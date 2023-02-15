@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project3\\Eproject3\\Eproject3\\Eproject3.csproj": {}
+    "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\Eproject3.csproj": {}
   },
   "projects": {
-    "D:\\Project3\\Eproject3\\Eproject3\\Eproject3.csproj": {
+    "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\Eproject3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project3\\Eproject3\\Eproject3\\Eproject3.csproj",
+        "projectUniqueName": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\Eproject3.csproj",
         "projectName": "Eproject3",
-        "projectPath": "D:\\Project3\\Eproject3\\Eproject3\\Eproject3.csproj",
+        "projectPath": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\Eproject3.csproj",
         "packagesPath": "C:\\Users\\DUNG\\.nuget\\packages\\",
-        "outputPath": "D:\\Project3\\Eproject3\\Eproject3\\obj\\",
+        "outputPath": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DUNG\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,28 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
