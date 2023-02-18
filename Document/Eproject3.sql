@@ -4,7 +4,8 @@ GO
 create table Labs
 (
 	Labs_ID int primary key identity,
-	LabsName varchar(max)
+	LabsName varchar(max),
+	Quantity int
 )
 go
 
@@ -18,7 +19,7 @@ CREATE TABLE Devices (
 Devices_ID varchar(50) PRIMARY KEY,
 DeviceName NVARCHAR(MAX) NOT NULL,
 DeviceType NVARCHAR(MAX) NULL,
-BuyFrom NVARCHAR(MAX) NULL,
+SupplyFrom NVARCHAR(MAX) NULL,
 Status NVARCHAR(MAX) NULL,
 DateMaintance DATETIME NULL,
 DeviceImg NVARCHAR(MAX) NULL,
@@ -35,7 +36,8 @@ go
 CREATE TABLE Admins (
 ID nvarchar(50) PRIMARY KEY,
 AdminName NVARCHAR(MAX) NOT NULL,
-Password NVARCHAR(MAX) NOT NULL
+Password NVARCHAR(MAX) NOT NULL,
+Role varchar(max) not null
 );
 go
 create table users

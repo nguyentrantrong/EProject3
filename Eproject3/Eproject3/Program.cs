@@ -1,7 +1,11 @@
+using Eproject3.Models;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<eProject3Context>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectDb")));
 
 var app = builder.Build();
 
