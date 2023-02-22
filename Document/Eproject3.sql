@@ -1,6 +1,8 @@
 USE eProject3;
 GO 
+Drop table Calender
 
+go
 create table Labs
 (
 	Labs_ID int primary key identity,
@@ -74,4 +76,28 @@ create table report
 	REFERENCES Devices (Devices_ID)
 )
 go 
+create table Calender
+(
+	Calen_ID int primary key identity,
+	Event varchar(max) not null,
+	Description varchar(max) null,
+	StarTime datetime not null,	
+        EndTime datetime null,
+)
+go
+create table Evt
+(
+	Event_ID int primary key identity,
+	Title varchar(max) null,
+	Minititle varchar(max) not null,
+	Img int not null,
+	Content varchar(max) not null,
+	Event_Date datetime not null,
+	Calen_ID int not null,
+	CONSTRAINT fk_Calender_Calen_ID
+	FOREIGN KEY (Calen_ID)
+	REFERENCES Calender (Calen_ID),
+)
+go 
+
 
