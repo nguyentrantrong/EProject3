@@ -120,11 +120,11 @@ namespace Eproject3.Controllers
         public IActionResult DeleteDevice(string id){
             var result = db.Devices.FirstOrDefault(d => d.DevicesId.Equals(id));
             if(result != null){
-                db.Devices.Remove(result);
-                db.SaveChanges();
-                return RedirectToAction("Index");
+            db.Devices.Remove(result);
+            db.SaveChanges();
+            return RedirectToAction("Index");
             }else{
-                return NoContent();
+            return NoContent();
             }
         }
     }

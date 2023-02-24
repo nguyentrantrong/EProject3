@@ -116,16 +116,11 @@ namespace Eproject3.Controllers
             }
             return View(device);
         }
-        [HttpGet]
-        public IActionResult DeleteDevice(string id){
-            var result = db.Devices.FirstOrDefault(d => d.DevicesId.Equals(id));
-            if(result != null){
-                db.Devices.Remove(result);
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }else{
-                return NoContent();
-            }
+        public IActionResult DeleteDevice(string deviceId){
+            var result = db.Devices.FirstOrDefault(d => d.DevicesId.Equals(deviceId));
+            db.Devices.Remove(result);
+            db.SaveChanges();
+            return View("Index");
         }
     }
 }

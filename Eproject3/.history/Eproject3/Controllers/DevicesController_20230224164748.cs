@@ -124,7 +124,7 @@ namespace Eproject3.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }else{
-                return NoContent();
+            return NoContent();
             }
         }
     }

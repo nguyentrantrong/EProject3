@@ -119,13 +119,10 @@ namespace Eproject3.Controllers
         [HttpGet]
         public IActionResult DeleteDevice(string id){
             var result = db.Devices.FirstOrDefault(d => d.DevicesId.Equals(id));
-            if(result != null){
-                db.Devices.Remove(result);
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }else{
-                return NoContent();
-            }
+
+            db.Devices.Remove(result);
+            db.SaveChanges();
+            return View("Index");
         }
     }
 }
