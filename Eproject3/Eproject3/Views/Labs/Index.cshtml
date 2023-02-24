@@ -21,7 +21,7 @@
     <section class="content">
         <div class="container-fluid">
             <a asp-action="Create">Create new Labs</a>
-            <div class="row">
+          <div class="row">
                 <table class="table table-bordered">
                     <thead>
                         <tr>
@@ -38,7 +38,7 @@
                                 <td>@item.LabsName</td>  
                                 <td>
                                   <a asp-action="Delete" asp-route-id="@item.LabsId" class="btn btn-danger">Delete</a>
-                                  <a asp-action="Delete" asp-route-id="@item.LabsId" class="btn btn-primary">Details</a>
+                                  <a asp-action="DevicesList" asp-route-id="@item.LabsId" class="btn btn-primary">See more</a>
                                 </td>
                               </tr>
                             }
@@ -46,9 +46,7 @@
                     </tbody>
                 
                 </table>
-                @* Table Hay card gì đó tự build *@
-                
-            </div>
+          </div>
         </div>
     </section>
 </div>
