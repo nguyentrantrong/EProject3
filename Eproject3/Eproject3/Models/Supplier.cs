@@ -15,7 +15,7 @@ namespace Eproject3.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 
-        public int SupplierId { get; set; }
+        public int Supplier_ID { get; set; }
         public string SupplierName { get; set; } = null!;
 
         public virtual ICollection<Device> Devices { get; set; }

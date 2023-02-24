@@ -1,6 +1,7 @@
 ﻿using Eproject3.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Eproject3.Controllers
 {
@@ -14,14 +15,18 @@ namespace Eproject3.Controllers
         // GET: LabsController1
         public ActionResult Index()
         {
-            var model = db.Labs.ToList();
+            var model = db.Labs.Include(x=>x.Devices).ToList();
+            // item.Devices.Count();
             return View(model);
         }
 
         // GET: LabsController1/Details/5
-        public ActionResult Details(int id)
+        public ActionResult DevicesList(int id)
         {
-            return View();
+            //Labs và Devices là quan hệ 1 nhiều , 1 Labs có nhiều Devices
+            //vd: Xuất ra view 1 lab A sẽ trả ra đc list Devices của Lab A (dựa vào Include)
+            var lab = db.Labs.Where(lab => lab.LabsId == id).Include(lab=>lab.Devices).ThenInclude(lab => lab.Supplier).FirstOrDefault();
+            return View(lab);
         }
 
         // GET: LabsController1/Create
@@ -35,22 +40,24 @@ namespace Eproject3.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(Lab lab)
         {
-            var model = db.Labs.Where(c => c.LabsId == lab.LabsId && c.LabsName.Equals(lab.LabsName)).FirstOrDefault();
+            var model = db.Labs.Where(c =>c.LabsName.Equals(lab.LabsName)).FirstOrDefault();
             try
             {
                 if(model == null){
                     db.Labs.Add(lab);
                     db.SaveChanges();
+                    return RedirectToAction("Index");
                 }
                 else{
                     ModelState.AddModelError(string.Empty, "Lab " + lab.LabsName + " already exists");
                 }
-                return RedirectToAction("Index");
             }
             catch
             {
-                return View();
+                return View(lab);
+                ModelState.AddModelError(string.Empty, "Lab " + lab.LabsName + " already exists");
             }
+            return View();
         }
 
         // GET: LabsController1/Edit/5

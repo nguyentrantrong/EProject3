@@ -5,6 +5,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<Lab>();
+builder.Services.AddScoped<Supplier>();
 builder.Services.AddDbContext<eProject3Context>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectDb")));
 
 var app = builder.Build();
@@ -22,6 +24,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Devices}/{action=Index}/{id?}");
 
 app.Run();

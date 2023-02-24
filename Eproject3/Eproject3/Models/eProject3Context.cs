@@ -36,7 +36,7 @@ namespace Eproject3.Models
         {
             modelBuilder.Entity<Admin>(entity =>
             {
-                entity.Property(e => e.Id)
+                entity.Property(e => e.ID)
                     .HasMaxLength(50)
                     .HasColumnName("ID");
             });
@@ -74,7 +74,7 @@ namespace Eproject3.Models
 
                 entity.Property(e => e.LabsId).HasColumnName("Labs_ID");
 
-                entity.Property(e => e.SupplierId).HasColumnName("Supplier_ID");
+                entity.Property(e => e.Supplier_ID).HasColumnName("Supplier_ID");
 
                 entity.HasOne(d => d.Labs)
                     .WithMany(p => p.Devices)
@@ -84,7 +84,7 @@ namespace Eproject3.Models
 
                 entity.HasOne(d => d.Supplier)
                     .WithMany(p => p.Devices)
-                    .HasForeignKey(d => d.SupplierId)
+                    .HasForeignKey(d => d.Supplier_ID)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_supplier_Supplier_ID");
             });
@@ -131,7 +131,7 @@ namespace Eproject3.Models
 
             modelBuilder.Entity<Supplier>(entity =>
             {
-                entity.Property(e => e.SupplierId).HasColumnName("Supplier_ID");
+                entity.Property(e => e.Supplier_ID).HasColumnName("Supplier_ID");
 
                 entity.Property(e => e.SupplierName).IsUnicode(false);
             });
