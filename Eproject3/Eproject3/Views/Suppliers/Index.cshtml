@@ -18,10 +18,10 @@
     </div>
     <!-- /.content-header -->
     <section class="content">
-        <div class="container-fluid">
+        <div class="container">
             <a asp-action="Create">Create new Suppliers</a></li>
             <div class="row">
-                <table class="table table-bordered">
+                <table class="table table-bordered" id="supplyTable">
                     <thead class="thead-dark">
                         <tr>
                             <th>Supplier Name</th>
@@ -48,3 +48,11 @@
         </div>
     </section>
 </div>
+<script src="//cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#supplyTable").DataTable({
+
+        })
+    })
+</script>

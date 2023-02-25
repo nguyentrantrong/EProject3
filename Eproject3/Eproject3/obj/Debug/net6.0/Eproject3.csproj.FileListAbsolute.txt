@@ -263,3 +263,7 @@ D:\Project\Eproject3\Eproject3\Eproject3\obj\Debug\net6.0\refint\Eproject3.dll
 D:\Project\Eproject3\Eproject3\Eproject3\obj\Debug\net6.0\Eproject3.pdb
 D:\Project\Eproject3\Eproject3\Eproject3\obj\Debug\net6.0\Eproject3.genruntimeconfig.cache
 D:\Project\Eproject3\Eproject3\Eproject3\obj\Debug\net6.0\ref\Eproject3.dll
+D:\Project\Eproject3\Eproject3\Eproject3\bin\Debug\net6.0\appsettings.Development.json
+D:\Project\Eproject3\Eproject3\Eproject3\bin\Debug\net6.0\appsettings.json
+D:\Project\Eproject3\Eproject3\Eproject3\bin\Debug\net6.0\Eproject3.staticwebassets.runtime.json
+D:\Project\Eproject3\Eproject3\Eproject3\bin\Debug\net6.0\Eproject3.exe
