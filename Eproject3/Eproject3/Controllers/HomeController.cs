@@ -1,9 +1,15 @@
 ﻿using Eproject3.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
 namespace Eproject3.Controllers
 {
+    [Authorize(AuthenticationSchemes = SchemesNameConst.TokenAuthenticationDefaultScheme)]
+    public static class SchemesNameConst
+    {
+        public const string TokenAuthenticationDefaultScheme = "TokenAuthenticationScheme";
+    }
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -15,6 +21,7 @@ namespace Eproject3.Controllers
 
         public IActionResult Index()
         {
+            HttpContext.Session.GetString("adminId");
             return View();
         }
 
