@@ -36,7 +36,7 @@ namespace Eproject3.Models
         {
             modelBuilder.Entity<Admin>(entity =>
             {
-                entity.Property(e => e.Id)
+                entity.Property(e => e.ID)
                     .HasMaxLength(50)
                     .HasColumnName("ID");
             });
