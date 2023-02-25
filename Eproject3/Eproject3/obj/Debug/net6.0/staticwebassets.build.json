@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "LU86NpER73cYAk729+y9vBvT9Oy2MTp0LG2A2FwZgAM=",
+=======
+  "Hash": "CaSdU7T4zlurpniuy7xIRXWEdUbV4yEZzrPeLieON10=",
+>>>>>>> main
   "Source": "Eproject3",
   "BasePath": "_content/Eproject3",
   "Mode": "Default",
@@ -1275,7 +1279,62 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\js\\site.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\273155787_506176694206507_9077340921652382191_n.jpg",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "images/273155787_506176694206507_9077340921652382191_n.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\273155787_506176694206507_9077340921652382191_n.jpg"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\320222202_716264739840411_4617903201906532030_n.jpg",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "images/320222202_716264739840411_4617903201906532030_n.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\320222202_716264739840411_4617903201906532030_n.jpg"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\noel.jpg",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "images/noel.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\noel.jpg"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\js\\site.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",

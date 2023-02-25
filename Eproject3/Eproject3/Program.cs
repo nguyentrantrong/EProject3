@@ -7,6 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<Lab>();
+builder.Services.AddScoped<Supplier>();
 builder.Services.AddDbContext<eProject3Context>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectDb")));
 builder.Services.AddAuthentication(o =>
 {
@@ -38,6 +40,10 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
+<<<<<<< HEAD
     pattern: "{controller=Account}/{action=Login}/{id?}");
+=======
+    pattern: "{controller=Devices}/{action=Index}/{id?}");
+>>>>>>> main
 
 app.Run();

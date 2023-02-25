@@ -16,6 +16,7 @@ namespace Eproject3.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int LabsId { get; set; }
         public string? LabsName { get; set; }
+        public int Quantity { get; set; }
 
         public virtual ICollection<Device> Devices { get; set; }
     }

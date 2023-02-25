@@ -293,7 +293,23 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+<<<<<<< HEAD
       "Id": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\js\\site.js",
+=======
+      "Id": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\273155787_506176694206507_9077340921652382191_n.jpg",
+      "PackagePath": "staticwebassets\\images\\273155787_506176694206507_9077340921652382191_n.jpg"
+    },
+    {
+      "Id": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\320222202_716264739840411_4617903201906532030_n.jpg",
+      "PackagePath": "staticwebassets\\images\\320222202_716264739840411_4617903201906532030_n.jpg"
+    },
+    {
+      "Id": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\noel.jpg",
+      "PackagePath": "staticwebassets\\images\\noel.jpg"
+    },
+    {
+      "Id": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\js\\site.js",
+>>>>>>> main
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {

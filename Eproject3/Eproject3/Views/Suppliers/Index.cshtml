@@ -1,0 +1,50 @@
+@model List<Eproject3.Models.Supplier>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            @* <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Labs v1</li>
+            </ol> *@
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <section class="content">
+        <div class="container-fluid">
+            <a asp-action="Create">Create new Suppliers</a></li>
+            <div class="row">
+                <table class="table table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Supplier Name</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                          @foreach (var item in Model)
+                            {
+                              <tr>
+                                <td>@item.SupplierName</td>  
+                                <td>
+                                  <a asp-action="Delete" asp-route-id="@item.Supplier_ID" class="btn btn-danger">Delete</a>
+                                </td>
+                              </tr>
+                            }
+                      
+                    </tbody>
+                
+                </table>
+                @* Table Hay card gì đó tự build *@
+                
+            </div>
+        </div>
+    </section>
+</div>

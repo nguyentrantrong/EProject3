@@ -1,3 +1,5 @@
+create database eProject3
+go
 USE eProject3;
 GO 
 
@@ -5,14 +7,14 @@ create table Labs
 (
 	Labs_ID int primary key identity,
 	LabsName varchar(max),
-	Quantity int
+	Quantity int,
 )
 go
 
 create table Suppliers
 (
 	Supplier_ID int primary key identity,
-	SupplierName varchar(max) not null
+	SupplierName varchar(max) not null,
 )
 go 
 CREATE TABLE Devices (
