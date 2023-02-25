@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@{ 
+     var name = Context.Session.GetString("adminName");
+ }
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -45,10 +49,16 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="index3.html" class="nav-link">Home</a>
+        <a href="../Views/Home/Index.cshtml" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">Contact</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+          <a href="#" class="nav-link">Contact</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+          <a class="nav-link" style="text-decoration:none; color: #309E08; font-weight: 600;" asp-controller="Account" asp-action="Logout">Logout</a>
       </li>
     </ul>
 
@@ -165,15 +175,16 @@
     <!-- Sidebar -->
     <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+      @if(name != null){
+        <div style="text-align: center;">
+            <span style="color: white; font-weight: 50px; font-size: 15px; line-height: 40px;">
+                Welcome
+                <span style="display: inline-block; font-size: 20px; font-weight: 70px; color: #43cea2;">
+                    @name
+                </span>
+            </span>
         </div>
-        <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
-        </div>
-      </div>
-
+      }
       <!-- SidebarSearch Form -->
       <div class="form-inline">
         <div class="input-group" data-widget="sidebar-search">
