@@ -1,6 +1,6 @@
-﻿@{ 
-     var name = Context.Session.GetString("adminName");
- }
+﻿@{
+    Admin? user = Context.Items["User"] as Admin;
+}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -49,16 +49,13 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="../Views/Home/Index.cshtml" class="nav-link">Home</a>
+        <a asp-controller="Home" asp-action="Index" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">Contact</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-          <a href="#" class="nav-link">Contact</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-          <a class="nav-link" style="text-decoration:none; color: #309E08; font-weight: 600;" asp-controller="Account" asp-action="Logout">Logout</a>
+        <a class="nav-link" asp-controller="Account" asp-action="Logout">Logout</a>
       </li>
     </ul>
 
@@ -175,16 +172,14 @@
     <!-- Sidebar -->
     <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
-      @if(name != null){
         <div style="text-align: center;">
             <span style="color: white; font-weight: 50px; font-size: 15px; line-height: 40px;">
                 Welcome
                 <span style="display: inline-block; font-size: 20px; font-weight: 70px; color: #43cea2;">
-                    @name
+                    @user.AdminName
                 </span>
             </span>
         </div>
-      }
       <!-- SidebarSearch Form -->
       <div class="form-inline">
         <div class="input-group" data-widget="sidebar-search">
@@ -227,41 +222,15 @@
               </p>
             </a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-chart-pie"></i>
-              <p>
-                Charts
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>ChartJS</p>
+            <li class="nav-item">
+                <a asp-controller="Account" asp-action="Index" class="nav-link">
+                  <i class="nav-icon fas fa-user-secret"></i>
+                    <p>
+                         Admin
+                    <i class="right fas fa-angle-left"></i>
+                    </p>
                 </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/charts/flot.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Flot</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/charts/inline.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Inline</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/charts/uplot.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>uPlot</p>
-                </a>
-              </li>
-            </ul>
-          </li>
+            </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-tree"></i>

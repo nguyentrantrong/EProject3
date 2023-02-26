@@ -5,7 +5,6 @@ using System.Diagnostics;
 
 namespace Eproject3.Controllers
 {
-    [Authorize(AuthenticationSchemes = SchemesNameConst.TokenAuthenticationDefaultScheme)]
     public static class SchemesNameConst
     {
         public const string TokenAuthenticationDefaultScheme = "TokenAuthenticationScheme";
@@ -18,7 +17,7 @@ namespace Eproject3.Controllers
         {
             _logger = logger;
         }
-
+        [Authorize(Roles = "admin, user, staff")]
         public IActionResult Index()
         {
             HttpContext.Session.GetString("adminId");

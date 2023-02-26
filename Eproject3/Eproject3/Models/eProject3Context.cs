@@ -7,10 +7,6 @@ namespace Eproject3.Models
 {
     public partial class eProject3Context : DbContext
     {
-        public eProject3Context()
-        {
-        }
-
         public eProject3Context(DbContextOptions<eProject3Context> options)
             : base(options)
         {
@@ -28,7 +24,7 @@ namespace Eproject3.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=.;Database=eProject3;uid=sa;pwd=1");
+                optionsBuilder.UseSqlServer("Server=DESKTOP-9R59LGC\\TRONG;Database=eProject3;uid=sa;pwd=160803");
             }
         }
 
