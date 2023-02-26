@@ -1,0 +1,66 @@
+﻿@model List<Eproject3.Models.Admin>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    Admin? user = Context.Items["User"] as Admin;
+}
+
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    @* <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Labs v1</li>
+                    </ol> *@
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <section class="content">
+        <div class="container">
+            @if(user?.Role == "admin"){
+                <p>
+                    <a asp-action="Create" asp-controller="Account" class="btn btn-outline-success">Register New Admin</a>
+                </p>
+            }
+            <div class="row">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Admin Name</th>
+                            <th>Role</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.Id</td>
+                                <td>@item.AdminName</td>
+                                <td>@item.Role</td>
+                                @*<td>
+                                    <a asp-action="Delete" asp-route-id="@item.LabsId" class="btn btn-danger">Delete</a>
+                                    <a asp-action="DevicesList" asp-route-id="@item.LabsId" class="btn btn-primary">See more</a>
+                                </td>*@
+                            </tr>
+                        }
+
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </section>
+</div>
+<script src="//cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#labTable").DataTable({
+
+        })
+    })
+</script>

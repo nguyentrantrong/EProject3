@@ -1,0 +1,53 @@
+﻿@model Eproject3.Models.Admin
+
+@{
+	ViewBag.title = "Register Admin";
+}
+<div class="content-wrapper">
+	<div class="content-header"></div>
+	<div class="content">
+		
+		<div class="container-fluid">
+			<h1>Register Account Admin</h1>
+			<div class="row">
+				<div class="col-md-4">
+					<form asp-action="Create" asp-controller="Account" method="post">
+						<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+						<div class="form-group">
+							<label asp-for="Id" class="control-label"></label>
+							<input asp-for="Id" class="form-control" placeholder="Input ID" required/>
+							<span asp-validation-for="Id" class="text-danger"></span>
+						</div>
+						<div class="form-group">
+							<label asp-for="AdminName" class="control-label"></label>
+							<input asp-for="AdminName" class="form-control" placeholder="Input Admin Name" required/>
+							<span asp-validation-for="AdminName" class="text-danger"></span>
+						</div>
+						<div class="form-group">
+							<label asp-for="Password" class="control-label"></label>
+							<input type="password" asp-for="Password" class="form-control" placeholder="Input Password" required/>
+							<div class="input-group-append"></div>
+							<span asp-validation-for="Password" class="text-danger"></span>
+						</div>
+						<div class="form-group">
+							<label asp-for="Role" class="control-label"></label>
+							<select asp-for="Role" class="form-control" required>
+								<option value="">---Please Choose Role---</option>
+								<option value="admin">Admin</option>
+								<option value="staff">Staff</option>
+								<option value="user">User</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<input type="submit" value="Register" class="btn btn-info" />
+						</div>
+					</form>
+				</div>
+			</div>
+			<br />
+			<div>
+				<a asp-action="Index" asp-controller="Account" class="btn btn-outline-secondary">Back To List</a>
+			</div>
+		</div>
+	</div>
+</div>
