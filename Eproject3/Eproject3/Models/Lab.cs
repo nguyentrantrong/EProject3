@@ -19,5 +19,7 @@ namespace Eproject3.Models
         public int Quantity { get; set; }
 
         public virtual ICollection<Device> Devices { get; set; }
+        public virtual ICollection<Event> Events { get; set; }
+
     }
 }
