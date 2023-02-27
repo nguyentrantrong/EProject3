@@ -31,15 +31,11 @@
 						</div>
 						<div class="form-group">
 							<label asp-for="Role" class="control-label"></label>
-							<select asp-for="Role" class="form-control" required>
-								<option value="">---Please Choose Role---</option>
-								<option value="admin">Admin</option>
-								<option value="staff">Staff</option>
-								<option value="user">User</option>
-							</select>
+							<input asp-for="Role" class="form-control" placeholder="Input Role" required/>
+							<span asp-validation-for="Role" class="text-danger"></span>
 						</div>
 						<div class="form-group">
-							<input type="submit" value="Register" class="btn btn-info" />
+							<input type="submit" value="Register" class="btn btn-primary" />
 						</div>
 					</form>
 				</div>
