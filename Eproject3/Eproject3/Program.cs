@@ -1,3 +1,4 @@
+using Eproject3.Data;
 using Eproject3.middleware;
 using Eproject3.Models;
 using Eproject3.Repositories.Auth;
@@ -13,6 +14,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<Lab>();
 builder.Services.AddScoped<Supplier>();
+builder.Services.AddScoped<IDAL, IDAL.DAL>();
 builder.Services.AddScoped<IAuthentication, AuthenticationService>();
 builder.Services.AddDbContext<eProject3Context>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectDb")));
 builder.Services.AddAuthentication(options =>

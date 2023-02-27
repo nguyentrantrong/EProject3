@@ -7,6 +7,10 @@ namespace Eproject3.Models
 {
     public partial class eProject3Context : DbContext
     {
+        public eProject3Context()
+        {
+        }
+
         public eProject3Context(DbContextOptions<eProject3Context> options)
             : base(options)
         {
@@ -15,6 +19,7 @@ namespace Eproject3.Models
         public DbSet<Admin> Admins { get; set; }
         public DbSet<Complain> Complains { get; set; }
         public DbSet<Device> Devices { get; set; }
+        public virtual DbSet<Event> Events { get; set; } 
         public DbSet<Lab> Labs { get; set; }
         public DbSet<Report> Reports { get; set; }
         public DbSet<Supplier> Suppliers { get; set; }
@@ -24,7 +29,7 @@ namespace Eproject3.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=DESKTOP-9R59LGC\\TRONG;Database=eProject3;uid=sa;pwd=160803");
+                optionsBuilder.UseSqlServer("server=.\\SQLEXPRESS;database=eProject3;Trusted_connection=true");
             }
         }
 
@@ -83,6 +88,23 @@ namespace Eproject3.Models
                     .HasForeignKey(d => d.Supplier_ID)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_supplier_Supplier_ID");
+            });
+
+            modelBuilder.Entity<Event>(entity =>
+            {
+                entity.ToTable("Event");
+
+                entity.Property(e => e.EndTime).HasColumnType("datetime");
+
+                entity.Property(e => e.LabsId).HasColumnName("Labs_ID");
+
+                entity.Property(e => e.StartTime).HasColumnType("datetime");
+
+                entity.HasOne(d => d.Lab)
+                    .WithMany(p => p.Events)
+                    .HasForeignKey(d => d.LabsId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("fk_Labs");
             });
 
             modelBuilder.Entity<Lab>(entity =>

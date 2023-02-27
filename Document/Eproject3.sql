@@ -2,7 +2,6 @@ create database eProject3
 go
 USE eProject3;
 GO 
-
 create table Labs
 (
 	Labs_ID int primary key identity,
@@ -76,4 +75,17 @@ create table report
 	REFERENCES Devices (Devices_ID)
 )
 go 
+create table Event
+(
+	Id int primary key identity,
+	Name nvarchar(max) null,
+	Description nvarchar(max) null,
+	StartTime datetime null,
+	EndTime datetime null,
+	Labs_ID int not null,
+	CONSTRAINT fk_Labs
+	FOREIGN KEY (Labs_ID)
+	REFERENCES Labs (Labs_ID),
+)
+go
 
