@@ -1,25 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Eproject3.Models
 {
-    [Table("Labs")]
     public partial class Lab
     {
         public Lab()
         {
             Devices = new HashSet<Device>();
+            Events = new HashSet<Event>();
         }
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+
         public int LabsId { get; set; }
         public string? LabsName { get; set; }
-        public int Quantity { get; set; }
+        public int? Quantity { get; set; }
 
         public virtual ICollection<Device> Devices { get; set; }
         public virtual ICollection<Event> Events { get; set; }
-
     }
 }

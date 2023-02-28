@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Workspace\\Eproject3\\Eproject3\\Eproject3\\Eproject3.csproj": {}
+    "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\Eproject3.csproj": {}
   },
   "projects": {
-    "C:\\Workspace\\Eproject3\\Eproject3\\Eproject3\\Eproject3.csproj": {
+    "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\Eproject3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Workspace\\Eproject3\\Eproject3\\Eproject3\\Eproject3.csproj",
+        "projectUniqueName": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\Eproject3.csproj",
         "projectName": "Eproject3",
-        "projectPath": "C:\\Workspace\\Eproject3\\Eproject3\\Eproject3\\Eproject3.csproj",
-        "packagesPath": "C:\\Users\\LAPTOP123\\.nuget\\packages\\",
-        "outputPath": "C:\\Workspace\\Eproject3\\Eproject3\\Eproject3\\obj\\",
+        "projectPath": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\Eproject3.csproj",
+        "packagesPath": "C:\\Users\\DUNG\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\LAPTOP123\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DUNG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -87,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

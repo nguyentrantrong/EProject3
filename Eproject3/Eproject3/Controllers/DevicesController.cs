@@ -41,7 +41,7 @@ namespace Eproject3.Controllers
                 newDevice.DeviceName = device.DeviceName;
                 newDevice.DeviceType = device.DeviceType;
                 newDevice.LabsId = device.LabsId;
-                newDevice.Supplier_ID = device.Supplier_ID;
+                newDevice.SupplierId = device.SupplierId;
                 newDevice.DateMaintance = device.DateMaintance;
                 newDevice.Status = device.Status;
                 newDevice.DeviceImg = "";
@@ -64,7 +64,7 @@ namespace Eproject3.Controllers
             // if(ModelState.IsValid){
             // }
                 ViewData["LabsId"] = new SelectList(db.Labs , "LabsId", "LabsName", device.LabsId);
-                ViewData["Supplier_ID"] = new SelectList(db.Suppliers , "Supplier_ID", "SupplierName", device.Supplier_ID);
+                ViewData["Supplier_ID"] = new SelectList(db.Suppliers , "Supplier_ID", "SupplierName", device.SupplierId);
                 return View(device);
         }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
@@ -81,7 +81,7 @@ namespace Eproject3.Controllers
         public IActionResult EditDevices(string id){
             var model = db.Devices.Where(d => d.DevicesId.Equals(id)).FirstOrDefault();
             ViewData["LabsId"] = new SelectList(db.Labs , "LabsId", "LabsName", model.LabsId);
-                ViewData["Supplier_ID"] = new SelectList(db.Suppliers , "Supplier_ID", "SupplierName", model.Supplier_ID);
+                ViewData["Supplier_ID"] = new SelectList(db.Suppliers , "Supplier_ID", "SupplierName", model.SupplierId);
             return View(model);
         }
         [HttpPost]
@@ -106,7 +106,7 @@ namespace Eproject3.Controllers
                     // newDevice.DeviceImg = "images/" + fileName;
                 }
                 // model.DeviceImg=device.DeviceImg ;
-                model.Supplier_ID=device.Supplier_ID;
+                model.SupplierId=device.SupplierId;
                 model.LabsId=device.LabsId;
                 db.Devices.Update(model);
                 db.SaveChanges();

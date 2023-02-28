@@ -19,7 +19,7 @@ namespace Eproject3.Models
         public int LabsId { get; set; }
 
         //Relational data
-        public virtual Lab Lab { get; set; }
+        public virtual Lab Labs { get; set; }
 
         public Event(IFormCollection form, Lab lab)
         {
@@ -27,21 +27,21 @@ namespace Eproject3.Models
             Description = form["Event.Description"].ToString();
             StartTime = DateTime.Parse(form["Event.StartTime"].ToString());
             EndTime = DateTime.Parse(form["Event.EndTime"].ToString());
-            Lab = lab;
+            Labs = lab;
         }
-
         public void UpdateEvent(IFormCollection form, Lab lab)
         {
             Name = form["Event.Name"].ToString();
             Description = form["Event.Description"].ToString();
             StartTime = DateTime.Parse(form["Event.StartTime"].ToString());
             EndTime = DateTime.Parse(form["Event.EndTime"].ToString());
-            Lab = lab;      
+            Labs = lab;
         }
-
         public Event()
         {
 
         }
     }
 }
+        
+        

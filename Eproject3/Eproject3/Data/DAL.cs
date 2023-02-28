@@ -22,12 +22,12 @@ namespace Eproject3.Data
 
             public List<Event> GetEvents()
             {
-                return db.Events.Include(c => c.Lab).ToList();
+                return db.Events.Include(c => c.Labs).ToList();
             }
 
             public Event GetEvent(int id)
             {
-                return db.Events.Include(c => c.Lab).FirstOrDefault(x => x.Id == id);
+                return db.Events.Include(c => c.Labs).FirstOrDefault(x => x.Id == id);
             }
 
             public void CreateEvent(IFormCollection form)
@@ -44,7 +44,7 @@ namespace Eproject3.Data
                 var eventid = int.Parse(form["Event.Id"]);
                 var myevent = db.Events.FirstOrDefault(x => x.Id == eventid);
                 var lab = db.Labs.FirstOrDefault(x => x.LabsName == labname);
-                myevent.UpdateEvent(form, lab);
+                myevent.UpdateEvent(form,lab);
                 db.Entry(myevent).State = EntityState.Modified;
                 db.SaveChanges();
             }

@@ -12,10 +12,13 @@ namespace Eproject3.Models
 
         public int ComplainId { get; set; }
         public string Description { get; set; } = null!;
-        public int UsersId { get; set; }
-        public DateTime? DateComplaint { get; set; }
+        public string Reason { get; set; } = null!;
+        public string StatusCp { get; set; } = null!;
+        public DateTime DateCp { get; set; }
+        public string Category { get; set; } = null!;
+        public string Id { get; set; } = null!;
 
-        public virtual User Users { get; set; } = null!;
+        public virtual Admin IdNavigation { get; set; } = null!;
         public virtual ICollection<Report> Reports { get; set; }
     }
 }
