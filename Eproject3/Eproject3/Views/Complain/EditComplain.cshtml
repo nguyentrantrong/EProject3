@@ -1,0 +1,55 @@
+﻿@model Eproject3.Models.Complain
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="content-wrapper">
+
+    <div class="container">
+        <h1>Update</h1>
+        <h4>Compain</h4>
+        <hr />
+        <div class="row">
+            <div class="col-md-4">
+                <form asp-action="EditComplain" method="post" >
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <input asp-for="ComplainId" class="form-control" type="hidden" />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Description" class="control-label"></label>
+                        <input asp-for="Description" class="form-control" />
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Reason" class="control-label"></label>
+                        <input asp-for="Reason" class="form-control" />
+                        <span asp-validation-for="Reason" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="StatusCp" class="control-label"></label>
+                        <input asp-for="StatusCp" class="form-control" />
+                        <span asp-validation-for="StatusCp" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <span asp-validation-for="DateCp" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Category" class="control-label"></label>
+                        <input asp-for="Category" class="form-control" />
+                        <span asp-validation-for="Category" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Id" class="control-label"></label>
+                        <select asp-for="Id" class="form-control" asp-items="ViewBag.Id">
+                            <option>----SELECT----</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Save" class="btn btn-primary" />
+                    </div>
+                </form>
+                <a asp-action="Index">Back to List</a>
+            </div>
+        </div>
+    </div>
+</div>
