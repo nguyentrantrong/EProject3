@@ -29,13 +29,14 @@ namespace Eproject3.Controllers
         public IActionResult Create()
         {
             ViewData["LabsId"] = new SelectList(db.Labs, "LabsId", "LabsName");
-            ViewData["Supplier_ID"] = new SelectList(db.Suppliers, "Supplier_ID", "SupplierName");
+            ViewData["Supplier_ID"] = new SelectList(db.Suppliers, "SupplierId", "SupplierName");
             return View();
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Device device, IFormFile file) 
         {
+          
                 Device newDevice = new Device();
                 newDevice.DevicesId = device.DevicesId;
                 newDevice.DeviceName = device.DeviceName;
@@ -43,9 +44,10 @@ namespace Eproject3.Controllers
                 newDevice.LabsId = device.LabsId;
                 newDevice.SupplierId = device.SupplierId;
                 newDevice.DateMaintance = device.DateMaintance;
-                newDevice.Status = device.Status;
+                newDevice.Status = "Active";
                 newDevice.DeviceImg = "";
-                if(file != null){
+                if (file != null)
+                {
                     var filePath = Path.Combine("wwwroot/images", file.FileName);
                     var stream = new FileStream(filePath, FileMode.Create);
                     file.CopyToAsync(stream);
@@ -60,12 +62,9 @@ namespace Eproject3.Controllers
                 }
                 db.Devices.Add(newDevice);
                 await db.SaveChangesAsync();
-                return RedirectToAction("Index");
-            // if(ModelState.IsValid){
-            // }
                 ViewData["LabsId"] = new SelectList(db.Labs , "LabsId", "LabsName", device.LabsId);
-                ViewData["Supplier_ID"] = new SelectList(db.Suppliers , "Supplier_ID", "SupplierName", device.SupplierId);
-                return View(device);
+                ViewData["Supplier_ID"] = new SelectList(db.Suppliers , "SupplierId", "SupplierName", device.SupplierId);
+                return RedirectToAction("Index");
         }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
@@ -81,7 +80,7 @@ namespace Eproject3.Controllers
         public IActionResult EditDevices(string id){
             var model = db.Devices.Where(d => d.DevicesId.Equals(id)).FirstOrDefault();
             ViewData["LabsId"] = new SelectList(db.Labs , "LabsId", "LabsName", model.LabsId);
-                ViewData["Supplier_ID"] = new SelectList(db.Suppliers , "Supplier_ID", "SupplierName", model.SupplierId);
+                ViewData["Supplier_ID"] = new SelectList(db.Suppliers , "SupplierId", "SupplierName", model.SupplierId);
             return View(model);
         }
         [HttpPost]
@@ -97,13 +96,6 @@ namespace Eproject3.Controllers
                     var stream = new FileStream(filePath, FileMode.Create);
                     file.CopyToAsync(stream);
                     model.DeviceImg = "/images/" + file.FileName;
-                    // string fileName = Path.GetFileName(file.FileName);
-                    // string filePath = Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot/images/", fileName);
-                    // using (var stream = new FileStream(filePath, FileMode.Create))
-                    // {
-                    //     await file.CopyToAsync(stream);
-                    // }
-                    // newDevice.DeviceImg = "images/" + fileName;
                 }
                 // model.DeviceImg=device.DeviceImg ;
                 model.SupplierId=device.SupplierId;

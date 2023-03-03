@@ -10,7 +10,7 @@ namespace Eproject3.Models
         public DateTime ReportDate { get; set; }
         public string Reciver { get; set; } = null!;
         public int ComplainId { get; set; }
-        public string DevicesId { get; set; } = null!;
+        public int DevicesId { get; set; }
 
         public virtual Complain Complain { get; set; } = null!;
         public virtual Device Devices { get; set; } = null!;
