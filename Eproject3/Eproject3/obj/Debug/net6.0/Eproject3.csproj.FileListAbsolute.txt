@@ -264,7 +264,6 @@ D:\Project\Eproject3\Eproject3\Eproject3\obj\Debug\net6.0\Eproject3.pdb
 D:\Project\Eproject3\Eproject3\Eproject3\obj\Debug\net6.0\Eproject3.genruntimeconfig.cache
 D:\Project\Eproject3\Eproject3\Eproject3\obj\Debug\net6.0\ref\Eproject3.dll
 D:\eProject3\Eproject3\Eproject3\Eproject3\bin\Debug\net6.0\appsettings.Development.json
-D:\eProject3\Eproject3\Eproject3\Eproject3\bin\Debug\net6.0\appsettings.json
 D:\eProject3\Eproject3\Eproject3\Eproject3\bin\Debug\net6.0\Eproject3.staticwebassets.runtime.json
 D:\eProject3\Eproject3\Eproject3\Eproject3\bin\Debug\net6.0\Eproject3.exe
 D:\eProject3\Eproject3\Eproject3\Eproject3\bin\Debug\net6.0\Eproject3.deps.json
@@ -809,3 +808,8 @@ C:\Workspace\Eproject3\Eproject3\Eproject3\bin\Debug\net6.0\Microsoft.Extensions
 D:\Project\Eproject3\Eproject3\Eproject3\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\Project\Eproject3\Eproject3\Eproject3\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
 D:\Project\Eproject3\Eproject3\Eproject3\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Project\Eproject3\Eproject3\Eproject3\bin\Debug\net6.0\appsettings.Development.json
+D:\Project\Eproject3\Eproject3\Eproject3\bin\Debug\net6.0\appsettings.json
+D:\Project\Eproject3\Eproject3\Eproject3\bin\Debug\net6.0\Eproject3.staticwebassets.runtime.json
+D:\Project\Eproject3\Eproject3\Eproject3\bin\Debug\net6.0\Eproject3.exe
+D:\eProject3\Eproject3\Eproject3\Eproject3\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll

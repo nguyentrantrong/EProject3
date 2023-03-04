@@ -17,7 +17,7 @@ create table Suppliers
 )
 go 
 CREATE TABLE Devices (
-Devices_ID int PRIMARY KEY identity,
+Devices_ID varchar(50) PRIMARY KEY,
 DeviceName NVARCHAR(MAX) NOT NULL,
 DeviceType NVARCHAR(MAX) NULL,
 SupplyFrom NVARCHAR(MAX) NULL,
@@ -70,7 +70,7 @@ create table report
 	ReportDate datetime not null,
 	Reciver varchar(max) not null,
 	Complain_ID int not null,
-	Devices_ID int not null,
+	Devices_ID varchar(50) not null,
 	CONSTRAINT fk_report_Report_ID
 	FOREIGN KEY (Complain_ID)
 	REFERENCES Complain (Complain_ID),
@@ -92,20 +92,38 @@ create table Event
 	REFERENCES Labs (Labs_ID),
 )
 go
-
-create table MaintainceDevices
+create table MaintainDevices
 (
 	Maintn_ID int primary key identity,
 	Descriptions varchar(MAX),
 	Reason varchar(MAX),
 	Date datetime,
 	Creater varchar(MAX),
-	Devices_ID int not null,
+	Devices_ID varchar(50) not null,
 	ID nvarchar(50) not null,
 	Status varchar(MAX),
 	Step int,
 	isFinished bit
 	CONSTRAINT fk_Device_Devices_ID
 	FOREIGN KEY (Devices_ID)
-	REFERENCES Devices (Devices_ID)
+	REFERENCES Devices (Devices_ID),
+	CONSTRAINT fk_admin_Admin_ID
+    FOREIGN KEY (ID)
+    REFERENCES Admins (ID)
 )
+go
+CREATE TABLE Slot
+(
+   Slot_ID INT PRIMARY KEY IDENTITY,
+   Day DATETIME NULL,
+   slot NVARCHAR(MAX) NOT NULL,
+   Lab_ID int NOT NULL,
+   Admins_ID nvarchar(50) NOT NULL,
+   CONSTRAINT FK_labs_Lab_ID
+      FOREIGN KEY (Lab_ID)
+      REFERENCES Labs (Labs_ID),
+   CONSTRAINT FK_admins_ID
+      FOREIGN KEY (Admins_ID)
+      REFERENCES Admins (ID)
+)
+go

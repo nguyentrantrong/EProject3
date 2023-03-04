@@ -1,0 +1,55 @@
+﻿@model Eproject3.Models.Slot
+
+@{
+	ViewBag.title = "Create Slot";
+}
+<div class="content-wrapper">
+	<div class="content-header"></div>
+	<div class="content">
+
+		<div class="container-fluid">
+			<h1>Create Slot</h1>
+			<div class="row">
+				<div class="col-md-4">
+					<form asp-action="Create" asp-controller="Slot" method="post" enctype="multipart/form-data">
+						<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+						<div class="form-group">
+							<label asp-for="Day" class="control-label"></label>
+							<input asp-for="Day" type="date" class="form-control" required />
+							<span asp-validation-for="Day" class="text-danger"></span>
+						</div>
+						<div class="form-group">
+							<label asp-for="Slot1" class="control-label"></label>
+							<select asp-for="Slot1" class="form-control" required>
+								<option>----SELECT-SLOT----</option>
+								<option value="Slot 1">Slot 1 (7AM-9AM)</option>
+								<option value="Slot 2">Slot 2 (9AM-11AM)</option>
+								<option value="Slot 3">Slot 3 (13PM-15PM)</option>
+								<option value="Slot 4">Slot 4 (15PM-17PM)</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label asp-for="LabId" class="control-label"></label>
+							<select asp-for="LabId" class="form-control" required asp-items="ViewBag.LabList">
+								<option>-----Select Room-----</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label asp-for="AdminsId" class="control-label"></label>
+							<select asp-for="AdminsId" class="form-control" required asp-items="ViewBag.StaffList">
+								<option>-----Select Teacher-----</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<input type="submit" value="Create" class="btn btn-primary" />
+						</div>
+					</form>
+				</div>
+			</div>
+			<br />
+			<div>
+				<a asp-action="Index" asp-controller="Slot" class="btn btn-outline-secondary">Back To List</a>
+			</div>
+		</div>
+	</div>
+</div>
