@@ -4,16 +4,6 @@
 }
 
 <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content-header -->
     <section class="content">
         <div class="container">
             <a asp-action="Create" class="btn btn-success">
@@ -46,7 +36,7 @@
                                 <td>@item.DeviceName</td>  
                                 <td>@item.DeviceType</td>  
                                 <td>@item.Supplier.SupplierName</td>  
-                                <td>@item.Status</td>  
+                                <span class="badge bg-success"><td>@item.Status</td></span>            
                                 <td>@item.DateMaintance</td>  
                                 <td>@item.Labs.LabsName</td>  
                                 <td>

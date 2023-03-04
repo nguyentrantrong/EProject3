@@ -27,9 +27,8 @@ namespace Eproject3.Controllers
         //[Authorize(Roles = "admin, staff")]
         public IActionResult Index()
         {
-            HttpContext.Session.GetString("adminId");
-            //ViewData["Resources"] = JSONListHelper.GetResourceListJSONString(db.Labs.ToList());
-            //ViewData["Events"] = JSONListHelper.GetEventListJSONString(db.Events.ToList());
+            ViewData["Resources"] = JSONListHelper.GetResourceListJSONString(db.Labs.ToList());
+            ViewData["Events"] = JSONListHelper.GetEventListJSONString(db.Events.ToList());
             return View();
         }
 

@@ -27,6 +27,7 @@ namespace Eproject3.Data
 
             public Event GetEvent(int id)
             {
+
                 return db.Events.Include(c => c.Labs).FirstOrDefault(x => x.Id == id);
             }
 
