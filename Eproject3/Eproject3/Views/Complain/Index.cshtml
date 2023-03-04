@@ -1,0 +1,76 @@
+﻿@model List<Eproject3.Models.Complain>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <section class="content">
+        <div class="container">
+            <a asp-action="Create" class="btn btn-success">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                </svg>
+                Create Complain
+            </a>
+
+            @* <i class="bi bi-plus"></i> *@
+            <br><br>
+            <div class="row">
+                <table class="table table-bordered" id="deviceTable">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Name Complain</th>
+                            <th>Description Complain</th>
+                            <th>Reason Complain</th>
+                            <th>Category Complain</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.IdNavigation.AdminName</td>
+                                <td>@item.Description</td>
+                                <td>@item.Reason</td>
+                                <td>@item.Category</td>
+                                <td>@item.StatusCp</td>
+                                <td>@item.DateCp</td>
+                                <td>
+                                    <a asp-action="Details" asp-route-id="@item.ComplainId" class="btn btn-primary">Details</a>
+                                    <a asp-action="EditComplain" asp-route-id="@item.ComplainId" class="btn btn-info">Edit</a>
+                                    <a asp-action="DeleteComplain" asp-route-id="@item.ComplainId" class="btn btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                        }
+
+                    </tbody>
+
+                </table>
+                @* Table Hay card gì đó tự build *@
+
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="//cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#deviceTable").DataTable({
+
+        })
+    })
+</script>
