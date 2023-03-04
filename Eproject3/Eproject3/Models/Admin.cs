@@ -8,7 +8,8 @@ namespace Eproject3.Models
         public Admin()
         {
             Complains = new HashSet<Complain>();
-            MaintainceDevices = new HashSet<MaintainceDevice>();
+            MaintainDevices = new HashSet<MaintainDevice>();
+            Slots = new HashSet<Slot>();
         }
 
         public string Id { get; set; } = null!;
@@ -17,6 +18,7 @@ namespace Eproject3.Models
         public string Role { get; set; } = null!;
 
         public virtual ICollection<Complain> Complains { get; set; }
-        public virtual ICollection<MaintainceDevice> MaintainceDevices { get; set; }
+        public virtual ICollection<MaintainDevice> MaintainDevices { get; set; }
+        public virtual ICollection<Slot> Slots { get; set; }
     }
 }

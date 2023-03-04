@@ -1,0 +1,69 @@
+﻿@model List<Eproject3.Models.Slot>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <section class="content">
+        <div class="container">
+            <a asp-action="Create" asp-controller="Slot" class="btn btn-outline-success">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                </svg>
+                Create New Slot
+            </a>
+
+            @* <i class="bi bi-plus"></i> *@
+            <br><br>
+            <div class="row">
+                <table class="table table-bordered" id="deviceTable">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Day</th>
+                            <th>Slot</th>
+                            <th>Room</th>
+                            <th>Teacher</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.Day?.ToString("dd/MM/yyyy")</td>
+                                <td>@item.Slot1</td>
+                                <td>@item.Lab.LabsName</td>
+                                <td>@item.Admins.AdminName</td>
+                                <td>
+                                    <a asp-action="Edit" asp-route-id="@item.SlotId" class="btn btn-info">Edit Slot</a>
+                                </td>
+                            </tr>
+                        }
+
+                    </tbody>
+
+                </table>
+
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="//cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#deviceTable").DataTable({
+
+        })
+    })
+</script>

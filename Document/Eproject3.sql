@@ -1,4 +1,4 @@
-create database eProject3
+Create database eProject3
 go
 USE eProject3;
 GO 
@@ -53,10 +53,14 @@ create table Complain
 (
 	Complain_ID int primary key identity,
 	description nvarchar(max) not null,
-	Users_ID int not null,
-	CONSTRAINT fk_users_Users_ID
-	FOREIGN KEY (Users_ID)
-	REFERENCES users (Users_ID)
+	Reason nvarchar(max) not null,
+	Status_CP nvarchar(max) not null,
+	Date_CP datetime not null,
+	Category nvarchar(max) not null,
+	ID nvarchar(50) not null,
+	CONSTRAINT fk_admins_Admin_ID
+    FOREIGN KEY (ID)
+    REFERENCES Admins (ID)
 )
 go
 create table report 
@@ -88,4 +92,38 @@ create table Event
 	REFERENCES Labs (Labs_ID),
 )
 go
-
+create table MaintainDevices
+(
+	Maintn_ID int primary key identity,
+	Descriptions varchar(MAX),
+	Reason varchar(MAX),
+	Date datetime,
+	Creater varchar(MAX),
+	Devices_ID varchar(50) not null,
+	ID nvarchar(50) not null,
+	Status varchar(MAX),
+	Step int,
+	isFinished bit
+	CONSTRAINT fk_Device_Devices_ID
+	FOREIGN KEY (Devices_ID)
+	REFERENCES Devices (Devices_ID),
+	CONSTRAINT fk_admin_Admin_ID
+    FOREIGN KEY (ID)
+    REFERENCES Admins (ID)
+)
+go
+CREATE TABLE Slot
+(
+   Slot_ID INT PRIMARY KEY IDENTITY,
+   Day DATETIME NULL,
+   slot NVARCHAR(MAX) NOT NULL,
+   Lab_ID int NOT NULL,
+   Admins_ID nvarchar(50) NOT NULL,
+   CONSTRAINT FK_labs_Lab_ID
+      FOREIGN KEY (Lab_ID)
+      REFERENCES Labs (Labs_ID),
+   CONSTRAINT FK_admins_ID
+      FOREIGN KEY (Admins_ID)
+      REFERENCES Admins (ID)
+)
+go

@@ -24,7 +24,7 @@ namespace Eproject3.Controllers
             _idal = idal;
             this.db = db;
         }
-        [Authorize(Roles = "admin, user, staff")]
+        //[Authorize(Roles = "admin, staff")]
         public IActionResult Index()
         {
             HttpContext.Session.GetString("adminId");

@@ -83,7 +83,7 @@ namespace Eproject3.Controllers
                 {
                     db.Admins.Add(newAdmin);
                     db.SaveChanges();
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "Account");
                 }
                 else
                 {
