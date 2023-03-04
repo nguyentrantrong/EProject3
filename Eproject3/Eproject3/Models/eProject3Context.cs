@@ -147,10 +147,6 @@ namespace Eproject3.Models
                     .IsUnicode(false)
                     .HasColumnName("Devices_ID");
 
-                entity.Property(e => e.Id)
-                    .HasMaxLength(50)
-                    .HasColumnName("ID");
-
                 entity.Property(e => e.Reason).IsUnicode(false);
 
                 entity.HasOne(d => d.Devices)
@@ -158,12 +154,6 @@ namespace Eproject3.Models
                     .HasForeignKey(d => d.DevicesId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_device_Devices_ID");
-
-                entity.HasOne(d => d.IdNavigation)
-                    .WithMany(p => p.MaintainceDevices)
-                    .HasForeignKey(d => d.Id)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("fk_admin_ID");
             });
 
             modelBuilder.Entity<Report>(entity =>

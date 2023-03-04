@@ -100,6 +100,34 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFic1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Project/Eproject3/Eproject3/Eproject3/Views/MaintainceDevices/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbnRhaW5jZURldmljZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/Eproject3/Eproject3/Eproject3/Views/MaintainceDevices/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbnRhaW5jZURldmljZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/Eproject3/Eproject3/Eproject3/Views/MaintainceDevices/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbnRhaW5jZURldmljZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/Eproject3/Eproject3/Eproject3/Views/MaintainceDevices/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbnRhaW5jZURldmljZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/Eproject3/Eproject3/Eproject3/Views/MaintainceDevices/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbnRhaW5jZURldmljZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/Eproject3/Eproject3/Eproject3/Views/MaintainceDevices/ListForMaintainer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbnRhaW5jZURldmljZXNcTGlzdEZvck1haW50YWluZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/Eproject3/Eproject3/Eproject3/Views/MaintainceDevices/ListUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbnRhaW5jZURldmljZXNcTGlzdFVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Project/Eproject3/Eproject3/Eproject3/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

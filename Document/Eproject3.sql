@@ -1,4 +1,4 @@
-create database eProject3
+Create database eProject3
 go
 USE eProject3;
 GO 
@@ -17,7 +17,7 @@ create table Suppliers
 )
 go 
 CREATE TABLE Devices (
-Devices_ID varchar(50) PRIMARY KEY,
+Devices_ID int PRIMARY KEY identity,
 DeviceName NVARCHAR(MAX) NOT NULL,
 DeviceType NVARCHAR(MAX) NULL,
 SupplyFrom NVARCHAR(MAX) NULL,
@@ -53,10 +53,14 @@ create table Complain
 (
 	Complain_ID int primary key identity,
 	description nvarchar(max) not null,
-	Users_ID int not null,
-	CONSTRAINT fk_users_Users_ID
-	FOREIGN KEY (Users_ID)
-	REFERENCES users (Users_ID)
+	Reason nvarchar(max) not null,
+	Status_CP nvarchar(max) not null,
+	Date_CP datetime not null,
+	Category nvarchar(max) not null,
+	ID nvarchar(50) not null,
+	CONSTRAINT fk_admins_Admin_ID
+    FOREIGN KEY (ID)
+    REFERENCES Admins (ID)
 )
 go
 create table report 
@@ -66,7 +70,7 @@ create table report
 	ReportDate datetime not null,
 	Reciver varchar(max) not null,
 	Complain_ID int not null,
-	Devices_ID varchar(50) not null,
+	Devices_ID int not null,
 	CONSTRAINT fk_report_Report_ID
 	FOREIGN KEY (Complain_ID)
 	REFERENCES Complain (Complain_ID),
@@ -89,3 +93,19 @@ create table Event
 )
 go
 
+create table MaintainceDevices
+(
+	Maintn_ID int primary key identity,
+	Descriptions varchar(MAX),
+	Reason varchar(MAX),
+	Date datetime,
+	Creater varchar(MAX),
+	Devices_ID int not null,
+	ID nvarchar(50) not null,
+	Status varchar(MAX),
+	Step int,
+	isFinished bit
+	CONSTRAINT fk_Device_Devices_ID
+	FOREIGN KEY (Devices_ID)
+	REFERENCES Devices (Devices_ID)
+)

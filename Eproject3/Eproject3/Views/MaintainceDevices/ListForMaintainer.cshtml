@@ -1,0 +1,97 @@
+@model IEnumerable<Eproject3.Models.MaintainceDevice>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="content-wrapper">
+
+    <!-- /.content-header -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="card">
+                <div class="card-header">
+                    <h1>Index</h1>
+                    <p>
+                        <a asp-action="Create">Create New</a>
+                    </p>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <table class="table table-bordered" width="100%" id="content">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Descriptions)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Reason)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Date)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Creater)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Devices)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Status)
+                                    </th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Descriptions)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Reason)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Date)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Creater)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Devices.DeviceName)
+                                        </td>
+                                        <td>
+                                            @if(item.Step == 4){
+                                                <span class="badge bg-success">Completed</span>
+                                            }else{
+                                                @if(item.Step != -99 && item.Step != 4){
+                                                    <span class="badge bg-primary">@Html.DisplayFor(modelItem => item.Status)</span>
+                                                }
+                                            }   
+                                            @if(item.Step == -99){
+                                                <span class="badge bg-danger">Rejected</span>
+                                            }
+                                        </td>
+                                        <td>
+                                            <a asp-action="Edit" asp-route-id="@item.MaintnId">Edit</a> |
+                                            <a asp-action="Details" asp-route-id="@item.MaintnId">Details</a> |
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>
+<script src="//cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#content").DataTable({
+
+        })
+    })
+</script>

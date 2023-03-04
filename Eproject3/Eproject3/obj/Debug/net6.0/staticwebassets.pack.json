@@ -305,8 +305,16 @@
       "PackagePath": "staticwebassets\\images\\273155787_506176694206507_9077340921652382191_n.jpg"
     },
     {
+      "Id": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\b1.gif",
+      "PackagePath": "staticwebassets\\images\\b1.gif"
+    },
+    {
       "Id": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\b2.gif",
       "PackagePath": "staticwebassets\\images\\b2.gif"
+    },
+    {
+      "Id": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\b3.gif",
+      "PackagePath": "staticwebassets\\images\\b3.gif"
     },
     {
       "Id": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\b4.gif",
