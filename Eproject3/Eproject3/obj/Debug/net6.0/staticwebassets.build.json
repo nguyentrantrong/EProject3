@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fmMbCpFfhJsnHWnomubrNIbcXiisXacnZi4lMaldtn8=",
+  "Hash": "IstnmI0CWKIws2NCkroseSjv5vQ5Rrx4KSfUoy4dN5s=",
   "Source": "Eproject3",
   "BasePath": "_content/Eproject3",
   "Mode": "Default",
@@ -1341,6 +1341,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\b2.gif"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\b3.gif",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "images/b3.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\b3.gif"
     },
     {
       "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\b4.gif",

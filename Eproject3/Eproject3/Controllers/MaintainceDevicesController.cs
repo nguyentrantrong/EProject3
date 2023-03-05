@@ -161,7 +161,7 @@ namespace Eproject3.Controllers
         public async Task<IActionResult> Approve(int id)
         {
             var request = await _context.MaintainceDevices.FirstOrDefaultAsync(req => req.MaintnId == id);
-            var req = await _context.Devices.FirstOrDefaultAsync(req => req.DevicesId == id);
+            var req = await _context.Devices.FirstOrDefaultAsync(req => req.DevicesId == request.DevicesId);
             
             if(request != null)
             {

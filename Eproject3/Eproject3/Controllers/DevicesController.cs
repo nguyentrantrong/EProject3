@@ -43,7 +43,7 @@ namespace Eproject3.Controllers
                 newDevice.DeviceType = device.DeviceType;
                 newDevice.LabsId = device.LabsId;
                 newDevice.SupplierId = device.SupplierId;
-                newDevice.DateMaintance = device.DateMaintance;
+                newDevice.DateMaintance = DateTime.Now;
                 newDevice.Status = "Active";
                 newDevice.DeviceImg = "";
                 if (file != null)
