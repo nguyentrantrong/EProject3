@@ -17,7 +17,7 @@ create table Suppliers
 )
 go 
 CREATE TABLE Devices (
-Devices_ID varchar(50) PRIMARY KEY,
+Devices_ID int PRIMARY KEY identity,
 DeviceName NVARCHAR(MAX) NOT NULL,
 DeviceType NVARCHAR(MAX) NULL,
 SupplyFrom NVARCHAR(MAX) NULL,
@@ -41,14 +41,6 @@ Password NVARCHAR(MAX) NOT NULL,
 Role varchar(max) not null
 );
 go
-create table users
-(
-	Users_ID int primary key identity,
-	Username nvarchar(max) not null,
-	Passwords nvarchar(max) not null,
-	Email nvarchar(max) not null
-)
-go
 create table Complain
 (
 	Complain_ID int primary key identity,
@@ -70,7 +62,7 @@ create table report
 	ReportDate datetime not null,
 	Reciver varchar(max) not null,
 	Complain_ID int not null,
-	Devices_ID varchar(50) not null,
+	Devices_ID int not null,
 	CONSTRAINT fk_report_Report_ID
 	FOREIGN KEY (Complain_ID)
 	REFERENCES Complain (Complain_ID),
@@ -99,7 +91,7 @@ create table MaintainDevices
 	Reason varchar(MAX),
 	Date datetime,
 	Creater varchar(MAX),
-	Devices_ID varchar(50) not null,
+	Devices_ID int not null,
 	ID nvarchar(50) not null,
 	Status varchar(MAX),
 	Step int,

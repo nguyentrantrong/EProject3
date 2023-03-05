@@ -21,7 +21,7 @@ namespace Eproject3.Models
         public virtual DbSet<Device> Devices { get; set; } = null!;
         public virtual DbSet<Event> Events { get; set; } = null!;
         public virtual DbSet<Lab> Labs { get; set; } = null!;
-        public virtual DbSet<MaintainDevice> MaintainDevices { get; set; } = null!;
+        public virtual DbSet<MaintainceDevice> MaintainceDevices { get; set; } = null!;
         public virtual DbSet<Report> Reports { get; set; } = null!;
         public virtual DbSet<Slot> Slots { get; set; } = null!;
         public virtual DbSet<Supplier> Suppliers { get; set; } = null!;
@@ -31,7 +31,7 @@ namespace Eproject3.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=DESKTOP-9R59LGC\\TRONG;Database=eProject3;uid=sa;pwd=160803");
+                optionsBuilder.UseSqlServer("Server=.;Database=eProject3;uid=sa;pwd=1");
             }
         }
 
@@ -130,7 +130,7 @@ namespace Eproject3.Models
                 entity.Property(e => e.LabsName).IsUnicode(false);
             });
 
-            modelBuilder.Entity<MaintainDevice>(entity =>
+            modelBuilder.Entity<MaintainceDevice>(entity =>
             {
                 entity.HasKey(e => e.MaintnId)
                     .HasName("PK__Maintain__156624B00AC36A19");
@@ -148,27 +148,17 @@ namespace Eproject3.Models
                     .IsUnicode(false)
                     .HasColumnName("Devices_ID");
 
-                entity.Property(e => e.Id)
-                    .HasMaxLength(50)
-                    .HasColumnName("ID");
-
-                entity.Property(e => e.IsFinished).HasColumnName("isFinished");
+                entity.Property(e => e.isFinished).HasColumnName("isFinished");
 
                 entity.Property(e => e.Reason).IsUnicode(false);
 
                 entity.Property(e => e.Status).IsUnicode(false);
 
                 entity.HasOne(d => d.Devices)
-                    .WithMany(p => p.MaintainDevices)
+                    .WithMany(p => p.MaintainceDevices)
                     .HasForeignKey(d => d.DevicesId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_Device_Devices_ID");
-
-                entity.HasOne(d => d.IdNavigation)
-                    .WithMany(p => p.MaintainDevices)
-                    .HasForeignKey(d => d.Id)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("fk_admin_Admin_ID");
             });
 
             modelBuilder.Entity<Report>(entity =>
