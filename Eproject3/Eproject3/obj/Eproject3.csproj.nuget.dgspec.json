@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\Eproject3.csproj": {}
+    "C:\\Workspace\\Eproject3\\Eproject3\\Eproject3\\Eproject3.csproj": {}
   },
   "projects": {
-    "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\Eproject3.csproj": {
+    "C:\\Workspace\\Eproject3\\Eproject3\\Eproject3\\Eproject3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\Eproject3.csproj",
+        "projectUniqueName": "C:\\Workspace\\Eproject3\\Eproject3\\Eproject3\\Eproject3.csproj",
         "projectName": "Eproject3",
-        "projectPath": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\Eproject3.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\obj\\",
+        "projectPath": "C:\\Workspace\\Eproject3\\Eproject3\\Eproject3\\Eproject3.csproj",
+        "packagesPath": "C:\\Users\\LAPTOP123\\.nuget\\packages\\",
+        "outputPath": "C:\\Workspace\\Eproject3\\Eproject3\\Eproject3\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\LAPTOP123\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,6 +41,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.100.3, )"
+            },
+            "EPPlus": {
+              "target": "Package",
+              "version": "[6.1.3, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[6.0.0, )"
@@ -66,7 +71,7 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.4, )"
+              "version": "[6.0.14, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
@@ -96,7 +101,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

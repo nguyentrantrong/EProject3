@@ -7,8 +7,7 @@ namespace Eproject3.Models
     {
         public Device()
         {
-            MaintainDevices = new HashSet<MaintainceDevice>();
-            Reports = new HashSet<Report>();
+            MaintainceDevices = new HashSet<MaintainceDevice>();
         }
 
         public int DevicesId { get; set; }
@@ -23,7 +22,6 @@ namespace Eproject3.Models
 
         public virtual Lab Labs { get; set; } = null!;
         public virtual Supplier Supplier { get; set; } = null!;
-        public virtual ICollection<MaintainceDevice> MaintainDevices { get; set; }
-        public virtual ICollection<Report> Reports { get; set; }
+        public virtual ICollection<MaintainceDevice> MaintainceDevices { get; set; }
     }
 }

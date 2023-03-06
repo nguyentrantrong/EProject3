@@ -25,13 +25,12 @@ namespace Eproject3.Models
         public virtual DbSet<Report> Reports { get; set; } = null!;
         public virtual DbSet<Slot> Slots { get; set; } = null!;
         public virtual DbSet<Supplier> Suppliers { get; set; } = null!;
-        public virtual DbSet<User> Users { get; set; } = null!;
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=.;Database=eProject3;uid=sa;pwd=1");
+                optionsBuilder.UseSqlServer("server=.\\SQLEXPRESS;database=eProject3;Trusted_connection=true");
             }
         }
 
@@ -49,7 +48,7 @@ namespace Eproject3.Models
             modelBuilder.Entity<Complain>(entity =>
             {
                 entity.HasKey(e => e.ComplainId)
-                    .HasName("PK__Complain__46A70C13D3F020E5");
+                    .HasName("PK__Complain__46A70C13691CA2D0");
 
                 entity.ToTable("Complain");
 
@@ -77,12 +76,9 @@ namespace Eproject3.Models
             modelBuilder.Entity<Device>(entity =>
             {
                 entity.HasKey(e => e.DevicesId)
-                    .HasName("PK__Devices__36D9232AC44A680B");
+                    .HasName("PK__Devices__36D9232A03FD987F");
 
-                entity.Property(e => e.DevicesId)
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("Devices_ID");
+                entity.Property(e => e.DevicesId).HasColumnName("Devices_ID");
 
                 entity.Property(e => e.DateMaintance).HasColumnType("datetime");
 
@@ -123,7 +119,7 @@ namespace Eproject3.Models
             modelBuilder.Entity<Lab>(entity =>
             {
                 entity.HasKey(e => e.LabsId)
-                    .HasName("PK__Labs__A74E2712A4F986F5");
+                    .HasName("PK__Labs__A74E27128343B416");
 
                 entity.Property(e => e.LabsId).HasColumnName("Labs_ID");
 
@@ -133,7 +129,7 @@ namespace Eproject3.Models
             modelBuilder.Entity<MaintainceDevice>(entity =>
             {
                 entity.HasKey(e => e.MaintnId)
-                    .HasName("PK__Maintain__156624B00AC36A19");
+                    .HasName("PK__Maintain__156624B04B177DB2");
 
                 entity.Property(e => e.MaintnId).HasColumnName("Maintn_ID");
 
@@ -143,12 +139,13 @@ namespace Eproject3.Models
 
                 entity.Property(e => e.Descriptions).IsUnicode(false);
 
-                entity.Property(e => e.DevicesId)
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("Devices_ID");
+                entity.Property(e => e.DevicesId).HasColumnName("Devices_ID");
 
-                entity.Property(e => e.isFinished).HasColumnName("isFinished");
+                entity.Property(e => e.Id)
+                    .HasMaxLength(50)
+                    .HasColumnName("ID");
+
+                entity.Property(e => e.IsFinished).HasColumnName("isFinished");
 
                 entity.Property(e => e.Reason).IsUnicode(false);
 
@@ -163,34 +160,30 @@ namespace Eproject3.Models
 
             modelBuilder.Entity<Report>(entity =>
             {
-                entity.ToTable("report");
+                entity.HasKey(e => e.DevicesId)
+                    .HasName("PK__Report__36D9232A31A3569C");
 
-                entity.Property(e => e.ReportId).HasColumnName("Report_ID");
+                entity.ToTable("Report");
 
-                entity.Property(e => e.ComplainId).HasColumnName("Complain_ID");
+                entity.Property(e => e.DevicesId).HasColumnName("Devices_ID");
 
-                entity.Property(e => e.Descriptions).IsUnicode(false);
+                entity.Property(e => e.DateMaintance).HasColumnType("datetime");
 
-                entity.Property(e => e.DevicesId)
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("Devices_ID");
+                entity.Property(e => e.LabsId).HasColumnName("Labs_ID");
 
-                entity.Property(e => e.Reciver).IsUnicode(false);
+                entity.Property(e => e.SupplierId).HasColumnName("Supplier_ID");
 
-                entity.Property(e => e.ReportDate).HasColumnType("datetime");
-
-                entity.HasOne(d => d.Complain)
+                entity.HasOne(d => d.Labs)
                     .WithMany(p => p.Reports)
-                    .HasForeignKey(d => d.ComplainId)
+                    .HasForeignKey(d => d.LabsId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("fk_report_Report_ID");
+                    .HasConstraintName("fk_lab_Lab_ID");
 
-                entity.HasOne(d => d.Devices)
+                entity.HasOne(d => d.Supplier)
                     .WithMany(p => p.Reports)
-                    .HasForeignKey(d => d.DevicesId)
+                    .HasForeignKey(d => d.SupplierId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("fk_Devices_Devices_ID");
+                    .HasConstraintName("fk_supplier_Suppliers_ID");
             });
 
             modelBuilder.Entity<Slot>(entity =>
@@ -227,16 +220,6 @@ namespace Eproject3.Models
                 entity.Property(e => e.SupplierId).HasColumnName("Supplier_ID");
 
                 entity.Property(e => e.SupplierName).IsUnicode(false);
-            });
-
-            modelBuilder.Entity<User>(entity =>
-            {
-                entity.HasKey(e => e.UsersId)
-                    .HasName("PK__users__EB68290DC586CC26");
-
-                entity.ToTable("users");
-
-                entity.Property(e => e.UsersId).HasColumnName("Users_ID");
             });
 
             OnModelCreatingPartial(modelBuilder);

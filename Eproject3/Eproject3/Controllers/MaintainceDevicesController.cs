@@ -177,7 +177,7 @@ namespace Eproject3.Controllers
                         req.Status = "Can not use rightnow";
                         break;
                     case 4:
-                        request.isFinished = true;
+                        request.IsFinished = true;
                         req.Status = "Active";
                         req.DateMaintance = DateTime.Now;
                         break;
