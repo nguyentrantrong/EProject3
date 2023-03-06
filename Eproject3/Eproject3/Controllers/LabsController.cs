@@ -1,7 +1,9 @@
 ﻿using Eproject3.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using static System.Reflection.Metadata.BlobBuilder;
 
 namespace Eproject3.Controllers
 {
@@ -15,7 +17,7 @@ namespace Eproject3.Controllers
         // GET: LabsController1
         public ActionResult Index()
         {
-            var model = db.Labs.Include(x=>x.Devices).ToList();
+            var model = db.Labs.Include(x=>x.Devices).Include(x => x.Slots).ThenInclude(x => x.Admins).ToList();
             // item.Devices.Count();
             return View(model);
         }
@@ -32,7 +34,8 @@ namespace Eproject3.Controllers
         // GET: LabsController1/Create
         public ActionResult Create()
         {
-            return View();
+            ViewData["TeacherList"] = new SelectList(db.Admins.Where(a => a.Role == "staff"), "Id", "AdminName");
+            return View();     
         }
 
         // POST: LabsController1/Create

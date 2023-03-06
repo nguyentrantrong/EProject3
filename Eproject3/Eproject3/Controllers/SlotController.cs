@@ -35,6 +35,15 @@ namespace Eproject3.Controllers
         [HttpPost]
         public async Task<IActionResult> Create([FromForm] Slot s)
         {
+            var isExist = db.Slots.Any(sl => (sl.AdminsId == s.AdminsId && sl.Slot1.Equals(s.Slot1) && sl.Day == s.Day && sl.LabId == s.LabId) || (sl.AdminsId == s.AdminsId && sl.Slot1.Equals(s.Slot1) && sl.Day == s.Day));
+       
+            if (isExist)
+            {
+                ModelState.AddModelError(string.Empty, "Account is exists in system");
+                ViewData["LabList"] = new SelectList(db.Labs, "LabsId", "LabsName");
+                ViewData["StaffList"] = new SelectList(db.Admins.Where(a => a.Role == "staff"), "Id", "AdminName");
+                return View();
+            }
             Slot newSlot = new Slot();
             newSlot.Day = s.Day;
             newSlot.Slot1 = s.Slot1;
