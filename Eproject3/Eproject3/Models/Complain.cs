@@ -5,11 +5,6 @@ namespace Eproject3.Models
 {
     public partial class Complain
     {
-        public Complain()
-        {
-            Reports = new HashSet<Report>();
-        }
-
         public int ComplainId { get; set; }
         public string Description { get; set; } = null!;
         public string Reason { get; set; } = null!;
@@ -19,6 +14,5 @@ namespace Eproject3.Models
         public string Id { get; set; } = null!;
 
         public virtual Admin IdNavigation { get; set; } = null!;
-        public virtual ICollection<Report> Reports { get; set; }
     }
 }

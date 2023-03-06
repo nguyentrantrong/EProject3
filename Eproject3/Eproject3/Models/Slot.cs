@@ -10,6 +10,7 @@ namespace Eproject3.Models
         public string Slot1 { get; set; } = null!;
         public int LabId { get; set; }
         public string AdminsId { get; set; } = null!;
+
         public virtual Admin Admins { get; set; } = null!;
         public virtual Lab Lab { get; set; } = null!;
     }
