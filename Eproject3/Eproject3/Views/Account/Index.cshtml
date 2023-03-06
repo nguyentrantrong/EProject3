@@ -33,6 +33,10 @@
                             <th>ID</th>
                             <th>Admin Name</th>
                             <th>Role</th>
+                            @if(user?.Role == "admin")
+                            {
+                            <th>Action</th>
+                            }
                         </tr>
                     </thead>
                     <tbody>
@@ -42,10 +46,12 @@
                                 <td>@item.Id</td>
                                 <td>@item.AdminName</td>
                                 <td>@item.Role</td>
-                                @*<td>
-                                    <a asp-action="Delete" asp-route-id="@item.LabsId" class="btn btn-danger">Delete</a>
-                                    <a asp-action="DevicesList" asp-route-id="@item.LabsId" class="btn btn-primary">See more</a>
-                                </td>*@
+                                @if(user?.Role == "admin")
+                                {
+                                <td>
+                                    <a asp-action="Edit" asp-controller="Account" asp-route-id="@item.Id" class="btn btn-warning">Update Admin</a>
+                                </td>
+                                }
                             </tr>
                         }
 
