@@ -7,14 +7,15 @@ namespace Eproject3.Models
     {
         public Device()
         {
-            MaintainceDevices = new HashSet<MaintainceDevice>();
+            MaintainDevices = new HashSet<MaintainceDevice>();
             Reports = new HashSet<Report>();
         }
 
         public int DevicesId { get; set; }
         public string DeviceName { get; set; } = null!;
         public string? DeviceType { get; set; }
-        public string Status { get; set; }
+        public string? SupplyFrom { get; set; }
+        public string? Status { get; set; }
         public DateTime? DateMaintance { get; set; }
         public string? DeviceImg { get; set; }
         public int LabsId { get; set; }
@@ -22,7 +23,7 @@ namespace Eproject3.Models
 
         public virtual Lab Labs { get; set; } = null!;
         public virtual Supplier Supplier { get; set; } = null!;
-        public virtual ICollection<MaintainceDevice> MaintainceDevices { get; set; }
+        public virtual ICollection<MaintainceDevice> MaintainDevices { get; set; }
         public virtual ICollection<Report> Reports { get; set; }
     }
 }
