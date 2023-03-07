@@ -8,6 +8,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Eproject3.Controllers
 {
@@ -95,6 +96,36 @@ namespace Eproject3.Controllers
                 ModelState.AddModelError(string.Empty, ex.Message);
             }
             return View();
+        }
+
+        [HttpGet]
+        [Authorize(Roles = "admin")]
+        public IActionResult Edit(string id)
+        {
+            var users = db.Admins.Where(u => u.Id.Equals(id)).FirstOrDefault();
+            return View(users);
+        }
+
+        [HttpPost]
+        [Authorize(Roles = "admin")]
+        public IActionResult Edit(Admin admin)
+        {
+            var model = db.Admins.Where(d => d.Id.Equals(admin.Id)).FirstOrDefault();
+            if (model != null)
+            {
+                model.Id = admin.Id;
+                model.AdminName = admin.AdminName;
+                model.Password = admin.Password;
+                model.Role = admin.Role;
+                db.Admins.Update(model);
+                db.SaveChanges();
+                return RedirectToAction("Index", "Account");
+            }
+            else
+            {
+                ModelState.AddModelError(string.Empty, "Cannot Update Slot!");
+            }
+            return View(model);
         }
 
         private string GenerateJwtToken(Admin user)

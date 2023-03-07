@@ -45,7 +45,7 @@ namespace Eproject3.Data
                 var eventid = int.Parse(form["Event.Id"]);
                 var myevent = db.Events.FirstOrDefault(x => x.Id == eventid);
                 var lab = db.Labs.FirstOrDefault(x => x.LabsName == labname);
-                myevent.UpdateEvent(form,lab);
+                myevent.UpdateEvent(form, lab);
                 db.Entry(myevent).State = EntityState.Modified;
                 db.SaveChanges();
             }

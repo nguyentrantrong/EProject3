@@ -27,6 +27,7 @@
                         <tr>
                             <th>Labs Number</th>
                             <th>Labs Name</th>
+                            <th>Teacher</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -35,7 +36,8 @@
                             {
                               <tr>
                                 <td>@item.LabsId</td>  
-                                <td>@item.LabsName</td>  
+                                <td>@item.LabsName</td>
+                                <th>@string.Join(", ", item.Slots.Select(s => s.Admins.AdminName))</th>
                                 <td>
                                   <a asp-action="Delete" asp-route-id="@item.LabsId" class="btn btn-danger">Delete</a>
                                   <a asp-action="DevicesList" asp-route-id="@item.LabsId" class="btn btn-primary">See more</a>
