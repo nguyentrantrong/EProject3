@@ -15,7 +15,7 @@ namespace Eproject3.Models
         public string? DeviceType { get; set; }
         public string? SupplyFrom { get; set; }
         public string? Status { get; set; }
-        public DateTime? DateMaintance { get; set; }
+        public DateTime DateMaintance { get; set; }
         public string? DeviceImg { get; set; }
         public int LabsId { get; set; }
         public int SupplierId { get; set; }

@@ -10,6 +10,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ClosedXML.Excel;
 using System.Data;
+using DocumentFormat.OpenXml.Spreadsheet;
+using iTextSharp.text.pdf;
+using iTextSharp.tool.xml;
+using System.Text;
+using iTextSharp.text;
 
 namespace Eproject3.Controllers
 {
@@ -148,14 +153,67 @@ namespace Eproject3.Controllers
                 using (MemoryStream stream = new MemoryStream())
                 {
                     wb.SaveAs(stream);
-                    return File(stream.ToArray(), "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", $"Report_Divices_{DateTime.Now.ToString("dd/MM/yyyy")}.xlsx");
+                    return File(stream.ToArray(), "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", $"Report_Devices_{DateTime.Now.ToString("dd/MM/yyyy")}.xlsx");
                 }
             }
         }
-        public ActionResult ExportPDF()
-        {
 
-            return View("Index");
+        public FileResult ExportPDF()
+        {
+            List<object> devices = (from device in db.Devices.Include(x => x.Supplier).Include(c => c.Labs).ToList().Take(10)
+                                    select new[] {
+                                      device.DeviceName,
+                                      device.DeviceType,
+                                      device.DateMaintance.ToString("dd/MM/yyyy"),
+                                      device.Supplier.SupplierName,
+                                      device.Labs.LabsName,
+                                      device.Status,
+                                      }).ToList<object>();
+
+            //Building an HTML string.
+            StringBuilder sb = new StringBuilder();
+
+            //Table start.
+            sb.Append("<table border='1' cellpadding='5' cellspacing='0' style='border: 1px solid #ccc;font-family: Arial; font-size: 10pt;'>");
+
+            //Building the Header row.
+            sb.Append("<tr>");
+            sb.Append("<th style='background-color: #B8DBFD;border: 1px solid #ccc'>Device Name</th>");
+            sb.Append("<th style='background-color: #B8DBFD;border: 1px solid #ccc'>Type</th>");
+            sb.Append("<th style='background-color: #B8DBFD;border: 1px solid #ccc'>Date</th>");
+            sb.Append("<th style='background-color: #B8DBFD;border: 1px solid #ccc'>Suplier</th>");
+            sb.Append("<th style='background-color: #B8DBFD;border: 1px solid #ccc'>Lab</th>");
+            sb.Append("<th style='background-color: #B8DBFD;border: 1px solid #ccc'>Status</th>");
+            sb.Append("</tr>");
+
+            //Building the Data rows.
+            for (int i = 0; i < devices.Count; i++)
+            {
+                string[] device = (string[])devices[i];
+                sb.Append("<tr>");
+                for (int j = 0; j < device.Length; j++)
+                {
+                    //Append data.
+                    sb.Append("<td style='border: 1px solid #ccc'>");
+                    sb.Append(device[j]);
+                    sb.Append("</td>");
+                }
+                sb.Append("</tr>");
+            }
+
+            //Table end.
+            sb.Append("</table>");
+
+            using (MemoryStream stream = new MemoryStream())
+            {
+                StringReader sr = new StringReader(sb.ToString());
+                Document pdfDoc = new Document(PageSize.A4, 10f, 10f, 100f, 0f);
+                PdfWriter writer = PdfWriter.GetInstance(pdfDoc, stream);
+                pdfDoc.Open();
+                XMLWorkerHelper.GetInstance().ParseXHtml(writer, pdfDoc, sr);
+                pdfDoc.Close();
+                return File(stream.ToArray(), "application/pdf", $"Report_Devices_{DateTime.Now.ToString("dd/MM/yyyy")}.pdf");
+            }
         }
     }
 }
