@@ -8,6 +8,8 @@ using Microsoft.Extensions.Logging;
 using Eproject3.Models;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using ClosedXML.Excel;
+using System.Data;
 
 namespace Eproject3.Controllers
 {
@@ -118,6 +120,42 @@ namespace Eproject3.Controllers
             }else{
                 return NoContent();
             }
+        }
+
+        public IActionResult ExportExcel()
+        {
+            DataTable dt = new DataTable("Report");
+            dt.Columns.AddRange(new DataColumn[6] { new DataColumn("DeviceName"),
+                                            new DataColumn("DeviceType"),
+                                            new DataColumn("DateMaintance"),
+                                            new DataColumn("Supplier"),
+                                            new DataColumn("Labs"),
+                                            new DataColumn("Status"),
+
+            });
+
+            var devices = from device in db.Devices.Include(x => x.Supplier).Include(c => c.Labs).Take(10)
+                          select device;
+
+            foreach (var device in devices)
+            {
+                dt.Rows.Add(device.DeviceName, device.DeviceType, device.DateMaintance, device.Supplier.SupplierName, device.Labs.LabsName, device.Status);
+            }
+
+            using (XLWorkbook wb = new XLWorkbook())
+            {
+                wb.Worksheets.Add(dt);
+                using (MemoryStream stream = new MemoryStream())
+                {
+                    wb.SaveAs(stream);
+                    return File(stream.ToArray(), "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", $"Report_Divices_{DateTime.Now.ToString("dd/MM/yyyy")}.xlsx");
+                }
+            }
+        }
+        public ActionResult ExportPDF()
+        {
+
+            return View("Index");
         }
     }
 }

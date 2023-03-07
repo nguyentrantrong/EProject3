@@ -54,24 +54,7 @@ create table Complain
     FOREIGN KEY (ID)
     REFERENCES Admins (ID)
 )
-go 
-CREATE TABLE Report (
-Devices_ID int PRIMARY KEY identity,
-DeviceName NVARCHAR(MAX) NOT NULL,
-DeviceType NVARCHAR(MAX) NULL,
-SupplyFrom NVARCHAR(MAX) NULL,
-Status NVARCHAR(MAX) NULL,
-DateMaintance DATETIME NULL,
-Labs_ID int not null,
-Supplier_ID int not null,
-CONSTRAINT fk_lab_Lab_ID
-FOREIGN KEY (Labs_ID)
-REFERENCES Labs (Labs_ID), 
-CONSTRAINT fk_supplier_Suppliers_ID
-FOREIGN KEY (Supplier_ID)
-REFERENCES Suppliers (Supplier_ID),
-);
-go 
+go  
 create table Event
 (
 	Id int primary key identity,

@@ -22,7 +22,6 @@ namespace Eproject3.Models
         public virtual DbSet<Event> Events { get; set; } = null!;
         public virtual DbSet<Lab> Labs { get; set; } = null!;
         public virtual DbSet<MaintainceDevice> MaintainceDevices { get; set; } = null!;
-        public virtual DbSet<Report> Reports { get; set; } = null!;
         public virtual DbSet<Slot> Slots { get; set; } = null!;
         public virtual DbSet<Supplier> Suppliers { get; set; } = null!;
 
@@ -156,34 +155,6 @@ namespace Eproject3.Models
                     .HasForeignKey(d => d.DevicesId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_Device_Devices_ID");
-            });
-
-            modelBuilder.Entity<Report>(entity =>
-            {
-                entity.HasKey(e => e.DevicesId)
-                    .HasName("PK__Report__36D9232A31A3569C");
-
-                entity.ToTable("Report");
-
-                entity.Property(e => e.DevicesId).HasColumnName("Devices_ID");
-
-                entity.Property(e => e.DateMaintance).HasColumnType("datetime");
-
-                entity.Property(e => e.LabsId).HasColumnName("Labs_ID");
-
-                entity.Property(e => e.SupplierId).HasColumnName("Supplier_ID");
-
-                entity.HasOne(d => d.Labs)
-                    .WithMany(p => p.Reports)
-                    .HasForeignKey(d => d.LabsId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("fk_lab_Lab_ID");
-
-                entity.HasOne(d => d.Supplier)
-                    .WithMany(p => p.Reports)
-                    .HasForeignKey(d => d.SupplierId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("fk_supplier_Suppliers_ID");
             });
 
             modelBuilder.Entity<Slot>(entity =>
