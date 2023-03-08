@@ -21,7 +21,7 @@ namespace Eproject3.Models
         public virtual DbSet<Device> Devices { get; set; } = null!;
         public virtual DbSet<Event> Events { get; set; } = null!;
         public virtual DbSet<Lab> Labs { get; set; } = null!;
-        public virtual DbSet<MaintainceDevice> MaintainceDevices { get; set; } = null!;
+        public virtual DbSet<MaintainceDevice> MaintainceDevices { get; set; } = null!; 
         public virtual DbSet<Report> Reports { get; set; } = null!;
         public virtual DbSet<Slot> Slots { get; set; } = null!;
         public virtual DbSet<Supplier> Suppliers { get; set; } = null!;

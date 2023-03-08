@@ -19,7 +19,7 @@ namespace Eproject3.Models
         public string Id { get; set; }
         public string Reply { get; set; } = null!;
 
-        public virtual Admin IdNavigation { get; set; } = null!;
+        public virtual Admin IdNavigation { get; set; } = null!; 
         public virtual ICollection<Report> Reports { get; set; }
     }
 }
