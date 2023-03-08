@@ -28,7 +28,7 @@ namespace Eproject3.Controllers
         {
             var result = db.Complains.Include(x => x.IdNavigation).ToList();
             return View(result);
-        }
+        } 
         [HttpGet]
         public IActionResult Create()
         {
