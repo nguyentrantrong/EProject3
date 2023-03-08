@@ -31,7 +31,7 @@ namespace Eproject3.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=.;Database=eProject3;uid=sa;pwd=1");
+                optionsBuilder.UseSqlServer("Server=DESKTOP-A16M1PC\\NUN;Database=eProject3;uid=sa;pwd=04012003");
             }
         }
 
@@ -72,6 +72,8 @@ namespace Eproject3.Models
                     .HasForeignKey(d => d.Id)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_admins_Admin_ID");
+
+                entity.Property(e => e.Reply).HasColumnName("Reply");
             });
 
             modelBuilder.Entity<Device>(entity =>
@@ -155,7 +157,7 @@ namespace Eproject3.Models
                 entity.Property(e => e.Status).IsUnicode(false);
 
                 entity.HasOne(d => d.Devices)
-                    .WithMany(p => p.MaintainceDevices)
+                    .WithMany(p => p.MaintainDevices)
                     .HasForeignKey(d => d.DevicesId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_Device_Devices_ID");

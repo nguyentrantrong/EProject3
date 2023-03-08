@@ -24,6 +24,17 @@ namespace Eproject3.Controllers
             var result = db.Complains.Include(x => x.IdNavigation).ToList();
             return View(result);
         }
+        public IActionResult IndexUser()
+        {
+            var result = db.Complains.Include(x => x.IdNavigation).ToList();
+            return View(result);
+        }
+        [HttpGet]
+        public IActionResult Create()
+        {
+            ViewData["Id"] = new SelectList(db.Admins, "Id", "AdminName");
+            return View();
+        }
         [HttpPost]
         [ActionName("Create")]
         public IActionResult Create(Complain newCPL)
@@ -37,28 +48,24 @@ namespace Eproject3.Controllers
             newComplain.DateCp = DateTime.Now;
             newComplain.Category = newCPL.Category;
             newComplain.Id = newCPL.Id;
+            newComplain.Reply = "";
             db.Complains.Add(newComplain);
             db.SaveChanges();
             ViewData["Id"] = new SelectList(db.Admins, "Id", "AdminName", newCPL.Id);
             return RedirectToAction("Index");
         }
-        [HttpGet]
-        public IActionResult Create()
-        {
-            ViewData["Id"] = new SelectList(db.Admins, "Id", "AdminName");
-            return View();
-        }
+        
         [HttpGet]
         public IActionResult EditComplain(int id)
         {
-            var model = db.Complains.Where(d => d.ComplainId.Equals(id)).FirstOrDefault();
+            var model = db.Complains.Where(d => d.ComplainId == id).FirstOrDefault();
             ViewData["Id"] = new SelectList(db.Admins, "Id", "AdminName", model.Id);
             return View(model);
         }
         [HttpPost]
         public IActionResult EditComplain(Complain newCPL)
         {
-            var model = db.Complains.Where(d => d.ComplainId.Equals(newCPL.ComplainId)).FirstOrDefault();
+            var model = db.Complains.Where(d => d.ComplainId == newCPL.ComplainId).FirstOrDefault();
 
             if (model != null)
             {
@@ -68,6 +75,7 @@ namespace Eproject3.Controllers
                 model.DateCp = DateTime.Now;
                 model.Category = newCPL.Category;
                 model.Id = newCPL.Id;
+                model.Reply = newCPL.Reply;
 
                 db.Update(model);
                 db.SaveChanges();
