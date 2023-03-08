@@ -15,6 +15,8 @@ namespace Eproject3.Data
         public void CreateEvent(IFormCollection form);
         public void UpdateEvent(IFormCollection form);
         public void DeleteEvent(int id);
+        public List<Lab> GetLabs();
+        public Lab GetLab(int id);
 
         public class DAL : IDAL
         {
@@ -43,7 +45,7 @@ namespace Eproject3.Data
             {
                 var labname = form["Lab"].ToString();
                 var eventid = int.Parse(form["Event.Id"]);
-                var myevent = db.Events.FirstOrDefault(x => x.Id == eventid);
+                var myevent = db.Events.Include(c => c.Labs).FirstOrDefault(x => x.Id == eventid);
                 var lab = db.Labs.FirstOrDefault(x => x.LabsName == labname);
                 myevent.UpdateEvent(form, lab);
                 db.Entry(myevent).State = EntityState.Modified;
@@ -55,6 +57,16 @@ namespace Eproject3.Data
                 var myevent = db.Events.Find(id);
                 db.Events.Remove(myevent);
                 db.SaveChanges();
+            }
+
+            public List<Lab> GetLabs()
+            {
+                return db.Labs.Include(x => x.Devices).ThenInclude(lab => lab.Supplier).ToList();
+            }
+
+            public Lab GetLab(int id)
+            {
+                return db.Labs.Where(lab => lab.LabsId == id).Include(lab => lab.Devices).ThenInclude(lab => lab.Supplier).FirstOrDefault();
             }
         }
     }

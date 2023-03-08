@@ -36,10 +36,5 @@ namespace Eproject3.Models.ViewModels
         {
 
         }
-
-        public EventViewModel(Event @event, Lab? lab)
-        {
-            Event = @event;
-        }
     }
 }

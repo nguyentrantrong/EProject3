@@ -174,16 +174,16 @@ namespace Eproject3.Controllers
             StringBuilder sb = new StringBuilder();
 
             //Table start.
-            sb.Append("<table border='1' cellpadding='5' cellspacing='0' style='border: 1px solid #ccc;font-family: Arial; font-size: 10pt;'>");
+            sb.Append("<table border='1' cellpadding='0' cellspacing='0' style='border: 1px solid gray;font-family: Arial; width: 100%;'>");
 
             //Building the Header row.
             sb.Append("<tr>");
-            sb.Append("<th style='background-color: #B8DBFD;border: 1px solid #ccc'>Device Name</th>");
-            sb.Append("<th style='background-color: #B8DBFD;border: 1px solid #ccc'>Type</th>");
-            sb.Append("<th style='background-color: #B8DBFD;border: 1px solid #ccc'>Date</th>");
-            sb.Append("<th style='background-color: #B8DBFD;border: 1px solid #ccc'>Suplier</th>");
-            sb.Append("<th style='background-color: #B8DBFD;border: 1px solid #ccc'>Lab</th>");
-            sb.Append("<th style='background-color: #B8DBFD;border: 1px solid #ccc'>Status</th>");
+            sb.Append("<th style='background-color: #ffffff;border: 1px solid gray'>Device Name</th>");
+            sb.Append("<th style='background-color: #ffffff;border: 1px solid gray'>Type</th>");
+            sb.Append("<th style='background-color: #ffffff;border: 1px solid gray'>Date</th>");
+            sb.Append("<th style='background-color: #ffffff;border: 1px solid gray'>Suplier</th>");
+            sb.Append("<th style='background-color: #ffffff;border: 1px solid gray'>Lab</th>");
+            sb.Append("<th style='background-color: #ffffff;border: 1px solid gray'>Status</th>");
             sb.Append("</tr>");
 
             //Building the Data rows.
@@ -194,7 +194,7 @@ namespace Eproject3.Controllers
                 for (int j = 0; j < device.Length; j++)
                 {
                     //Append data.
-                    sb.Append("<td style='border: 1px solid #ccc'>");
+                    sb.Append("<td style='border: 1px solid gray'>");
                     sb.Append(device[j]);
                     sb.Append("</td>");
                 }
