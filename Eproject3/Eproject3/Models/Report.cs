@@ -5,14 +5,16 @@ namespace Eproject3.Models
 {
     public partial class Report
     {
-        public int ReportId { get; set; }
-        public string? Descriptions { get; set; }
-        public DateTime ReportDate { get; set; }
-        public string Reciver { get; set; } = null!;
-        public int ComplainId { get; set; }
         public int DevicesId { get; set; }
+        public string DeviceName { get; set; } = null!;
+        public string? DeviceType { get; set; }
+        public string? SupplyFrom { get; set; }
+        public string? Status { get; set; }
+        public DateTime DateMaintance { get; set; }
+        public int LabsId { get; set; }
+        public int SupplierId { get; set; }
 
-        public virtual Complain Complain { get; set; } = null!;
-        public virtual Device Devices { get; set; } = null!;
+        public virtual Lab Labs { get; set; } = null!;
+        public virtual Supplier Supplier { get; set; } = null!;
     }
 }
