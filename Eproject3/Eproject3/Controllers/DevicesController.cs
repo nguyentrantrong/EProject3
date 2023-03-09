@@ -8,8 +8,13 @@ using Microsoft.Extensions.Logging;
 using Eproject3.Models;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Authorization;
+using ClosedXML.Excel;
 using System.Data;
+using DocumentFormat.OpenXml.Spreadsheet;
+using iTextSharp.text.pdf;
+using iTextSharp.tool.xml;
+using System.Text;
+using iTextSharp.text;
 
 namespace Eproject3.Controllers
 {
@@ -131,6 +136,95 @@ namespace Eproject3.Controllers
                 return RedirectToAction("Index");
             }else{
                 return NoContent();
+            }
+        }
+
+        public IActionResult ExportExcel()
+        {
+            DataTable dt = new DataTable("Report");
+            dt.Columns.AddRange(new DataColumn[6] { new DataColumn("DeviceName"),
+                                            new DataColumn("DeviceType"),
+                                            new DataColumn("DateMaintance"),
+                                            new DataColumn("Supplier"),
+                                            new DataColumn("Labs"),
+                                            new DataColumn("Status"),
+
+            });
+
+            var devices = from device in db.Devices.Include(x => x.Supplier).Include(c => c.Labs).Take(10)
+                          select device;
+
+            foreach (var device in devices)
+            {
+                dt.Rows.Add(device.DeviceName, device.DeviceType, device.DateMaintance, device.Supplier.SupplierName, device.Labs.LabsName, device.Status);
+            }
+
+            using (XLWorkbook wb = new XLWorkbook())
+            {
+                wb.Worksheets.Add(dt);
+                using (MemoryStream stream = new MemoryStream())
+                {
+                    wb.SaveAs(stream);
+                    return File(stream.ToArray(), "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", $"Report_Devices_{DateTime.Now.ToString("dd/MM/yyyy")}.xlsx");
+                }
+            }
+        }
+
+        public FileResult ExportPDF()
+        {
+            List<object> devices = (from device in db.Devices.Include(x => x.Supplier).Include(c => c.Labs).ToList().Take(10)
+                                    select new[] {
+                                      device.DeviceName,
+                                      device.DeviceType,
+                                      device.DateMaintance.ToString("dd/MM/yyyy"),
+                                      device.Supplier.SupplierName,
+                                      device.Labs.LabsName,
+                                      device.Status,
+                                      }).ToList<object>();
+
+            //Building an HTML string.
+            StringBuilder sb = new StringBuilder();
+
+            //Table start.
+            sb.Append("<table border='1' cellpadding='0' cellspacing='0' style='border: 1px solid gray;font-family: Arial; width: 100%;'>");
+
+            //Building the Header row.
+            sb.Append("<tr>");
+            sb.Append("<th style='background-color: #ffffff;border: 1px solid gray'>Device Name</th>");
+            sb.Append("<th style='background-color: #ffffff;border: 1px solid gray'>Type</th>");
+            sb.Append("<th style='background-color: #ffffff;border: 1px solid gray'>Date</th>");
+            sb.Append("<th style='background-color: #ffffff;border: 1px solid gray'>Suplier</th>");
+            sb.Append("<th style='background-color: #ffffff;border: 1px solid gray'>Lab</th>");
+            sb.Append("<th style='background-color: #ffffff;border: 1px solid gray'>Status</th>");
+            sb.Append("</tr>");
+
+            //Building the Data rows.
+            for (int i = 0; i < devices.Count; i++)
+            {
+                string[] device = (string[])devices[i];
+                sb.Append("<tr>");
+                for (int j = 0; j < device.Length; j++)
+                {
+                    //Append data.
+                    sb.Append("<td style='border: 1px solid gray'>");
+                    sb.Append(device[j]);
+                    sb.Append("</td>");
+                }
+                sb.Append("</tr>");
+            }
+
+            //Table end.
+            sb.Append("</table>");
+
+            using (MemoryStream stream = new MemoryStream())
+            {
+                StringReader sr = new StringReader(sb.ToString());
+                Document pdfDoc = new Document(PageSize.A4, 10f, 10f, 100f, 0f);
+                PdfWriter writer = PdfWriter.GetInstance(pdfDoc, stream);
+                pdfDoc.Open();
+                XMLWorkerHelper.GetInstance().ParseXHtml(writer, pdfDoc, sr);
+                pdfDoc.Close();
+                return File(stream.ToArray(), "application/pdf", $"Report_Devices_{DateTime.Now.ToString("dd/MM/yyyy")}.pdf");
             }
         }
     }

@@ -91,7 +91,7 @@ namespace Eproject3.Controllers
             {
                 return NotFound();
             }
-            var vm = new EventViewModel(@event, db.Labs.Find((int)id));
+            var vm = new EventViewModel(@event, _dal.GetLabs());
             return View(vm);
         }
 
@@ -110,7 +110,7 @@ namespace Eproject3.Controllers
             catch (Exception ex)
             {
                 ViewData["Alert"] = "An error occurred: " + ex.Message;
-                var vm = new EventViewModel(_dal.GetEvent(id), db.Labs.Find(id));
+                var vm = new EventViewModel(_dal.GetEvent(id), _dal.GetLabs());
                 return View(vm);
             }
         }

@@ -1,4 +1,4 @@
-Create database eProject3
+create database eProject3
 go
 USE eProject3;
 GO 
@@ -54,23 +54,7 @@ create table Complain
     FOREIGN KEY (ID)
     REFERENCES Admins (ID)
 )
-go
-create table report 
-(
-	Report_ID int primary key identity,
-	Descriptions varchar(max) null,
-	ReportDate datetime not null,
-	Reciver varchar(max) not null,
-	Complain_ID int not null,
-	Devices_ID int not null,
-	CONSTRAINT fk_report_Report_ID
-	FOREIGN KEY (Complain_ID)
-	REFERENCES Complain (Complain_ID),
-	CONSTRAINT fk_Devices_Devices_ID
-	FOREIGN KEY (Devices_ID)
-	REFERENCES Devices (Devices_ID)
-)
-go 
+go  
 create table Event
 (
 	Id int primary key identity,
@@ -84,7 +68,7 @@ create table Event
 	REFERENCES Labs (Labs_ID),
 )
 go
-create table MaintainDevices
+create table MaintainceDevices
 (
 	Maintn_ID int primary key identity,
 	Descriptions varchar(MAX),
@@ -99,9 +83,6 @@ create table MaintainDevices
 	CONSTRAINT fk_Device_Devices_ID
 	FOREIGN KEY (Devices_ID)
 	REFERENCES Devices (Devices_ID),
-	CONSTRAINT fk_admin_Admin_ID
-    FOREIGN KEY (ID)
-    REFERENCES Admins (ID)
 )
 go
 CREATE TABLE Slot

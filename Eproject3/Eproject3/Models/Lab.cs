@@ -13,7 +13,7 @@ namespace Eproject3.Models
         }
 
         public int LabsId { get; set; }
-        public string? LabsName { get; set; }
+        public string LabsName { get; set; }
         public int? Quantity { get; set; }
 
         public virtual ICollection<Device> Devices { get; set; }
