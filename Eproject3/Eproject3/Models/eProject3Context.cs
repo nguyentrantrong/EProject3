@@ -65,11 +65,13 @@ namespace Eproject3.Models
 
                 entity.Property(e => e.StatusCp).HasColumnName("Status_CP");
 
-                entity.HasOne(d => d.IdNavigation)
-                    .WithMany(p => p.Complains)
-                    .HasForeignKey(d => d.Id)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("fk_admins_Admin_ID");
+                //entity.HasOne(d => d.Admins)
+                //    .WithMany(p => p.Slots)
+                //    .HasForeignKey(d => d.AdminsId)
+                //    .OnDelete(DeleteBehavior.ClientSetNull)
+                //    .HasConstraintName("FK_admins_ID");
+
+                entity.Property(e => e.Reply).HasColumnName("Reply");
             });
 
             modelBuilder.Entity<Device>(entity =>
@@ -155,6 +157,32 @@ namespace Eproject3.Models
                     .HasForeignKey(d => d.DevicesId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_Device_Devices_ID");
+            });
+
+            modelBuilder.Entity<Report>(entity =>
+            {
+                entity.ToTable("report");
+
+                entity.Property(e => e.ReportId).HasColumnName("Report_ID");
+
+                entity.Property(e => e.ComplainId).HasColumnName("Complain_ID");
+
+                entity.Property(e => e.Descriptions).IsUnicode(false);
+
+                entity.Property(e => e.DevicesId)
+                    .HasMaxLength(50)
+                    .IsUnicode(false)
+                    .HasColumnName("Devices_ID");
+
+                entity.Property(e => e.Reciver).IsUnicode(false);
+
+                entity.Property(e => e.ReportDate).HasColumnType("datetime");
+
+                entity.HasOne(d => d.Devices)
+                    .WithMany(p => p.Reports)
+                    .HasForeignKey(d => d.DevicesId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("fk_Devices_Devices_ID");
             });
 
             modelBuilder.Entity<Slot>(entity =>

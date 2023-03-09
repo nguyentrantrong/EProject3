@@ -135,6 +135,13 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbnRhaW5jZURldmljZXNcTGlzdFVzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< HEAD
+[D:/Project/Eproject3/Eproject3/Eproject3/Views/Report/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Project/Eproject3/Eproject3/Eproject3/Views/Shared/Error.cshtml]
+=======
 [C:/Workspace/Eproject3/Eproject3/Eproject3/Views/Shared/Error.cshtml]
 >>>>>>> main
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
