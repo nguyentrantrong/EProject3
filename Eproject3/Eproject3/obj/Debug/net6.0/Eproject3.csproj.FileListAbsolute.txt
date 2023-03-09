@@ -555,3 +555,6 @@ C:\Workspace\Eproject3\Eproject3\Eproject3\bin\Debug\net6.0\Irony.dll
 C:\Workspace\Eproject3\Eproject3\Eproject3\bin\Debug\net6.0\SixLabors.Fonts.dll
 C:\Workspace\Eproject3\Eproject3\Eproject3\bin\Debug\net6.0\System.IO.Packaging.dll
 C:\Workspace\Eproject3\Eproject3\Eproject3\bin\Debug\net6.0\XLParser.dll
+C:\Workspace\Eproject3\Eproject3\Eproject3\bin\Debug\net6.0\BouncyCastle.Crypto.dll
+C:\Workspace\Eproject3\Eproject3\Eproject3\bin\Debug\net6.0\itextsharp.dll
+C:\Workspace\Eproject3\Eproject3\Eproject3\bin\Debug\net6.0\itextsharp.xmlworker.dll
