@@ -1,8 +1,10 @@
 ﻿using Eproject3.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using System.Data;
 using static System.Reflection.Metadata.BlobBuilder;
 
 namespace Eproject3.Controllers
@@ -15,6 +17,7 @@ namespace Eproject3.Controllers
             this.db = db;
         }
         // GET: LabsController1
+        [Authorize(Roles = "admin, constructor, maintainer")]
         public ActionResult Index()
         {
             var model = db.Labs.Include(x=>x.Devices).Include(x => x.Slots).ThenInclude(x => x.Admins).ToList();
@@ -23,6 +26,7 @@ namespace Eproject3.Controllers
         }
 
         // GET: LabsController1/Details/5
+        [Authorize(Roles = "admin, constructor, maintainer")]
         public ActionResult DevicesList(int id)
         {
             //Labs và Devices là quan hệ 1 nhiều , 1 Labs có nhiều Devices
@@ -32,6 +36,7 @@ namespace Eproject3.Controllers
         }
 
         // GET: LabsController1/Create
+        [Authorize(Roles = "admin")]
         public ActionResult Create()
         {
             ViewData["TeacherList"] = new SelectList(db.Admins.Where(a => a.Role == "staff"), "Id", "AdminName");
@@ -41,6 +46,7 @@ namespace Eproject3.Controllers
         // POST: LabsController1/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "admin")]
         public ActionResult Create(Lab lab)
         {
             var model = db.Labs.Where(c =>c.LabsName.Equals(lab.LabsName)).FirstOrDefault();
@@ -85,6 +91,7 @@ namespace Eproject3.Controllers
         }
 
         // GET: LabsController1/Delete/5
+        [Authorize(Roles = "admin")]
         public ActionResult Delete(int id)
         {
             var lab = db.Labs.SingleOrDefault(b=>b.LabsId.Equals(id));

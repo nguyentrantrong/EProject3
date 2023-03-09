@@ -21,18 +21,23 @@ namespace Eproject3.Controllers
             this.db = db;
         }
 
+        [Authorize(Roles = "admin, constructor, maintainer")]
         public IActionResult Index()
         {
             var model = db.Slots.Include(x => x.Lab).Include(c => c.Admins).ToList();
             return View(model);
         }
+
+        [Authorize(Roles = "admin")]
         public IActionResult Create()
         {
             ViewData["LabList"] = new SelectList(db.Labs, "LabsId", "LabsName");
-            ViewData["StaffList"] = new SelectList(db.Admins.Where(a => a.Role == "staff"), "Id", "AdminName");
+            ViewData["ConstructorList"] = new SelectList(db.Admins.Where(a => a.Role == "constructor"), "Id", "AdminName");
             return View();
         }
+
         [HttpPost]
+        [Authorize(Roles = "admin")]    
         public async Task<IActionResult> Create([FromForm] Slot s)
         {
             var isExist = db.Slots.Any(sl => (sl.AdminsId == s.AdminsId && sl.Slot1.Equals(s.Slot1) && sl.Day == s.Day && sl.LabId == s.LabId) || (sl.AdminsId == s.AdminsId && sl.Slot1.Equals(s.Slot1) && sl.Day == s.Day));
@@ -41,7 +46,7 @@ namespace Eproject3.Controllers
             {
                 ModelState.AddModelError(string.Empty, "Account is exists in system");
                 ViewData["LabList"] = new SelectList(db.Labs, "LabsId", "LabsName");
-                ViewData["StaffList"] = new SelectList(db.Admins.Where(a => a.Role == "staff"), "Id", "AdminName");
+                ViewData["ConstructorList"] = new SelectList(db.Admins.Where(a => a.Role == "constructor"), "Id", "AdminName");
                 return View();
             }
             Slot newSlot = new Slot();
@@ -61,15 +66,17 @@ namespace Eproject3.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "admin")]
         public IActionResult Edit(int id)
         {
             var s = db.Slots.SingleOrDefault(c => c.SlotId.Equals(id));
             ViewData["LabList"] = new SelectList(db.Labs, "LabsId", "LabsName");
-            ViewData["StaffList"] = new SelectList(db.Admins.Where(a => a.Role == "staff"), "Id", "AdminName");
+            ViewData["ConstructorList"] = new SelectList(db.Admins.Where(a => a.Role == "constructor"), "Id", "AdminName");
             return View(s);
         }
 
         [HttpPost]
+        [Authorize(Roles = "admin")]
         public IActionResult Edit(Slot slot)
         {
             var model = db.Slots.Where(d => d.SlotId.Equals(slot.SlotId)).FirstOrDefault();

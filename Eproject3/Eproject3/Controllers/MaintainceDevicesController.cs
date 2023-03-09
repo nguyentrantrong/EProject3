@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Eproject3.Models;
+using Microsoft.AspNetCore.Authorization;
+using System.Data;
 
 namespace Eproject3.Controllers
 {
@@ -19,18 +21,22 @@ namespace Eproject3.Controllers
         }
 
         // GET: MaintainceDevices
+        [Authorize(Roles = "admin, constructor, maintainer")]
         public async Task<IActionResult> Index()
         {
             var eProject3Context = _context.MaintainceDevices.Include(m => m.Devices).Where(m => m.Step == 1 || m.Step == -99);
             return View(await eProject3Context.ToListAsync());
         }
+
+        [Authorize(Roles = "maintainer")]
         public async Task<IActionResult> ListForMaintainer()
         {
             var eProject3Context = _context.MaintainceDevices.Include(m => m.Devices).Where(m => m.Step >= 2);
             return View(await eProject3Context.ToListAsync());
         }
 
-        // GET: MaintainceDevices/Details/5
+        // GET: MaintainceDevices/Details/5\
+        [Authorize(Roles = "admin, maintainer")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.MaintainceDevices == null)
@@ -50,6 +56,7 @@ namespace Eproject3.Controllers
         }
 
         // GET: MaintainceDevices/Create
+        [Authorize(Roles = "admin")]
         public IActionResult Create()
         {
             ViewData["DevicesId"] = new SelectList(_context.Devices, "DevicesId", "DeviceName");
@@ -61,6 +68,7 @@ namespace Eproject3.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Create([Bind("MaintnId,Descriptions,Reason,Date,Creater,DevicesId,Id")] MaintainceDevice maintainceDevice)
         {
             MaintainceDevice newMaintaince = new MaintainceDevice();
@@ -80,6 +88,7 @@ namespace Eproject3.Controllers
         }
 
         // GET: MaintainceDevices/Edit/5
+        [Authorize(Roles = "admin, constructor")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.MaintainceDevices == null)
@@ -101,6 +110,7 @@ namespace Eproject3.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "admin, constructor")]
         public async Task<IActionResult> Edit([Bind("MaintnId,Descriptions,Reason,Date,Creater,DevicesId,Id")] MaintainceDevice maintainceDevice)
         {
             var model = await _context.MaintainceDevices.FirstOrDefaultAsync(c => c.MaintnId == maintainceDevice.MaintnId);
@@ -115,6 +125,7 @@ namespace Eproject3.Controllers
         }
 
         // GET: MaintainceDevices/Delete/5
+        [Authorize(Roles = "admin, maintainer")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.MaintainceDevices == null)
@@ -186,7 +197,15 @@ namespace Eproject3.Controllers
                 _context.Update(req);
                 _context.SaveChanges();
             }
-            return RedirectToAction(nameof(Index));
+            var user = _context.Admins.Where(a => a.AdminName == User.Identity.Name).FirstOrDefault();
+            if (user != null && user.Role == "maintainer")
+            {
+                return RedirectToAction(nameof(ListForMaintainer));
+            }
+            else
+            {
+                return RedirectToAction(nameof(Index));
+            }
         }
         public async Task<IActionResult> DisApprove(int id)
         {

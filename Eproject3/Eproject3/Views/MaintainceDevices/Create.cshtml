@@ -4,19 +4,18 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
     Admin? user = Context.Items["User"] as Admin;
 }
-<div class="content-wrapper">
-    <div class="container-fluid">
-        <div class="card">
-            <div class="card-header">
-                <h1>Create</h1>
-                <h4>MaintainceDevice</h4>
-            </div>
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-md-4">
-                        <form asp-action="Create" method="post">
-                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                            <div class="form-group">
+
+<div class="container">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header text-black text-center">
+                    <h3>Create MaintainceDevice</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Create" method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                       <div class="form-group">
                                 <label asp-for="Descriptions" class="control-label"></label>
                                 <input asp-for="Descriptions" class="form-control" />
                                 <span asp-validation-for="Descriptions" class="text-danger"></span>
@@ -38,17 +37,45 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <input type="submit" value="Create" class="btn btn-primary" />
+                                <button type="submit" class="btn btn-success btn-block">Create</button>
                             </div>
-                        </form>
-                    </div>
+                    </form>
+                </div>
+                <div class="card-footer text-center">
+                    @if (user?.Role == "admin")
+                    {
+                        <a class="btn btn-outline-secondary" asp-action="Index">Back to List</a>
+                    }
+                    else
+                    {
+                        <a class="btn btn-outline-secondary" asp-action="ListForMaintainer">Back to List</a>
+                    }
                 </div>
             </div>
-                <div>
-                    <a asp-action="Index">Back to List</a>
-                </div>
+        </div>
     </div>
 </div>
 
+<style>
+    .card {
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .card-header {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .btn-outline-secondary {
+        color: #495057;
+        border-color: #495057;
+    }
+
+        .btn-outline-secondary:hover {
+            color: #fff;
+            background-color: #495057;
+            border-color: #495057;
+        }
+</style>
 
     

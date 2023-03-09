@@ -3,14 +3,15 @@
 @{
 	ViewBag.title = "Create Slot";
 }
-<div class="content-wrapper">
-	<div class="content-header"></div>
-	<div class="content">
 
-		<div class="container-fluid">
-			<h1>Create Slot</h1>
-			<div class="row">
-				<div class="col-md-4">
+<div class="container">
+	<div class="row justify-content-center mt-5">
+		<div class="col-md-6">
+			<div class="card">
+				<div class="card-header text-black text-center">
+					<h3>Create Slot</h3>
+				</div>
+				<div class="card-body">
 					<form asp-action="Create" asp-controller="Slot" method="post" enctype="multipart/form-data">
 						<div asp-validation-summary="ModelOnly" class="text-danger"></div>
 						<div class="form-group">
@@ -36,20 +37,41 @@
 						</div>
 						<div class="form-group">
 							<label asp-for="AdminsId" class="control-label"></label>
-							<select asp-for="AdminsId" class="form-control" required asp-items="ViewBag.StaffList">
+							<select asp-for="AdminsId" class="form-control" required asp-items="ViewBag.ConstructorList">
 								<option>-----Select Teacher-----</option>
 							</select>
 						</div>
 						<div class="form-group">
-							<input type="submit" value="Create" class="btn btn-primary" />
+							<button type="submit" class="btn btn-success btn-block">Create</button>
 						</div>
 					</form>
 				</div>
-			</div>
-			<br />
-			<div>
-				<a asp-action="Index" asp-controller="Slot" class="btn btn-outline-secondary">Back To List</a>
+				<div class="card-footer text-center">
+					<a asp-action="Index" asp-controller="Slot" class="btn btn-outline-secondary">Back To List</a>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
+<style>
+	.card {
+		border-radius: 10px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	}
+
+	.card-header {
+		border-radius: 10px 10px 0 0;
+	}
+
+	.btn-outline-secondary {
+		color: #495057;
+		border-color: #495057;
+	}
+
+		.btn-outline-secondary:hover {
+			color: #fff;
+			background-color: #495057;
+			border-color: #495057;
+		}
+</style>

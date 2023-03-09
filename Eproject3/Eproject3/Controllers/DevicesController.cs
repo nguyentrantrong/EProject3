@@ -27,20 +27,25 @@ namespace Eproject3.Controllers
             this.db = db;
         }
 
+        [Authorize(Roles = "admin, constructor, maintainer")]
         public IActionResult Index()
         {
             var model = db.Devices.Include(x=>x.Supplier).Include(c => c.Labs).ToList();
             return View(model);
             
         }
+
+        [Authorize(Roles = "admin")]
         public IActionResult Create()
         {
             ViewData["LabsId"] = new SelectList(db.Labs, "LabsId", "LabsName");
             ViewData["Supplier_ID"] = new SelectList(db.Suppliers, "SupplierId", "SupplierName");
             return View();
         }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "admin")]
         public async Task<IActionResult> Create(Device device, IFormFile file) 
         {
           
@@ -78,12 +83,16 @@ namespace Eproject3.Controllers
         {
             return View("Error!");
         }
+
+        [Authorize(Roles = "admin, constructor, maintainer")]
         public IActionResult Details(string id )
         {
             var result = db.Devices.Where(d => d.DevicesId.Equals(id)).Include(x=>x.Supplier).Include(c => c.Labs).FirstOrDefault();
             return View(result);
         }
+
         [HttpGet]
+        [Authorize(Roles = "admin, maintainer")]
         public IActionResult EditDevices(string id){
             var model = db.Devices.Where(d => d.DevicesId.Equals(id)).FirstOrDefault();
             ViewData["LabsId"] = new SelectList(db.Labs , "LabsId", "LabsName", model.LabsId);
@@ -91,6 +100,7 @@ namespace Eproject3.Controllers
             return View(model);
         }
         [HttpPost]
+        [Authorize(Roles = "admin, maintainer")]
         public IActionResult EditDevices(Device device, IFormFile file){
             var model = db.Devices.Where(d => d.DevicesId.Equals(device.DevicesId)).FirstOrDefault();
             if(model != null){
@@ -115,7 +125,9 @@ namespace Eproject3.Controllers
             }
             return View(device);
         }
+
         [HttpGet]
+        [Authorize(Roles = "admin")]
         public IActionResult DeleteDevice(string id){
             var result = db.Devices.FirstOrDefault(d => d.DevicesId.Equals(id));
             if(result != null){

@@ -2,6 +2,8 @@
 using Eproject3.Data;
 using Eproject3.Models.ViewModels;
 using Eproject3.Models;
+using Microsoft.AspNetCore.Authorization;
+using System.Data;
 
 namespace Eproject3.Controllers
 {
@@ -19,6 +21,7 @@ namespace Eproject3.Controllers
         }
 
         // GET: Event
+        [Authorize(Roles = "admin, constructor, maintainer")]
         public IActionResult Index()
         {
             var model = _dal.GetEvents().ToList();
@@ -30,6 +33,7 @@ namespace Eproject3.Controllers
         }
 
         // GET: Event/Details/5
+        [Authorize(Roles = "admin, constructor, maintainer")]
         public IActionResult Details(int? id)
         {
             if (id == null)
@@ -47,7 +51,7 @@ namespace Eproject3.Controllers
         }
 
         //GET: Event/Create
-
+        [Authorize(Roles = "admin")]
         public IActionResult Create()
         {
             return View(new EventViewModel(db.Labs.ToList()));
@@ -57,6 +61,7 @@ namespace Eproject3.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "admin")]
         public ActionResult Create(EventViewModel vm, IFormCollection form)
         {
             try
@@ -73,6 +78,7 @@ namespace Eproject3.Controllers
         }
 
         // GET: Event/Edit/5
+        [Authorize(Roles = "admin")]
         public IActionResult Edit(int? id)
         {
             if (id == null)
@@ -92,6 +98,7 @@ namespace Eproject3.Controllers
         // POST: Event/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "admin")]
         public ActionResult Edit(int id, IFormCollection form)
         {
             try
@@ -109,6 +116,7 @@ namespace Eproject3.Controllers
         }
 
         // GET: Event/Delete/5
+        [Authorize(Roles = "admin")]
         public IActionResult Delete(int? id)
         {
             if (id == null)
@@ -127,6 +135,7 @@ namespace Eproject3.Controllers
         // POST: Event/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "admin")]
         public IActionResult DeleteConfirmed(int id)
         {
             _dal.DeleteEvent(id);
