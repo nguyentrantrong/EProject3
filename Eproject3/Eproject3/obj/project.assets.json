@@ -2,6 +2,8 @@
   "version": 3,
   "targets": {
     "net6.0": {
+<<<<<<< HEAD
+=======
       "BouncyCastle/1.8.9": {
         "type": "package",
         "compile": {
@@ -11,6 +13,7 @@
           "lib/BouncyCastle.Crypto.dll": {}
         }
       },
+>>>>>>> main
       "ClosedXML/0.100.3": {
         "type": "package",
         "dependencies": {
@@ -136,6 +139,8 @@
           "lib/netstandard1.6/Irony.dll": {}
         }
       },
+<<<<<<< HEAD
+=======
       "iTextSharp/5.5.13.3": {
         "type": "package",
         "dependencies": {
@@ -160,6 +165,7 @@
           "lib/itextsharp.xmlworker.dll": {}
         }
       },
+>>>>>>> main
       "MessagePack/2.1.152": {
         "type": "package",
         "dependencies": {
@@ -3882,6 +3888,8 @@
     }
   },
   "libraries": {
+<<<<<<< HEAD
+=======
     "BouncyCastle/1.8.9": {
       "sha512": "axnBgvdD5n+FnEG6efk/tfKuMFru7R/EoISH9zjh319yb3HD24TEHSAbNN/lTRT2ulOGRxDgOsCjkuk08iwWPg==",
       "type": "package",
@@ -3895,6 +3903,7 @@
         "lib/BouncyCastle.Crypto.dll"
       ]
     },
+>>>>>>> main
     "ClosedXML/0.100.3": {
       "sha512": "yvEK5ga48mSalPknChOh5hppZixBY5tDkHN7V6WybLjLBBoHvRqm0Vi23XdIaDu9St2rLGJ9/vmgvdCyMPPAsA==",
       "type": "package",
@@ -4046,6 +4055,8 @@
         "lib/netstandard1.6/Irony.dll"
       ]
     },
+<<<<<<< HEAD
+=======
     "iTextSharp/5.5.13.3": {
       "sha512": "vtnMhTEJdZFCkLqaQLjD8aqTBIVKHPrSFuSXnxbLEJlvE/j/l88fvG9wtsejXTmhtErMo0lA9T2LdfdfbwplYw==",
       "type": "package",
@@ -4076,6 +4087,7 @@
         "lib/itextsharp.xmlworker.dll"
       ]
     },
+>>>>>>> main
     "MessagePack/2.1.152": {
       "sha512": "PlJ31qf42uGuJfwc61x/Pt4hJi01xh1rrBofj1MJSLzEot/2UAIRdSgxEHN/8qou5CV8OBeDM9HXKPi1Oj8rpQ==",
       "type": "package",

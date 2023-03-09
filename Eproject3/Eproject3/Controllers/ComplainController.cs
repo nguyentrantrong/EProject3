@@ -20,18 +20,17 @@ namespace Eproject3.Controllers
         }
         public IActionResult Index()
         {
-            var result = db.Complains.Include(x => x.IdNavigation).ToList();
+            var result = db.Complains.ToList();
             return View(result);
         }
         public IActionResult IndexUser()
         {
-            var result = db.Complains.Include(x => x.IdNavigation).ToList();
+            var result = db.Complains.ToList();
             return View(result);
         } 
         [HttpGet]
         public IActionResult Create()
         {
-            ViewData["Id"] = new SelectList(db.Admins, "Id", "AdminName");
             return View();
         }
         [HttpPost]
@@ -43,14 +42,14 @@ namespace Eproject3.Controllers
             Complain newComplain = new Complain();
             newComplain.Description = newCPL.Description;
             newComplain.Reason = newCPL.Reason;
-            newComplain.StatusCp = newCPL.StatusCp;
+            newComplain.StatusCp = "Pending";
             newComplain.DateCp = DateTime.Now;
             newComplain.Category = newCPL.Category;
             newComplain.Id = newCPL.Id;
             newComplain.Reply = "";
             db.Complains.Add(newComplain);
             db.SaveChanges();
-            ViewData["Id"] = new SelectList(db.Admins, "Id", "AdminName", newCPL.Id);
+            //ViewData["Id"] = new SelectList(db.Admins, "Id", "AdminName", newCPL.Id);
             return RedirectToAction("Index");
         }
         
@@ -58,24 +57,24 @@ namespace Eproject3.Controllers
         public IActionResult EditComplain(int id)
         {
             var model = db.Complains.Where(d => d.ComplainId == id).FirstOrDefault();
-            ViewData["Id"] = new SelectList(db.Admins, "Id", "AdminName", model.Id);
             return View(model);
         }
         [HttpPost]
         public IActionResult EditComplain(Complain newCPL)
         {
             var model = db.Complains.Where(d => d.ComplainId == newCPL.ComplainId).FirstOrDefault();
-
             if (model != null)
             {
                 model.Description = newCPL.Description;
                 model.Reason = newCPL.Reason;
-                model.StatusCp = newCPL.StatusCp;
                 model.DateCp = DateTime.Now;
                 model.Category = newCPL.Category;
                 model.Id = newCPL.Id;
                 model.Reply = newCPL.Reply;
-
+                if(model.Reply != null)
+                {
+                    model.StatusCp = "Answered";
+                }
                 db.Update(model);
                 db.SaveChanges();
                 return RedirectToAction("Index");

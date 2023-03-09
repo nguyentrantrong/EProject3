@@ -1,6 +1,7 @@
 ﻿@model Eproject3.Models.Complain
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
+    Admin? user = Context.Items["User"] as Admin;
 }
 <div class="content-wrapper">
 
@@ -25,15 +26,6 @@
                         <span asp-validation-for="Reason" class="text-danger"></span>
                     </div>
                     <div class="form-group">
-                        <label class="form-select mt-3" asp-for="StatusCp" class="control-label"></label>
-                        <select asp-for="StatusCp" class="form-control" required>
-                            <option class="btn btn-light">----SELECT----</option>
-                            <option class="btn btn-success" value="Pending">Pending</option>
-                            <option class="btn btn-danger" value="Success">Success</option>
-                            <option class="btn btn-light">----SELECT----</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
                         <span asp-validation-for="DateCp" class="text-danger"></span>
                     </div> 
                     <div class="form-group">
@@ -43,9 +35,8 @@
                     </div>
                     <div class="form-group">
                         <label asp-for="Id" class="control-label"></label>
-                        <select asp-for="Id" class="form-control" asp-items="ViewBag.Id" required>
-                            <option>----SELECT----</option>
-                        </select>
+                        <input asp-for="Id" class="form-control" value="@user.AdminName" readonly />
+                        <span asp-validation-for="Id" class="text-danger"></span>
                     </div>
                     <div class="form-group">
                         <label asp-for="Reply" class="control-label"></label>
