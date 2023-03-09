@@ -9,15 +9,17 @@ namespace Eproject3.Models
         {
             Devices = new HashSet<Device>();
             Events = new HashSet<Event>();
+            Reports = new HashSet<Report>();
             Slots = new HashSet<Slot>();
         }
 
         public int LabsId { get; set; }
-        public string? LabsName { get; set; }
+        public string LabsName { get; set; }
         public int? Quantity { get; set; }
 
         public virtual ICollection<Device> Devices { get; set; }
         public virtual ICollection<Event> Events { get; set; }
+        public virtual ICollection<Report> Reports { get; set; }
         public virtual ICollection<Slot> Slots { get; set; }
     }
 }
