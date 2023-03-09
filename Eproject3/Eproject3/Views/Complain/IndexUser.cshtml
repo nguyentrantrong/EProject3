@@ -1,0 +1,54 @@
+﻿@model List<Eproject3.Models.Complain>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section style="background-color: #f7f6f6;">
+    <div class="container my-5 py-5 text-dark">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-12 col-lg-10 col-xl-8">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h4 class="text-dark mb-0">Unread comments </h4>
+                    <div class="card">
+                        <div class="card-body p-2 d-flex align-items-center">
+                            <h6 class="text-primary fw-bold small mb-0 me-1">Comments "ON"</h6>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
+                                <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 @foreach (var item in Model)
+                        {
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="d-flex flex-start">
+                            <div class="w-100">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h6 class="text-primary fw-bold mb-0">
+                                            @item.IdNavigation.AdminName:
+                                            <span class="text-dark ms-2">@item.Description</span>
+                                    </h6>
+                                        <p class="mb-0">@item.DateCp</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="small mb-0" >
+
+                                            <a style="color: #aaa; " href="#!" class="link-grey">•Reply•</a>
+
+                                    </p>
+                                    <div class="d-flex flex-row"> 
+                                            <i class="far fa-star mx-2" style="color: #aaa;"></i>
+                                        <i class="fas fa-star text-warning me-2"></i>
+                                        <i class="far fa-check-circle" style="color: #aaa;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                }
+               
+</section>
+
+                       
