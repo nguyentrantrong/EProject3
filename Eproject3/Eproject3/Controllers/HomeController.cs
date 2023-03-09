@@ -24,7 +24,8 @@ namespace Eproject3.Controllers
             _idal = idal;
             this.db = db;
         }
-        //[Authorize(Roles = "admin, staff")]
+
+        [Authorize(Roles = "admin, constructor, maintainer")]
         public IActionResult Index()
         {
             ViewData["Resources"] = JSONListHelper.GetResourceListJSONString(db.Labs.ToList());

@@ -202,56 +202,118 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item">
-            <a asp-controller="Labs" asp-action="Index" class="nav-link">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Labs
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a asp-controller="Suppliers" asp-action="Index" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Suplliers
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a asp-controller="Devices" asp-action="Index" class="nav-link">
-              <i class="nav-icon fas fa-copy"></i>
-              <p>
-                Devices
-              </p>
-            </a>
-          </li>
-            <li class="nav-item">
-                <a asp-controller="Account" asp-action="Index" class="nav-link">
-                  <i class="nav-icon fas fa-user-secret"></i>
+             <li class="nav-item">
+                <a class="nav-link">
+                    <i class="nav-icon fas fa-user-secret"></i>
                     <p>
-                         Admin
+                        Admin
+                        <i class="fas fa-angle-left right"></i>
                     </p>
                 </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a asp-controller="Account" asp-action="Index" class="nav-link">
+                            <i class="far fa-circle-dot nav-icon"></i>
+                            <p>Manager Staff</p>
+                        </a>
+                    </li>
+                </ul>
             </li>
             <li class="nav-item">
-                <a asp-controller="Slot" asp-action="Index" class="nav-link">
-                  <i class="nav-icon fas fa-check-to-slot"></i>
+                <a class="nav-link">
+                    <i class="nav-icon fas fa-tachometer-alt"></i>
                     <p>
-                         Slot
+                        Lab
+                        <i class="fas fa-angle-left right"></i>
                     </p>
                 </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a asp-controller="Labs" asp-action="Index" class="nav-link">
+                            <i class="far fa-circle-dot nav-icon"></i>
+                            <p>Manager Lab</p>
+                        </a>
+                    </li>
+                </ul>
             </li>
-          <li class="nav-item">
-            <a asp-controller="MaintainceDevices" asp-action="Index" class="nav-link">
-              <i class="nav-icon fas fa-tree"></i>
-              <p>
-                UI Elements
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-          </li>
+            <li class="nav-item">
+                <a class="nav-link">
+                    <i class="nav-icon fas fa-th"></i>
+                    <p>
+                        Supplier
+                        <i class="fas fa-angle-left right"></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a asp-controller="Suppliers" asp-action="Index" class="nav-link">
+                            <i class="far fa-circle-dot nav-icon"></i>
+                            <p>Manager Supplier</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">
+                    <i class="nav-icon fas fa-copy"></i>
+                    <p>
+                        Device
+                        <i class="fas fa-angle-left right"></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a asp-controller="Devices" asp-action="Index" class="nav-link">
+                            <i class="far fa-circle-dot nav-icon"></i>
+                            <p>Manager Device</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">
+                    <i class="nav-icon fas fa-check-to-slot"></i>
+                    <p>
+                        Slot
+                        <i class="fas fa-angle-left right"></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a asp-controller="Slot" asp-action="Index" class="nav-link">
+                            <i class="far fa-circle-dot nav-icon"></i>
+                            <p>Manager Slot</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">
+                    <i class="nav-icon fas fa-screwdriver-wrench"></i>
+                        <p>
+                            Maintance
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                </a>
+                    <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        @if (user?.Role == "maintainer")
+                        {
+                            <a asp-controller="MaintainceDevices" asp-action="ListForMaintainer" class="nav-link">
+                                <i class="far fa-circle-dot nav-icon"></i>
+                                <p>Maintance Request</p>
+                            </a>
+                        }
+                        else
+                        {
+                            <a asp-controller="MaintainceDevices" asp-action="Index" class="nav-link">
+                            <i class="far fa-circle-dot nav-icon"></i>
+                            <p>Maintance Request</p>
+                            </a>         
+                        }
+                    </li>
+                </ul>
+            </li>
           <li class="nav-header">EXAMPLES</li>
           <li class="nav-item">
             <a asp-controller="Event" asp-action="Index" class="nav-link">
@@ -261,6 +323,8 @@
               </p>
             </a>
           </li>
+           
+
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

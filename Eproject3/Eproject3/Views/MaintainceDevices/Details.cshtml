@@ -3,6 +3,7 @@
 @{
     ViewData["Title"] = "Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    Admin? user = Context.Items["User"] as Admin;
 }
 
 <h1>Details</h1>
@@ -68,7 +69,16 @@
             <a asp-action="Approve" asp-route-id="@Model.MaintnId" class="btn btn-success">Approve</a>
             <a asp-action="DisApprove" asp-route-id="@Model.MaintnId" class="btn btn-danger">DisApprove</a>
             }
-            <a asp-action="Index">Back to List</a>
+            @if (user?.Role == "maintainer")
+            {
+                <a class="btn btn-light" asp-action="ListForMaintainer">Back to List</a>
+                
+            }
+            else
+            {
+                <a class="btn btn-light" asp-action="Index">Back to List</a>
+            }
+            
         </div>
     </div>
 </div>

@@ -3,6 +3,7 @@
 @{
     ViewData["Title"] = "Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    Admin? user = Context.Items["User"] as Admin;
 }
 <div class="content-wrapper">
     <div class="container">
@@ -49,7 +50,10 @@
             </div>
         </div>
         <div>
-            <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+            @if (user?.Role == "admin")
+            {
+                <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a>
+            }
             <a asp-action="Index">Back to List</a>
         </div>
     </div>

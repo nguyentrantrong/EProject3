@@ -3,64 +3,47 @@
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<div class="content-wrapper">
-
+    <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <!-- /.col -->
+                </div>
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
     <!-- /.content-header -->
+    <!-- Main content -->
     <section class="content">
         <div class="container-fluid">
-            <div class="card">
-                <div class="card-header">
-                    <h1>Index</h1>
-                    <p>
-                        <a asp-action="Create">Create New</a>
-                    </p>
-                </div>
-                <div class="card-body">
-                    <div class="row">
-                        <table class="table table-bordered" width="100%" id="content">
-                            <thead>
-                                <tr>
-                                    <th>
-                                        @Html.DisplayNameFor(model => model.Descriptions)
-                                    </th>
-                                    <th>
-                                        @Html.DisplayNameFor(model => model.Reason)
-                                    </th>
-                                    <th>
-                                        @Html.DisplayNameFor(model => model.Date)
-                                    </th>
-                                    <th>
-                                        @Html.DisplayNameFor(model => model.Creater)
-                                    </th>
-                                    <th>
-                                        @Html.DisplayNameFor(model => model.Devices)
-                                    </th>
-                                    <th>
-                                        @Html.DisplayNameFor(model => model.Status)
-                                    </th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach (var item in Model)
-                                {
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body table-responsive">
+                            <table class="table table-bordered table-hover text-nowrap" id="deviceTable">
+                                <thead>
                                     <tr>
-                                        <td>
-                                            @Html.DisplayFor(modelItem => item.Descriptions)
-                                        </td>
-                                        <td>
-                                            @Html.DisplayFor(modelItem => item.Reason)
-                                        </td>
-                                        <td>
-                                            @Html.DisplayFor(modelItem => item.Date)
-                                        </td>
-                                        <td>
-                                            @Html.DisplayFor(modelItem => item.Creater)
-                                        </td>
-                                        <td>
-                                            @Html.DisplayFor(modelItem => item.Devices.DeviceName)
-                                        </td>
-                                        <td>
+                                        <th>Descriptions</th>
+                                        <th>Reason</th>
+                                        <th>Date</th>
+                                        <th>Creater</th>
+                                        <th>Devices</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>@item.Descriptions</td>
+                                            <td>@item.Reason</td>
+                                            <td>@item.Date</td>
+                                            <td>@item.Creater</td>
+                                            <td>@item.Devices.DeviceName</td>
+                                            <td>
                                             @if(item.Step == 4){
                                                 <span class="badge bg-success">Completed</span>
                                             }else{
@@ -71,27 +54,43 @@
                                             @if(item.Step == -99){
                                                 <span class="badge bg-danger">Rejected</span>
                                             }
-                                        </td>
-                                        <td>
-                                            <a asp-action="Edit" asp-route-id="@item.MaintnId">Edit</a> |
-                                            <a asp-action="Details" asp-route-id="@item.MaintnId">Details</a> |
-                                        </td>
-                                    </tr>
-                                }
-                            </tbody>
-                        </table>
+                                            </td>
+                                            <td>
+                                                <a asp-action="Details" class="btn btn-outline-info" asp-route-id="@item.MaintnId"><i class="fas fa-circle-info"></i> Maintenance Confirmation</a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.card-body -->
                     </div>
+                    <!-- /.card -->
                 </div>
+                <!-- /.col -->
             </div>
-
+            <!-- /.row -->
         </div>
+        <!-- /.container-fluid -->
     </section>
+    <!-- /.content -->
 </div>
-<script src="//cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
 <script>
     $(document).ready(function () {
-        $("#content").DataTable({
-
-        })
-    })
+        $("#deviceTable").DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": true,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false,
+            "language": {
+                "paginate": {
+                    "next": "<i class='fas fa-chevron-right'></i>",
+                    "previous": "<i class='fas fa-chevron-left'></i>"
+                }
+            }
+        });
+    });
 </script>

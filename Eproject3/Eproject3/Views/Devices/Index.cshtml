@@ -1,70 +1,112 @@
 @model List<Eproject3.Models.Device>
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
+    Admin? user = Context.Items["User"] as Admin;
 }
 
 <div class="content-wrapper">
-    <section class="content">
-        <div class="container">
-            <a asp-action="Create" class="btn btn-success">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-              </svg>
-              Create new Device
-            </a>
-          
-            @* <i class="bi bi-plus"></i> *@
-            <br><br>
-            <div class="row">
-                <table class="table table-bordered" id="deviceTable">
-                    <thead class="thead-dark">
-                        <tr>
-                            <th>Device Names</th>
-                            <th>Devices Type</th>
-                            <th>SupplyFrom</th>
-                            <th>Status</th>
-                            <th>DateMaintance</th>
-                            <th>Belong to</th>
-                            <th>DeviceImg</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                          @foreach (var item in Model)
-                            {
-                              <tr>
-                                <td>@item.DeviceName</td>  
-                                <td>@item.DeviceType</td>  
-                                <td>@item.Supplier.SupplierName</td>
-                                <td> <span class="badge bg-success">@item.Status</span> </td>
-                                <td>@item.DateMaintance</td>  
-                                <td>@item.Labs.LabsName</td>  
-                                <td>
-                                  <img src="@item.DeviceImg" width="100px" height="100px" />
-                                </td>  
-                                <td>
-                                  <a asp-action="Details" asp-route-id="@item.DevicesId" class="btn btn-primary">Details</a>
-                                  <a asp-action="EditDevices" asp-route-id="@item.DevicesId" class="btn btn-info">Edit</a>
-                                  <a asp-action="DeleteDevice" asp-route-id="@item.DevicesId" class="btn btn-danger">Delete</a>
-                                </td>
-                              </tr>
-                            }
-                      
-                    </tbody>
-                
-                </table>
-                @* Table Hay card gì đó tự build *@
-                
-            </div>
-        </div>
-    </section>
-</div>
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                <!-- /.col -->
+                @if (user?.Role == "admin")
+                {
+                        <div class="col-sm-6 text-right">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a asp-action="Create" asp-controller="Devices" class="btn btn-outline-success">
+                                        <i class="fas fa-laptop-medical"></i> Create New Device
+                                    </a>
+                                </li>
+                            </ol>
+                        </div>
 
-<script src="//cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
-<script>
-  $(document).ready(function() {
-    $("#deviceTable").DataTable({
-      
-    })
-  })
-</script>
+                    <!-- /.col -->
+                }
+                </div>
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body table-responsive">
+                            <table class="table table-bordered table-hover text-nowrap" id="deviceTable">
+                                <thead>
+                                    <tr>
+                                        <th>Device Names</th>
+                                        <th>Devices Type</th>
+                                        <th>SupplyFrom</th>
+                                        <th>Status</th>
+                                        <th>DateMaintance</th>
+                                        <th>Belong to</th>
+                                        <th>DeviceImg</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>@item.DeviceName</td>
+                                            <td>@item.DeviceType</td>
+                                            <td>@item.Supplier.SupplierName</td>
+                                            <td> <span class="badge bg-success">@item.Status</span> </td>
+                                            <td>@item.DateMaintance</td>
+                                            <td>@item.Labs.LabsName</td>
+                                            <td>
+                                                <img src="@item.DeviceImg" width="100px" height="100px" />
+                                            </td>
+                                            <td>
+                                                <a asp-action="Details" asp-route-id="@item.DevicesId" class="btn btn-outline-primary"><i class="fas fa-circle-info"></i> Details</a>
+                                                @if (user?.Role == "admin, maintainer")
+                                                {
+                                                    <a asp-action="EditDevices" asp-route-id="@item.DevicesId" class="btn btn-outline-info"><i class="fas fa-edit"></i> Edit</a>
+                                                }
+                                                @if (user?.Role == "admin")
+                                                {
+                                                    <a asp-action="DeleteDevice" asp-route-id="@item.DevicesId" class="btn btn-outline-danger"><i class="fas fa-trash"></i> Delete</a>
+                                                }
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+    </div>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#deviceTable").DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": true,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "language": {
+                    "paginate": {
+                        "next": "<i class='fas fa-chevron-right'></i>",
+                        "previous": "<i class='fas fa-chevron-left'></i>"
+                    }
+                }
+            });
+        });
+    </script>
