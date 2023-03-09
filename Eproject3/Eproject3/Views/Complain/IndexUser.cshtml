@@ -26,7 +26,7 @@
                             <div class="w-100">
                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                     <h6 class="text-primary fw-bold mb-0">
-                                            @item.IdNavigation.AdminName:
+                                            @item.Id:
                                             <span class="text-dark ms-2">@item.Description</span>
                                     </h6>
                                         <p class="mb-0">@item.DateCp</p>
@@ -34,7 +34,7 @@
                                 <div class="d-flex justify-content-between align-items-center">
                                     <p class="small mb-0" >
 
-                                            <a style="color: #aaa; " href="#!" class="link-grey">•Reply•</a>
+                                            <a asp-action="EditComplain" asp-route-id="@item.ComplainId" style="color: #aaa; class="link-grey">•Reply•</a>
 
                                     </p>
                                     <div class="d-flex flex-row"> 
@@ -42,7 +42,14 @@
                                         <i class="fas fa-star text-warning me-2"></i>
                                         <i class="far fa-check-circle" style="color: #aaa;"></i>
                                     </div>
+                                       
                                 </div>
+                                
+                                    <div class="form-outline w-100">
+                                        <span class="text-dark ms-2" id="textAreaExample"
+                                                  style="background: #fff; margin-left: 50px">@item.Reply</span>
+                                       
+                                    </div>
                             </div>
                         </div>
                     </div>

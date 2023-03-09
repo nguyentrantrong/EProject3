@@ -67,11 +67,11 @@ namespace Eproject3.Models
 
                 entity.Property(e => e.StatusCp).HasColumnName("Status_CP");
 
-                entity.HasOne(d => d.IdNavigation)
-                    .WithMany(p => p.Complains)
-                    .HasForeignKey(d => d.Id)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("fk_admins_Admin_ID");
+                //entity.HasOne(d => d.Admins)
+                //    .WithMany(p => p.Slots)
+                //    .HasForeignKey(d => d.AdminsId)
+                //    .OnDelete(DeleteBehavior.ClientSetNull)
+                //    .HasConstraintName("FK_admins_ID");
 
                 entity.Property(e => e.Reply).HasColumnName("Reply");
             });
@@ -181,12 +181,6 @@ namespace Eproject3.Models
                 entity.Property(e => e.Reciver).IsUnicode(false);
 
                 entity.Property(e => e.ReportDate).HasColumnType("datetime");
-
-                entity.HasOne(d => d.Complain)
-                    .WithMany(p => p.Reports)
-                    .HasForeignKey(d => d.ComplainId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("fk_report_Report_ID");
 
                 entity.HasOne(d => d.Devices)
                     .WithMany(p => p.Reports)
