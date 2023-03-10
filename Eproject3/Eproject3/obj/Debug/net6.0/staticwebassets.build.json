@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "1BVHQJKc8LWv9br+HSvVIw9Ddfiaf4gnbdRdrPQs36M=",
+=======
+  "Hash": "dwXcdBQZaTMUeHVaQgkuIxxmw0D4sfzi2SXUcJWvaVw=",
+>>>>>>> main
   "Source": "Eproject3",
   "BasePath": "_content/Eproject3",
   "Mode": "Default",
@@ -1326,7 +1330,45 @@
       "OriginalItemSpec": "wwwroot\\images\\273155787_506176694206507_9077340921652382191_n.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\b2.gif",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\305439358_486892073262230_3587136534864156215_n.jpg",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "images/305439358_486892073262230_3587136534864156215_n.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\305439358_486892073262230_3587136534864156215_n.jpg"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\b1.gif",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "images/b1.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\b1.gif"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\b2.gif",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -1343,7 +1385,28 @@
       "OriginalItemSpec": "wwwroot\\images\\b2.gif"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\b4.gif",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\b3.gif",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "images/b3.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\b3.gif"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\b4.gif",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -1360,7 +1423,45 @@
       "OriginalItemSpec": "wwwroot\\images\\b4.gif"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\My party.png",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\Logo.jpg",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "images/Logo.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Logo.jpg"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\Screenshot 2021-07-20 004624.png",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "images/Screenshot 2021-07-20 004624.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Screenshot 2021-07-20 004624.png"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\z3909476167533_cc268ead65a2ac3bd13a5c1f35737eb5.jpg",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -1428,6 +1529,7 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -1565,6 +1667,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -1972,7 +2077,147 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -2193,12 +2438,16 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
       "BasePath": "_content/Eproject3",
-      "RelativePath": "lib/jquery/dist/jquery.js",
+      "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2207,15 +2456,19 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
       "BasePath": "_content/Eproject3",
-      "RelativePath": "lib/jquery/dist/jquery.min.js",
+      "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2224,15 +2477,19 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
       "BasePath": "_content/Eproject3",
-      "RelativePath": "lib/jquery/dist/jquery.min.map",
+      "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2241,6 +2498,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
@@ -2259,6 +2517,9 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
+=======
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+>>>>>>> main
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
@@ -2346,12 +2607,16 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
       "BasePath": "_content/Eproject3",
-      "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2360,15 +2625,19 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
       "BasePath": "_content/Eproject3",
-      "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2377,15 +2646,19 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
       "BasePath": "_content/Eproject3",
-      "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2394,15 +2667,19 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\bootstrap\\js\\bootstrap.bundle.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\lib\\jquery\\LICENSE.txt",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
       "BasePath": "_content/Eproject3",
-      "RelativePath": "plugins/bootstrap/js/bootstrap.bundle.js",
+      "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2411,6 +2688,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\plugins\\bootstrap\\js\\bootstrap.bundle.js"
     },
     {
@@ -2599,6 +2877,9 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\plugins\\bootstrap4-duallistbox\\jquery.bootstrap-duallistbox.min.js"
+=======
+      "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
+>>>>>>> main
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\bootstrap-colorpicker\\css\\bootstrap-colorpicker.css",
@@ -2907,7 +3188,215 @@
       "OriginalItemSpec": "wwwroot\\plugins\\bootstrap-switch\\js\\bootstrap-switch.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\bs-custom-file-input\\bs-custom-file-input.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\bootstrap\\js\\bootstrap.bundle.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/bootstrap/js/bootstrap.bundle.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\bootstrap\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\bootstrap\\js\\bootstrap.bundle.js.map",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/bootstrap/js/bootstrap.bundle.js.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\bootstrap\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/bootstrap/js/bootstrap.bundle.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\bootstrap\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/bootstrap/js/bootstrap.bundle.min.js.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\bootstrap\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\bootstrap\\js\\bootstrap.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/bootstrap/js/bootstrap.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\bootstrap\\js\\bootstrap.js.map",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/bootstrap/js/bootstrap.js.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\bootstrap\\js\\bootstrap.js.map"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\bootstrap\\js\\bootstrap.min.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/bootstrap/js/bootstrap.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\bootstrap\\js\\bootstrap.min.js.map",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/bootstrap/js/bootstrap.min.js.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\bootstrap\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\bootstrap4-duallistbox\\bootstrap-duallistbox.css",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/bootstrap4-duallistbox/bootstrap-duallistbox.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\bootstrap4-duallistbox\\bootstrap-duallistbox.css"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\bootstrap4-duallistbox\\bootstrap-duallistbox.min.css",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\bootstrap4-duallistbox\\bootstrap-duallistbox.min.css"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\bootstrap4-duallistbox\\jquery.bootstrap-duallistbox.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\bootstrap4-duallistbox\\jquery.bootstrap-duallistbox.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\bootstrap4-duallistbox\\jquery.bootstrap-duallistbox.min.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\bootstrap4-duallistbox\\jquery.bootstrap-duallistbox.min.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\bs-custom-file-input\\bs-custom-file-input.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -3944,6 +4433,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\codemirror\\addon\\mode\\loadmode.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\addon\\mode\\multiplex.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -3962,6 +4452,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\addon\\mode\\multiplex_test.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\addon\\mode\\multiplex_test.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -3978,7 +4471,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\codemirror\\addon\\mode\\multiplex_test.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\addon\\mode\\overlay.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\addon\\mode\\multiplex.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/codemirror/addon/mode/multiplex.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\codemirror\\addon\\mode\\multiplex.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\addon\\mode\\overlay.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -4029,7 +4543,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\codemirror\\addon\\runmode\\colorize.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\addon\\runmode\\runmode.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\addon\\runmode\\runmode-standalone.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/codemirror/addon/runmode/runmode-standalone.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\codemirror\\addon\\runmode\\runmode-standalone.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\addon\\runmode\\runmode.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -4063,6 +4598,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\codemirror\\addon\\runmode\\runmode.node.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\addon\\runmode\\runmode-standalone.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -4081,6 +4617,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\addon\\scroll\\annotatescrollbar.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\addon\\scroll\\annotatescrollbar.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -4165,7 +4704,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\codemirror\\addon\\search\\jump-to-line.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\addon\\search\\matchesonscrollbar.css",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\addon\\search\\match-highlighter.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/codemirror/addon/search/match-highlighter.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\codemirror\\addon\\search\\match-highlighter.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\addon\\search\\matchesonscrollbar.css",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -4199,6 +4759,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\codemirror\\addon\\search\\matchesonscrollbar.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\addon\\search\\match-highlighter.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -4217,6 +4778,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\addon\\search\\search.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\addon\\search\\search.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -5083,6 +5647,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\codemirror\\mode\\handlebars\\handlebars.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\mode\\haskell\\haskell.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -5101,6 +5666,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\mode\\haskell-literate\\haskell-literate.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\mode\\haskell-literate\\haskell-literate.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -5117,7 +5685,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\codemirror\\mode\\haskell-literate\\haskell-literate.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\mode\\haxe\\haxe.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\mode\\haskell\\haskell.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/codemirror/mode/haskell/haskell.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\codemirror\\mode\\haskell\\haskell.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\mode\\haxe\\haxe.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -6256,6 +6845,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\codemirror\\mode\\troff\\troff.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\mode\\ttcn\\ttcn.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -6274,6 +6864,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\mode\\ttcn-cfg\\ttcn-cfg.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\mode\\ttcn-cfg\\ttcn-cfg.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -6290,7 +6883,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\codemirror\\mode\\ttcn-cfg\\ttcn-cfg.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\mode\\turtle\\turtle.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\mode\\ttcn\\ttcn.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/codemirror/mode/ttcn/ttcn.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\codemirror\\mode\\ttcn\\ttcn.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\mode\\turtle\\turtle.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -6511,6 +7125,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\codemirror\\mode\\yacas\\yacas.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\mode\\yaml\\yaml.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -6529,6 +7144,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\mode\\yaml-frontmatter\\yaml-frontmatter.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\mode\\yaml-frontmatter\\yaml-frontmatter.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -6545,7 +7163,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\codemirror\\mode\\yaml-frontmatter\\yaml-frontmatter.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\mode\\z80\\z80.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\mode\\yaml\\yaml.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/codemirror/mode/yaml/yaml.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\codemirror\\mode\\yaml\\yaml.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\mode\\z80\\z80.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -6630,6 +7269,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\codemirror\\theme\\abcdef.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\theme\\ambiance.css",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -6648,6 +7288,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\theme\\ambiance-mobile.css",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\theme\\ambiance-mobile.css",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -6664,7 +7307,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\codemirror\\theme\\ambiance-mobile.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\theme\\ayu-dark.css",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\theme\\ambiance.css",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/codemirror/theme/ambiance.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\codemirror\\theme\\ambiance.css"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\theme\\ayu-dark.css",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -7072,6 +7736,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\codemirror\\theme\\lucario.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\theme\\material.css",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -7090,6 +7755,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\theme\\material-darker.css",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\theme\\material-darker.css",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -7140,7 +7808,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\codemirror\\theme\\material-palenight.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\theme\\mbo.css",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\theme\\material.css",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/codemirror/theme/material.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\codemirror\\theme\\material.css"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\codemirror\\theme\\mbo.css",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -7667,6 +8356,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\codemirror\\theme\\zenburn.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\datatables\\jquery.dataTables.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -7702,6 +8392,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\datatables-autofill\\css\\autoFill.bootstrap4.css",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\datatables-autofill\\css\\autoFill.bootstrap4.css",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -9231,7 +9924,45 @@
       "OriginalItemSpec": "wwwroot\\plugins\\datatables-select\\js\\select.bootstrap4.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\daterangepicker\\daterangepicker.css",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\datatables\\jquery.dataTables.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/datatables/jquery.dataTables.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\datatables\\jquery.dataTables.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\datatables\\jquery.dataTables.min.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/datatables/jquery.dataTables.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\datatables\\jquery.dataTables.min.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\daterangepicker\\daterangepicker.css",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -9282,7 +10013,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\dropzone\\basic.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\dropzone\\dropzone.css",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\dropzone\\dropzone-amd-module.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/dropzone/dropzone-amd-module.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\dropzone\\dropzone-amd-module.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\dropzone\\dropzone.css",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -9333,6 +10085,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\dropzone\\dropzone.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\dropzone\\dropzone-amd-module.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -9351,6 +10104,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\dropzone\\min\\basic.css",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\dropzone\\min\\basic.css",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -9384,7 +10140,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\dropzone\\min\\basic.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\dropzone\\min\\dropzone.css",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\dropzone\\min\\dropzone-amd-module.min.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/dropzone/min/dropzone-amd-module.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\dropzone\\min\\dropzone-amd-module.min.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\dropzone\\min\\dropzone.css",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -9435,6 +10212,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\dropzone\\min\\dropzone.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\dropzone\\min\\dropzone-amd-module.min.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -9453,6 +10231,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\ekko-lightbox\\ekko-lightbox.css",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\ekko-lightbox\\ekko-lightbox.css",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -10880,6 +11661,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\flag-icon-css\\flags\\1x1\\er.svg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\flag-icon-css\\flags\\1x1\\es.svg",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -10898,6 +11680,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\flag-icon-css\\flags\\1x1\\es-ca.svg",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\flag-icon-css\\flags\\1x1\\es-ca.svg",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -10948,7 +11733,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\flag-icon-css\\flags\\1x1\\es-ga.svg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\flag-icon-css\\flags\\1x1\\et.svg",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\flag-icon-css\\flags\\1x1\\es.svg",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/flag-icon-css/flags/1x1/es.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\flag-icon-css\\flags\\1x1\\es.svg"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\flag-icon-css\\flags\\1x1\\et.svg",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -11101,6 +11907,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\flag-icon-css\\flags\\1x1\\ga.svg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\flag-icon-css\\flags\\1x1\\gb.svg",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -11119,6 +11926,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\flag-icon-css\\flags\\1x1\\gb-eng.svg",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\flag-icon-css\\flags\\1x1\\gb-eng.svg",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -11186,7 +11996,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\flag-icon-css\\flags\\1x1\\gb-wls.svg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\flag-icon-css\\flags\\1x1\\gd.svg",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\flag-icon-css\\flags\\1x1\\gb.svg",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/flag-icon-css/flags/1x1/gb.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\flag-icon-css\\flags\\1x1\\gb.svg"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\flag-icon-css\\flags\\1x1\\gd.svg",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -15402,6 +16233,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\flag-icon-css\\flags\\4x3\\er.svg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\flag-icon-css\\flags\\4x3\\es.svg",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -15420,6 +16252,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\flag-icon-css\\flags\\4x3\\es-ca.svg",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\flag-icon-css\\flags\\4x3\\es-ca.svg",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -15470,7 +16305,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\flag-icon-css\\flags\\4x3\\es-ga.svg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\flag-icon-css\\flags\\4x3\\et.svg",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\flag-icon-css\\flags\\4x3\\es.svg",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/flag-icon-css/flags/4x3/es.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\flag-icon-css\\flags\\4x3\\es.svg"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\flag-icon-css\\flags\\4x3\\et.svg",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -15623,6 +16479,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\flag-icon-css\\flags\\4x3\\ga.svg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\flag-icon-css\\flags\\4x3\\gb.svg",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -15641,6 +16498,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\flag-icon-css\\flags\\4x3\\gb-eng.svg",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\flag-icon-css\\flags\\4x3\\gb-eng.svg",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -15708,7 +16568,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\flag-icon-css\\flags\\4x3\\gb-wls.svg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\flag-icon-css\\flags\\4x3\\gd.svg",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\flag-icon-css\\flags\\4x3\\gb.svg",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/flag-icon-css/flags/4x3/gb.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\flag-icon-css\\flags\\4x3\\gb.svg"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\flag-icon-css\\flags\\4x3\\gd.svg",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -19669,7 +20550,45 @@
       "OriginalItemSpec": "wwwroot\\plugins\\fullcalendar\\LICENSE.txt"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\af.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales-all.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/fullcalendar/locales-all.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\fullcalendar\\locales-all.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales-all.min.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/fullcalendar/locales-all.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\fullcalendar\\locales-all.min.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\af.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -19686,6 +20605,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\fullcalendar\\locales\\af.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\ar.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -19704,6 +20624,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\ar-dz.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\ar-dz.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -19805,7 +20728,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\fullcalendar\\locales\\ar-tn.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\az.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\ar.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/fullcalendar/locales/ar.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\fullcalendar\\locales\\ar.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\az.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -19941,6 +20885,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\fullcalendar\\locales\\da.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\de.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -19959,6 +20904,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\de-at.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\de-at.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -19975,7 +20923,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\fullcalendar\\locales\\de-at.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\el.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\de.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/fullcalendar/locales/de.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\fullcalendar\\locales\\de.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\el.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -20060,6 +21029,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\fullcalendar\\locales\\eo.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\es.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -20078,6 +21048,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\es-us.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\es-us.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -20094,7 +21067,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\fullcalendar\\locales\\es-us.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\et.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\es.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/fullcalendar/locales/es.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\fullcalendar\\locales\\es.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\et.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -20162,6 +21156,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\fullcalendar\\locales\\fi.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\fr.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -20180,6 +21175,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\fr-ca.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\fr-ca.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -20213,7 +21211,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\fullcalendar\\locales\\fr-ch.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\gl.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\fr.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/fullcalendar/locales/fr.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\fullcalendar\\locales\\fr.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\gl.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -20638,6 +21657,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\fullcalendar\\locales\\pl.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\pt.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -20656,6 +21676,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\pt-br.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\pt-br.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -20672,7 +21695,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\fullcalendar\\locales\\pt-br.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\ro.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\pt.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/fullcalendar/locales/pt.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\fullcalendar\\locales\\pt.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\ro.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -20791,6 +21835,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\fullcalendar\\locales\\sq.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\sr.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -20809,6 +21854,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\sr-cyrl.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\sr-cyrl.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -20825,7 +21873,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\fullcalendar\\locales\\sr-cyrl.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\sv.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\sr.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/fullcalendar/locales/sr.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\fullcalendar\\locales\\sr.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales\\sv.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -20995,6 +22064,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\fullcalendar\\locales\\zh-tw.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\locales-all.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -21030,6 +22100,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\main.css",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\fullcalendar\\main.css",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -21318,6 +22391,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\ion-rangeslider\\License.md"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery\\jquery.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -21421,6 +22495,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery-knob\\jquery.knob.min.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery-knob\\jquery.knob.min.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -21556,6 +22633,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\jquery-mapael\\maps\\usa_states.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery-mapael\\maps\\world_countries.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -21591,6 +22669,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery-mapael\\maps\\world_countries_mercator.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery-mapael\\maps\\world_countries_mercator.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -21658,7 +22739,45 @@
       "OriginalItemSpec": "wwwroot\\plugins\\jquery-mapael\\maps\\world_countries_miller.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery-mousewheel\\jquery.mousewheel.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery-mapael\\maps\\world_countries.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/jquery-mapael/maps/world_countries.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\jquery-mapael\\maps\\world_countries.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery-mapael\\maps\\world_countries.min.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/jquery-mapael/maps/world_countries.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\jquery-mapael\\maps\\world_countries.min.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery-mousewheel\\jquery.mousewheel.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -22321,6 +23440,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\jquery-validation\\localization\\messages_el.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery-validation\\localization\\messages_es.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -22356,6 +23476,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery-validation\\localization\\messages_es_AR.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery-validation\\localization\\messages_es_AR.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -22423,7 +23546,45 @@
       "OriginalItemSpec": "wwwroot\\plugins\\jquery-validation\\localization\\messages_es_PE.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery-validation\\localization\\messages_et.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery-validation\\localization\\messages_es.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/jquery-validation/localization/messages_es.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\jquery-validation\\localization\\messages_es.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery-validation\\localization\\messages_es.min.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/jquery-validation/localization/messages_es.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\jquery-validation\\localization\\messages_es.min.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery-validation\\localization\\messages_et.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -23545,6 +24706,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\jquery-validation\\localization\\messages_sl.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery-validation\\localization\\messages_sr.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -23580,6 +24742,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery-validation\\localization\\messages_sr_lat.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery-validation\\localization\\messages_sr_lat.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -23613,7 +24778,45 @@
       "OriginalItemSpec": "wwwroot\\plugins\\jquery-validation\\localization\\messages_sr_lat.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery-validation\\localization\\messages_sv.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery-validation\\localization\\messages_sr.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/jquery-validation/localization/messages_sr.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\jquery-validation\\localization\\messages_sr.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery-validation\\localization\\messages_sr.min.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/jquery-validation/localization/messages_sr.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\jquery-validation\\localization\\messages_sr.min.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery-validation\\localization\\messages_sv.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -23851,6 +25054,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\jquery-validation\\localization\\messages_vi.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery-validation\\localization\\messages_zh.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -23886,6 +25090,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery-validation\\localization\\messages_zh_TW.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery-validation\\localization\\messages_zh_TW.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -23919,7 +25126,45 @@
       "OriginalItemSpec": "wwwroot\\plugins\\jquery-validation\\localization\\messages_zh_TW.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery-validation\\localization\\methods_de.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery-validation\\localization\\messages_zh.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/jquery-validation/localization/messages_zh.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\jquery-validation\\localization\\messages_zh.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery-validation\\localization\\messages_zh.min.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/jquery-validation/localization/messages_zh.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\jquery-validation\\localization\\messages_zh.min.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery-validation\\localization\\methods_de.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -24123,7 +25368,113 @@
       "OriginalItemSpec": "wwwroot\\plugins\\jquery-validation\\localization\\methods_pt.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jqvmap\\jquery.vmap.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery\\jquery.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/jquery/jquery.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\jquery\\jquery.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery\\jquery.min.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/jquery/jquery.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\jquery\\jquery.min.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery\\jquery.min.map",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/jquery/jquery.min.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\jquery\\jquery.min.map"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery\\jquery.slim.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/jquery/jquery.slim.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\jquery\\jquery.slim.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery\\jquery.slim.min.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/jquery/jquery.slim.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\jquery\\jquery.slim.min.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jquery\\jquery.slim.min.map",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/jquery/jquery.slim.min.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\jquery\\jquery.slim.min.map"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jqvmap\\jquery.vmap.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -24803,6 +26154,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\jsgrid\\i18n\\jsgrid-pl.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jsgrid\\i18n\\jsgrid-pt.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -24821,6 +26173,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jsgrid\\i18n\\jsgrid-pt-br.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jsgrid\\i18n\\jsgrid-pt-br.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -24837,7 +26192,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\jsgrid\\i18n\\jsgrid-pt-br.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jsgrid\\i18n\\jsgrid-ru.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jsgrid\\i18n\\jsgrid-pt.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/jsgrid/i18n/jsgrid-pt.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\jsgrid\\i18n\\jsgrid-pt.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jsgrid\\i18n\\jsgrid-ru.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -24905,7 +26281,45 @@
       "OriginalItemSpec": "wwwroot\\plugins\\jsgrid\\i18n\\jsgrid-zh-tw.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jsgrid\\jsgrid.css",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jsgrid\\jsgrid-theme.css",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/jsgrid/jsgrid-theme.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\jsgrid\\jsgrid-theme.css"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jsgrid\\jsgrid-theme.min.css",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/jsgrid/jsgrid-theme.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\jsgrid\\jsgrid-theme.min.css"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jsgrid\\jsgrid.css",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -24973,6 +26387,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\jsgrid\\jsgrid.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jsgrid\\jsgrid-theme.css",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -25008,6 +26423,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jszip\\jszip.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\jszip\\jszip.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -25058,6 +26476,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\af.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\ar.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -25076,6 +26495,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\ar-dz.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\ar-dz.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -25177,7 +26599,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\ar-tn.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\az.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\ar.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/moment/locale/ar.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\ar.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\az.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -25245,6 +26688,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\bm.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\bn.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -25263,6 +26707,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\bn-bd.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\bn-bd.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -25279,7 +26726,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\bn-bd.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\bo.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\bn.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/moment/locale/bn.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\bn.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\bo.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -25415,6 +26883,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\da.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\de.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -25433,6 +26902,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\de-at.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\de-at.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -25466,7 +26938,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\de-ch.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\dv.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\de.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/moment/locale/de.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\de.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\dv.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -25653,6 +27146,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\eo.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\es.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -25671,6 +27165,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\es-do.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\es-do.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -25721,7 +27218,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\es-us.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\et.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\es.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/moment/locale/es.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\es.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\et.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -25823,6 +27341,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\fo.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\fr.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -25841,6 +27360,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\fr-ca.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\fr-ca.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -25874,7 +27396,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\fr-ch.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\fy.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\fr.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/moment/locale/fr.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\fr.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\fy.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -26112,6 +27655,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\is.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\it.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -26130,6 +27674,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\it-ch.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\it-ch.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -26146,7 +27693,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\it-ch.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\ja.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\it.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/moment/locale/it.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\it.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\ja.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -26469,6 +28037,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\mr.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\ms.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -26487,6 +28056,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\ms-my.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\ms-my.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -26503,7 +28075,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\ms-my.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\mt.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\ms.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/moment/locale/ms.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\ms.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\mt.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -26571,6 +28164,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\ne.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\nl.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -26589,6 +28183,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\nl-be.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\nl-be.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -26605,7 +28202,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\nl-be.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\nn.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\nl.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/moment/locale/nl.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\nl.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\nn.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -26673,6 +28291,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\pl.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\pt.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -26691,6 +28310,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\pt-br.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\pt-br.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -26707,7 +28329,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\pt-br.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\ro.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\pt.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/moment/locale/pt.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\pt.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\ro.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -26843,6 +28486,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\sq.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\sr.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -26861,6 +28505,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\sr-cyrl.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\sr-cyrl.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -26877,7 +28524,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\sr-cyrl.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\ss.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\sr.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/moment/locale/sr.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\sr.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\ss.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -27030,6 +28698,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\tk.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\tlh.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -27048,6 +28717,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\tl-ph.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\tl-ph.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -27064,7 +28736,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\tl-ph.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\tr.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\tlh.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/moment/locale/tlh.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\tlh.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\tr.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -27098,6 +28791,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\tzl.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\tzm.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -27116,6 +28810,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\tzm-latn.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\tzm-latn.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -27132,7 +28829,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\tzm-latn.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\ug-cn.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\tzm.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/moment/locale/tzm.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\tzm.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\ug-cn.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -27183,6 +28901,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\ur.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\uz.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -27201,6 +28920,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\uz-latn.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\uz-latn.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -27217,7 +28939,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\uz-latn.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\vi.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\uz.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/moment/locale/uz.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\moment\\locale\\uz.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\locale\\vi.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -27387,6 +29130,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\moment\\locales.min.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\moment.min.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -27422,6 +29166,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\moment-with-locales.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\moment-with-locales.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -27472,7 +29219,45 @@
       "OriginalItemSpec": "wwwroot\\plugins\\moment\\moment-with-locales.min.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\overlayScrollbars\\css\\OverlayScrollbars.css",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\moment.min.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/moment/moment.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\moment\\moment.min.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\moment\\moment.min.js.map",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/moment/moment.min.js.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\moment\\moment.min.js.map"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\overlayScrollbars\\css\\OverlayScrollbars.css",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -30243,7 +32028,79 @@
       "OriginalItemSpec": "wwwroot\\plugins\\pdfmake\\vfs_fonts.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\popper\\esm\\popper.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\popper\\esm\\popper-utils.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/popper/esm/popper-utils.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\popper\\esm\\popper-utils.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\popper\\esm\\popper-utils.js.map",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/popper/esm/popper-utils.js.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\popper\\esm\\popper-utils.js.map"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\popper\\esm\\popper-utils.min.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/popper/esm/popper-utils.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\popper\\esm\\popper-utils.min.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\popper\\esm\\popper-utils.min.js.map",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/popper/esm/popper-utils.min.js.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\popper\\esm\\popper-utils.min.js.map"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\popper\\esm\\popper.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -30311,12 +32168,16 @@
       "OriginalItemSpec": "wwwroot\\plugins\\popper\\esm\\popper.min.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\popper\\esm\\popper-utils.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\popper\\popper-utils.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
       "BasePath": "_content/Eproject3",
-      "RelativePath": "plugins/popper/esm/popper-utils.js",
+      "RelativePath": "plugins/popper/popper-utils.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -30325,15 +32186,19 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\plugins\\popper\\esm\\popper-utils.js"
+      "OriginalItemSpec": "wwwroot\\plugins\\popper\\popper-utils.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\popper\\esm\\popper-utils.js.map",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\popper\\popper-utils.js.map",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
       "BasePath": "_content/Eproject3",
-      "RelativePath": "plugins/popper/esm/popper-utils.js.map",
+      "RelativePath": "plugins/popper/popper-utils.js.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -30342,15 +32207,19 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\plugins\\popper\\esm\\popper-utils.js.map"
+      "OriginalItemSpec": "wwwroot\\plugins\\popper\\popper-utils.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\popper\\esm\\popper-utils.min.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\popper\\popper-utils.min.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
       "BasePath": "_content/Eproject3",
-      "RelativePath": "plugins/popper/esm/popper-utils.min.js",
+      "RelativePath": "plugins/popper/popper-utils.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -30359,15 +32228,19 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\plugins\\popper\\esm\\popper-utils.min.js"
+      "OriginalItemSpec": "wwwroot\\plugins\\popper\\popper-utils.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\popper\\esm\\popper-utils.min.js.map",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\popper\\popper-utils.min.js.map",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
       "BasePath": "_content/Eproject3",
-      "RelativePath": "plugins/popper/esm/popper-utils.min.js.map",
+      "RelativePath": "plugins/popper/popper-utils.min.js.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -30376,7 +32249,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\plugins\\popper\\esm\\popper-utils.min.js.map"
+      "OriginalItemSpec": "wwwroot\\plugins\\popper\\popper-utils.min.js.map"
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\popper\\popper.js",
@@ -30447,12 +32320,16 @@
       "OriginalItemSpec": "wwwroot\\plugins\\popper\\popper.min.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\popper\\popper-utils.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\popper\\umd\\popper-utils.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
       "BasePath": "_content/Eproject3",
-      "RelativePath": "plugins/popper/popper-utils.js",
+      "RelativePath": "plugins/popper/umd/popper-utils.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -30461,15 +32338,19 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\plugins\\popper\\popper-utils.js"
+      "OriginalItemSpec": "wwwroot\\plugins\\popper\\umd\\popper-utils.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\popper\\popper-utils.js.map",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\popper\\umd\\popper-utils.js.map",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
       "BasePath": "_content/Eproject3",
-      "RelativePath": "plugins/popper/popper-utils.js.map",
+      "RelativePath": "plugins/popper/umd/popper-utils.js.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -30478,15 +32359,19 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\plugins\\popper\\popper-utils.js.map"
+      "OriginalItemSpec": "wwwroot\\plugins\\popper\\umd\\popper-utils.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\popper\\popper-utils.min.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\popper\\umd\\popper-utils.min.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
       "BasePath": "_content/Eproject3",
-      "RelativePath": "plugins/popper/popper-utils.min.js",
+      "RelativePath": "plugins/popper/umd/popper-utils.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -30495,15 +32380,19 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\plugins\\popper\\popper-utils.min.js"
+      "OriginalItemSpec": "wwwroot\\plugins\\popper\\umd\\popper-utils.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\popper\\popper-utils.min.js.map",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\popper\\umd\\popper-utils.min.js.map",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
       "BasePath": "_content/Eproject3",
-      "RelativePath": "plugins/popper/popper-utils.min.js.map",
+      "RelativePath": "plugins/popper/umd/popper-utils.min.js.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -30512,7 +32401,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\plugins\\popper\\popper-utils.min.js.map"
+      "OriginalItemSpec": "wwwroot\\plugins\\popper\\umd\\popper-utils.min.js.map"
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\popper\\umd\\popper.js",
@@ -30600,6 +32489,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\popper\\umd\\popper.min.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\popper\\umd\\popper-utils.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -30669,6 +32559,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\raphael\\Gruntfile.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\raphael\\Gruntfile.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -30770,7 +32663,45 @@
       "OriginalItemSpec": "wwwroot\\plugins\\raphael\\raphael.no-deps.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\select2\\css\\select2.css",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\select2-bootstrap4-theme\\select2-bootstrap4.css",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/select2-bootstrap4-theme/select2-bootstrap4.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\select2-bootstrap4-theme\\select2-bootstrap4.css"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\select2-bootstrap4-theme\\select2-bootstrap4.min.css",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\select2-bootstrap4-theme\\select2-bootstrap4.min.css"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\select2\\css\\select2.css",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -31535,6 +33466,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\select2\\js\\i18n\\ps.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\select2\\js\\i18n\\pt.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -31553,6 +33485,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\select2\\js\\i18n\\pt-BR.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\select2\\js\\i18n\\pt-BR.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -31569,7 +33504,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\select2\\js\\i18n\\pt-BR.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\select2\\js\\i18n\\ro.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\select2\\js\\i18n\\pt.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/select2/js/i18n/pt.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\select2\\js\\i18n\\pt.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\select2\\js\\i18n\\ro.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -31654,6 +33610,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\select2\\js\\i18n\\sq.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\select2\\js\\i18n\\sr.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -31672,6 +33629,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\select2\\js\\i18n\\sr-Cyrl.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\select2\\js\\i18n\\sr-Cyrl.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -31688,7 +33648,28 @@
       "OriginalItemSpec": "wwwroot\\plugins\\select2\\js\\i18n\\sr-Cyrl.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\select2\\js\\i18n\\sv.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\select2\\js\\i18n\\sr.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/select2/js/i18n/sr.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\select2\\js\\i18n\\sr.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\select2\\js\\i18n\\sv.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -31892,6 +33873,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\select2\\js\\select2.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\select2-bootstrap4-theme\\select2-bootstrap4.css",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -31927,6 +33909,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\sparklines\\sparkline.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\sparklines\\sparkline.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -34442,6 +36427,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\summernote\\lang\\summernote-sl-SI.min.js.LICENSE.txt"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\summernote\\lang\\summernote-sr-RS.js",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -34511,6 +36497,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\summernote\\lang\\summernote-sr-RS-Latin.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\summernote\\lang\\summernote-sr-RS-Latin.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -34578,7 +36567,79 @@
       "OriginalItemSpec": "wwwroot\\plugins\\summernote\\lang\\summernote-sr-RS-Latin.min.js.LICENSE.txt"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\summernote\\lang\\summernote-sv-SE.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\summernote\\lang\\summernote-sr-RS.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/summernote/lang/summernote-sr-RS.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\summernote\\lang\\summernote-sr-RS.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\summernote\\lang\\summernote-sr-RS.js.map",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/summernote/lang/summernote-sr-RS.js.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\summernote\\lang\\summernote-sr-RS.js.map"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\summernote\\lang\\summernote-sr-RS.min.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/summernote/lang/summernote-sr-RS.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\summernote\\lang\\summernote-sr-RS.min.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\summernote\\lang\\summernote-sr-RS.min.js.LICENSE.txt",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/summernote/lang/summernote-sr-RS.min.js.LICENSE.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\summernote\\lang\\summernote-sr-RS.min.js.LICENSE.txt"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\summernote\\lang\\summernote-sv-SE.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -35258,6 +37319,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\summernote\\plugin\\specialchars\\summernote-ext-specialchars.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\summernote\\summernote.css",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -35395,6 +37457,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\summernote\\summernote-bs4.css",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\summernote\\summernote-bs4.css",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -35768,7 +37833,181 @@
       "OriginalItemSpec": "wwwroot\\plugins\\summernote\\summernote-lite.min.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\sweetalert2\\sweetalert2.all.js",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\summernote\\summernote.css",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/summernote/summernote.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\summernote\\summernote.css"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\summernote\\summernote.css.map",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/summernote/summernote.css.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\summernote\\summernote.css.map"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\summernote\\summernote.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/summernote/summernote.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\summernote\\summernote.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\summernote\\summernote.js.map",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/summernote/summernote.js.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\summernote\\summernote.js.map"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\summernote\\summernote.min.css",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/summernote/summernote.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\summernote\\summernote.min.css"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\summernote\\summernote.min.js",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/summernote/summernote.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\summernote\\summernote.min.js"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\summernote\\summernote.min.js.LICENSE.txt",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/summernote/summernote.min.js.LICENSE.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\summernote\\summernote.min.js.LICENSE.txt"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\summernote\\summernote.min.js.map",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/summernote/summernote.min.js.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\summernote\\summernote.min.js.map"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\sweetalert2-theme-bootstrap-4\\bootstrap-4.css",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\sweetalert2-theme-bootstrap-4\\bootstrap-4.css"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\sweetalert2-theme-bootstrap-4\\bootstrap-4.min.css",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\sweetalert2-theme-bootstrap-4\\bootstrap-4.min.css"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\sweetalert2\\sweetalert2.all.js",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
@@ -35870,6 +38109,7 @@
       "OriginalItemSpec": "wwwroot\\plugins\\sweetalert2\\sweetalert2.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\sweetalert2-theme-bootstrap-4\\bootstrap-4.css",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -35905,6 +38145,9 @@
     },
     {
       "Identity": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\tempusdominus-bootstrap-4\\css\\tempusdominus-bootstrap-4.css",
+=======
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\plugins\\tempusdominus-bootstrap-4\\css\\tempusdominus-bootstrap-4.css",
+>>>>>>> main
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",

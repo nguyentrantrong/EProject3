@@ -24,12 +24,13 @@ namespace Eproject3.Models
         public virtual DbSet<MaintainceDevice> MaintainceDevices { get; set; } = null!;
         public virtual DbSet<Slot> Slots { get; set; } = null!;
         public virtual DbSet<Supplier> Suppliers { get; set; } = null!;
+        public virtual DbSet<Notification> Notifications { get; set; } = null!;
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("server=DESKTOP-9R59LGC\\TRONG;Database=eProject3;uid=sa;pwd=160803");
+                optionsBuilder.UseSqlServer("server=.;database=eProject3;uid=sa;pwd=1");
             }
         }
 
@@ -59,10 +60,6 @@ namespace Eproject3.Models
 
                 entity.Property(e => e.Description).HasColumnName("description");
 
-                entity.Property(e => e.Id)
-                    .HasMaxLength(50)
-                    .HasColumnName("ID");
-
                 entity.Property(e => e.StatusCp).HasColumnName("Status_CP");
 
                 //entity.HasOne(d => d.Admins)
@@ -79,7 +76,7 @@ namespace Eproject3.Models
                 entity.HasKey(e => e.DevicesId)
                     .HasName("PK__Devices__36D9232A03FD987F");
 
-                entity.Property(e => e.DevicesId).HasColumnName("Devices_ID");
+                entity.Property(e => e.DevicesId).HasColumnName("DevicesId");
 
                 entity.Property(e => e.DateMaintance).HasColumnType("datetime");
 
@@ -140,11 +137,7 @@ namespace Eproject3.Models
 
                 entity.Property(e => e.Descriptions).IsUnicode(false);
 
-                entity.Property(e => e.DevicesId).HasColumnName("Devices_ID");
-
-                entity.Property(e => e.Id)
-                    .HasMaxLength(50)
-                    .HasColumnName("ID");
+                entity.Property(e => e.DevicesId).HasColumnName("DevicesId");
 
                 entity.Property(e => e.IsFinished).HasColumnName("isFinished");
 

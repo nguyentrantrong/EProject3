@@ -50,7 +50,7 @@
                         </dd>
                     </dl>
 
-                    <form asp-action="Delete">
+                    <form asp-action="Delete" onsubmit="submit(event)" id="myform">
                         <input type="hidden" asp-for="Id" />
                         <input type="submit" value="Delete" class="btn btn-danger" /> |
                         <a asp-action="Index">Back to List</a>
@@ -60,3 +60,22 @@
         </div>
     </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    function submit(e) {
+        e.preventDefault();
+        Swal.fire({
+            title: 'Are you sure?',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then(result => {
+            if (result.isConfirmed) {
+                const myform = document.getElementById('myform');
+                myform.submit();
+            }
+        })
+    }
+</script>

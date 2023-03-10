@@ -12,7 +12,7 @@ namespace Eproject3.Models
         public DateTime DateCp { get; set; }
         public string Category { get; set; }
         public string Id { get; set; }
-        public string Reply { get; set; } = null;
+        public string Reply { get; set; }
 
     }
 }

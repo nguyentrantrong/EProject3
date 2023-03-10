@@ -305,6 +305,7 @@
       "PackagePath": "staticwebassets\\images\\273155787_506176694206507_9077340921652382191_n.jpg"
     },
     {
+<<<<<<< HEAD
       "Id": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\My party.png",
       "PackagePath": "staticwebassets\\images\\My party.png"
     },
@@ -314,6 +315,33 @@
     },
     {
       "Id": "D:\\eProject3\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\b4.gif",
+=======
+      "Id": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\305439358_486892073262230_3587136534864156215_n.jpg",
+      "PackagePath": "staticwebassets\\images\\305439358_486892073262230_3587136534864156215_n.jpg"
+    },
+    {
+      "Id": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\Logo.jpg",
+      "PackagePath": "staticwebassets\\images\\Logo.jpg"
+    },
+    {
+      "Id": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\Screenshot 2021-07-20 004624.png",
+      "PackagePath": "staticwebassets\\images\\Screenshot 2021-07-20 004624.png"
+    },
+    {
+      "Id": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\b1.gif",
+      "PackagePath": "staticwebassets\\images\\b1.gif"
+    },
+    {
+      "Id": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\b2.gif",
+      "PackagePath": "staticwebassets\\images\\b2.gif"
+    },
+    {
+      "Id": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\b3.gif",
+      "PackagePath": "staticwebassets\\images\\b3.gif"
+    },
+    {
+      "Id": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\b4.gif",
+>>>>>>> main
       "PackagePath": "staticwebassets\\images\\b4.gif"
     },
     {

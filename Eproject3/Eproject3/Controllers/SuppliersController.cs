@@ -40,6 +40,22 @@ namespace Eproject3.Controllers{
             }
             return View();
         }
+        [Authorize(Roles = "admin")]
+        public ActionResult Delete(int id)
+        {
+            var model = db.Suppliers.Where(s => s.SupplierId == id).FirstOrDefault();
+            if(model != null)
+            {
+                db.Suppliers.Remove(model);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return NoContent();
+            }
+            return View();
+        }
     }
 
 }

@@ -12,7 +12,7 @@
             <div class="row mb-2">
                 <div class="col-sm-6">
                     <!-- /.col -->
-                    @if (user?.Role == "admin")
+                    @if (user?.Role == "constructor")
                     {
                         <div class="col-sm-6 text-right">
                             <ol class="breadcrumb">
@@ -98,6 +98,7 @@
     <!-- /.content -->
 </div>
 <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+
 <script>
     $(document).ready(function () {
         $("#deviceTable").DataTable({

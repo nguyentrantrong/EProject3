@@ -45,7 +45,6 @@ namespace Eproject3.Controllers
             newComplain.StatusCp = "Pending";
             newComplain.DateCp = DateTime.Now;
             newComplain.Category = newCPL.Category;
-            newComplain.Id = newCPL.Id;
             newComplain.Reply = "";
             db.Complains.Add(newComplain);
             db.SaveChanges();
@@ -69,7 +68,6 @@ namespace Eproject3.Controllers
                 model.Reason = newCPL.Reason;
                 model.DateCp = DateTime.Now;
                 model.Category = newCPL.Category;
-                model.Id = newCPL.Id;
                 model.Reply = newCPL.Reply;
                 if(model.Reply != null)
                 {

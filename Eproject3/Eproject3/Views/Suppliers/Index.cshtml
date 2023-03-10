@@ -10,9 +10,9 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                <!-- /.col -->
-                @if (user?.Role == "admin")
-                {
+                    <!-- /.col -->
+                    @if (user?.Role == "admin")
+                    {
                         <div class="col-sm-6 text-right">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item">
@@ -22,8 +22,8 @@
                                 </li>
                             </ol>
                         </div>
-                    <!-- /.col -->
-                }
+                        <!-- /.col -->
+                    }
                 </div>
             </div><!-- /.row -->
         </div><!-- /.container-fluid -->
@@ -54,9 +54,12 @@
                                             @if (user?.Role == "admin")
                                             {
                                                 <td>
-                                                    <a asp-action="Delete" asp-controller="Suppliers" asp-route-id="@item.SupplierId" class="btn btn-outline-danger">
+                                                    <button onclick="displayText()" class="btn btn-outline-danger">
+                                                        <a asp-action="Delete" asp-controller="Suppliers" asp-route-id="@item.SupplierId" >
                                                         <i class="fas fa-trash"></i> Delete
-                                                    </a>
+                                                        </a>
+                                                    </button>
+                                                    
                                                 </td>
                                             }
                                         </tr>
@@ -75,23 +78,35 @@
         <!-- /.container-fluid -->
     </section>
     <!-- /.content -->
-    </div>
-    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#adminTable").DataTable({
-                "paging": true,
-                "lengthChange": false,
-                "searching": true,
-                "ordering": true,
-                "info": true,
-                "autoWidth": false,
-                "language": {
-                    "paginate": {
-                        "next": "<i class='fas fa-chevron-right'></i>",
-                        "previous": "<i class='fas fa-chevron-left'></i>"
-                    }
+</div>
+<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    $(document).ready(function () {
+        $("#adminTable").DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": true,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false,
+            "language": {
+                "paginate": {
+                    "next": "<i class='fas fa-chevron-right'></i>",
+                    "previous": "<i class='fas fa-chevron-left'></i>"
                 }
-            });
+            }
         });
-    </script>
+    });
+</script>
+<script>
+    function displayText() {
+        Swal.fire({
+            position: 'top-end',
+            icon: 'error',
+            title: 'You Can not delete it',
+            showConfirmButton: false,
+            timer: 2000
+        })
+    }
+</script>
