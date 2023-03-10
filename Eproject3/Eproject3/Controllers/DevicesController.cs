@@ -113,7 +113,7 @@ namespace Eproject3.Controllers
 			{
 				model.DeviceName = device.DeviceName;
 				model.DeviceType = device.DeviceType;
-				model.Status = device.Status;
+				model.Status = "Active";
 				model.DateMaintance = device.DateMaintance;
 				if (file != null)
 				{

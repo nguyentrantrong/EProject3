@@ -50,7 +50,7 @@ create table Complain
 	Date_CP datetime not null,
 	Category nvarchar(max) not null,
 	ID nvarchar(50) not null,
-	Reply nvarchar(max) null,
+	Reply nvarchar(max) null
 )
 go  
 create table Event
@@ -74,7 +74,7 @@ create table MaintainceDevices
 	Date datetime,
 	Creater varchar(MAX),
 	Devices_ID int not null,
-	ID nvarchar(50) null,
+	ID nvarchar(50) not null,
 	Status varchar(MAX),
 	Step int,
 	isFinished bit

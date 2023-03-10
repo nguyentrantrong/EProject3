@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dRDbB6t0h7wt1lxE4MucdmGaCEtRNnBf1NajR+6Vjoo=",
+  "Hash": "VPtq7ayuqpHtNiXXHH/Khao0B6/QpEYmO10Eq1div5I=",
   "Source": "Eproject3",
   "BasePath": "_content/Eproject3",
   "Mode": "Default",
@@ -1292,6 +1292,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\04c7ca4c2180093e82339377556d973a.jfif",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "images/04c7ca4c2180093e82339377556d973a.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\04c7ca4c2180093e82339377556d973a.jfif"
+    },
+    {
       "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\273155787_506176694206507_9077340921652382191_n.jpg",
       "SourceId": "Eproject3",
       "SourceType": "Discovered",
@@ -1341,6 +1358,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\b4.gif"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\Desktop_computer_clipart_-_Yellow_theme.svg.png",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "images/Desktop_computer_clipart_-_Yellow_theme.svg.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Desktop_computer_clipart_-_Yellow_theme.svg.png"
+    },
+    {
+      "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\images.jfif",
+      "SourceId": "Eproject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\",
+      "BasePath": "_content/Eproject3",
+      "RelativePath": "images/images.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\images.jfif"
     },
     {
       "Identity": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\Logo.jpg",

@@ -297,8 +297,16 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\04c7ca4c2180093e82339377556d973a.jfif",
+      "PackagePath": "staticwebassets\\images\\04c7ca4c2180093e82339377556d973a.jfif"
+    },
+    {
       "Id": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\273155787_506176694206507_9077340921652382191_n.jpg",
       "PackagePath": "staticwebassets\\images\\273155787_506176694206507_9077340921652382191_n.jpg"
+    },
+    {
+      "Id": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\Desktop_computer_clipart_-_Yellow_theme.svg.png",
+      "PackagePath": "staticwebassets\\images\\Desktop_computer_clipart_-_Yellow_theme.svg.png"
     },
     {
       "Id": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\Logo.jpg",
@@ -311,6 +319,10 @@
     {
       "Id": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\b4.gif",
       "PackagePath": "staticwebassets\\images\\b4.gif"
+    },
+    {
+      "Id": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\images.jfif",
+      "PackagePath": "staticwebassets\\images\\images.jfif"
     },
     {
       "Id": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\wwwroot\\images\\z3909476167533_cc268ead65a2ac3bd13a5c1f35737eb5.jpg",
