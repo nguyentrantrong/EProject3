@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Eproject3.Models;
 using Microsoft.AspNetCore.Authorization;
 using System.Data;
+using DocumentFormat.OpenXml.Spreadsheet;
 
 namespace Eproject3.Controllers
 {
@@ -24,7 +25,7 @@ namespace Eproject3.Controllers
         [Authorize(Roles = "admin, constructor, maintainer")]
         public async Task<IActionResult> Index()
         {
-            var eProject3Context = _context.MaintainceDevices.Include(m => m.Devices).Where(m => m.Step == 1 || m.Step == -99);
+            var eProject3Context = _context.MaintainceDevices.Include(m => m.Devices).Where(m => m.Step == 1 || m.Step == -99 || m.Step == 4);
             return View(await eProject3Context.ToListAsync());
         }
 
@@ -43,7 +44,14 @@ namespace Eproject3.Controllers
             {
                 return NotFound();
             }
-
+            // check if user have notification 
+            var noties = _context.Notifications.Where(x=>x.Url =="/MaintainceDevices/Details/"+id && x.SendFor == User.Identity.Name).ToList();
+            //if user have notification => remove all
+            if (noties != null)
+            {
+                _context.Notifications.RemoveRange(noties);
+                await _context.SaveChangesAsync();
+            }
             var maintainceDevice = await _context.MaintainceDevices
                 .Include(m => m.Devices)
                 .FirstOrDefaultAsync(m => m.MaintnId == id);
@@ -56,7 +64,7 @@ namespace Eproject3.Controllers
         }
 
         // GET: MaintainceDevices/Create
-        [Authorize(Roles = "admin")]
+        [Authorize(Roles = "constructor")]
         public IActionResult Create()
         {
             ViewData["DevicesId"] = new SelectList(_context.Devices, "DevicesId", "DeviceName");
@@ -68,7 +76,7 @@ namespace Eproject3.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = "admin")]
+        [Authorize(Roles = "constructor")]
         public async Task<IActionResult> Create([Bind("MaintnId,Descriptions,Reason,Date,Creater,DevicesId,Id")] MaintainceDevice maintainceDevice)
         {
             MaintainceDevice newMaintaince = new MaintainceDevice();
@@ -81,6 +89,18 @@ namespace Eproject3.Controllers
             newMaintaince.Step = 1;
             //newMaintaince.Status = "pending";
             _context.Add(newMaintaince);
+            await _context.SaveChangesAsync();
+            //Notification for admin 
+            var admins = _context.Admins.Where(x=>x.Role=="admin").ToList();
+            foreach(var admin in admins)
+            {
+                _context.Add(new Notification
+                {
+                    SendFor = admin.AdminName,
+                    Content = User.Identity.Name +" has submitted a new maintaince devices",
+                    Url = "/MaintainceDevices/Details/"+ newMaintaince.MaintnId
+                });
+            }
             await _context.SaveChangesAsync();
             ViewData["DevicesId"] = new SelectList(_context.Devices, "DevicesId", "DeviceName", maintainceDevice.DevicesId);
             return RedirectToAction(nameof(Index));
@@ -195,6 +215,28 @@ namespace Eproject3.Controllers
                 }
                 _context.Update(request);
                 _context.Update(req);
+                if (request.Step != 4)
+                {
+                    var admins = _context.Admins.Where(x => x.Role == "maintainer").ToList();
+                    foreach (var admin in admins)
+                    {
+                        _context.Add(new Notification
+                        {
+                            SendFor = admin.AdminName,
+                            Content = User.Identity.Name + " has submitted a new maintaince devices",
+                            Url = "/MaintainceDevices/Details/" + request.MaintnId
+                        });
+                    }
+                }
+                else
+                {
+                    _context.Notifications.Add(new Notification
+                    {
+                        SendFor = request.Creater,
+                        Content = "Your new maintaince devices has been finish approval",
+                        Url = "/MaintainceDevices/Details/" + request.MaintnId
+                    });
+                }
                 _context.SaveChanges();
             }
             var user = _context.Admins.Where(a => a.AdminName == User.Identity.Name).FirstOrDefault();
@@ -207,18 +249,21 @@ namespace Eproject3.Controllers
                 return RedirectToAction(nameof(Index));
             }
         }
+        [HttpGet]
         public async Task<IActionResult> DisApprove(int id)
         {
             var request = await _context.MaintainceDevices.FirstOrDefaultAsync(req => req.MaintnId == id);
-            var req = await _context.Devices.FirstOrDefaultAsync(req => req.DevicesId == id);
+            var req = await _context.Devices.FirstOrDefaultAsync(req => req.DevicesId == request.DevicesId);
             if(request != null)
             {
                 request.Step = -99;
                 req.Status = "Deactivate";
                 _context.Update(request);
+                _context.Update(req);
                 _context.SaveChanges();
+                
             }
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Index");
         }
         
     }

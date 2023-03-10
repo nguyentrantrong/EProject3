@@ -9,9 +9,9 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                <!-- /.col -->
-                @if (user?.Role == "admin")
-                {
+                    <!-- /.col -->
+                    @if (user?.Role == "admin")
+                    {
                         <div class="col-sm-6 text-right">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item">
@@ -22,8 +22,8 @@
                             </ol>
                         </div>
 
-                    <!-- /.col -->
-                }
+                        <!-- /.col -->
+                    }
                 </div>
             </div><!-- /.row -->
         </div><!-- /.container-fluid -->
@@ -53,10 +53,11 @@
                                             <td>@item.LabsName</td>
                                             <td>@string.Join(", ", item.Slots.Select(s => s.Admins.AdminName))</td>
                                             <td>
-                                            @if (user?.Role == "admin")
-                                            {
-                                                <a asp-action="Delete" asp-route-id="@item.LabsId" class="btn btn-outline-danger"><i class="fas fa-trash"></i> Delete</a>
-                                            }
+                                                @if (user?.Role == "admin")
+                                                {
+                                                    <button class="btn btn-outline-danger" onclick="displayTextDanger()"><a asp-action="Delete" asp-route-id="@item.LabsId" ><i class="fas fa-trash"></i> Delete</a></button>
+                                                    
+                                                }
                                                 <a asp-action="DevicesList" asp-route-id="@item.LabsId" class="btn btn-outline-primary"><i class="fas fa-circle-info"></i> See more</a>
                                             </td>
                                         </tr>
@@ -75,23 +76,35 @@
         <!-- /.container-fluid -->
     </section>
     <!-- /.content -->
-    </div>
-    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#adminTable").DataTable({
-                "paging": true,
-                "lengthChange": false,
-                "searching": true,
-                "ordering": true,
-                "info": true,
-                "autoWidth": false,
-                "language": {
-                    "paginate": {
-                        "next": "<i class='fas fa-chevron-right'></i>",
-                        "previous": "<i class='fas fa-chevron-left'></i>"
-                    }
+</div>
+<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    $(document).ready(function () {
+        $("#adminTable").DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": true,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false,
+            "language": {
+                "paginate": {
+                    "next": "<i class='fas fa-chevron-right'></i>",
+                    "previous": "<i class='fas fa-chevron-left'></i>"
                 }
-            });
+            }
         });
-    </script>
+    });
+</script>
+<script>
+    function displayTextDanger() {
+        Swal.fire({
+            position: 'top-end',
+            icon: 'error',
+            title: 'You Can not delete it',
+            showConfirmButton: false,
+            timer: 2000
+        })
+    }
+</script>
