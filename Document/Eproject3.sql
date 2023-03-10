@@ -50,9 +50,7 @@ create table Complain
 	Date_CP datetime not null,
 	Category nvarchar(max) not null,
 	ID nvarchar(50) not null,
-	CONSTRAINT fk_admins_Admin_ID
-    FOREIGN KEY (ID)
-    REFERENCES Admins (ID)
+	Reply nvarchar(max) null,
 )
 go  
 create table Event
@@ -76,7 +74,7 @@ create table MaintainceDevices
 	Date datetime,
 	Creater varchar(MAX),
 	Devices_ID int not null,
-	ID nvarchar(50) not null,
+	ID nvarchar(50) null,
 	Status varchar(MAX),
 	Step int,
 	isFinished bit

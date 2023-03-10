@@ -29,7 +29,7 @@ namespace Eproject3.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("server=.\\SQLEXPRESS;database=eProject3;Trusted_connection=true");
+                optionsBuilder.UseSqlServer("server=DESKTOP-9R59LGC\\TRONG;Database=eProject3;uid=sa;pwd=160803");
             }
         }
 
@@ -157,32 +157,6 @@ namespace Eproject3.Models
                     .HasForeignKey(d => d.DevicesId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_Device_Devices_ID");
-            });
-
-            modelBuilder.Entity<Report>(entity =>
-            {
-                entity.ToTable("report");
-
-                entity.Property(e => e.ReportId).HasColumnName("Report_ID");
-
-                entity.Property(e => e.ComplainId).HasColumnName("Complain_ID");
-
-                entity.Property(e => e.Descriptions).IsUnicode(false);
-
-                entity.Property(e => e.DevicesId)
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("Devices_ID");
-
-                entity.Property(e => e.Reciver).IsUnicode(false);
-
-                entity.Property(e => e.ReportDate).HasColumnType("datetime");
-
-                entity.HasOne(d => d.Devices)
-                    .WithMany(p => p.Reports)
-                    .HasForeignKey(d => d.DevicesId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("fk_Devices_Devices_ID");
             });
 
             modelBuilder.Entity<Slot>(entity =>

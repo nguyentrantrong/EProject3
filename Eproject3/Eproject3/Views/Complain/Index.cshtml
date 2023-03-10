@@ -1,73 +1,104 @@
 ﻿@model List<Eproject3.Models.Complain>
 @{
 	Layout = "~/Views/Shared/_Layout.cshtml";
+    Admin? user = Context.Items["User"] as Admin;
 }
 
 <div class="content-wrapper">
-	<!-- Content Header (Page header) -->
-	<div class="content-header">
-		<div class="container-fluid">
-			<div class="row mb-2">
-				<div class="col-sm-6">
-				</div><!-- /.col -->
-			</div><!-- /.row -->
-		</div><!-- /.container-fluid -->
-	</div>
-	<!-- /.content-header -->
-	<section class="content">
-		<div class="container">
-			<a asp-action="Create" style="text-align-center" class="btn btn-primary">
-				<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-					<path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-				</svg>
-				COMPLAIN
-			</a>
-
-			@* <i class="bi bi-plus"></i> *@
-			<br><br>
-			<div class="row">
-				<table class="table table-bordered" id="deviceTable">
-					<thead class="thead-dark">
-						<tr>
-							<th>Complain By</th>
-							<th>Description</th>
-							<th>Reason</th>
-							<th>Devices</th>
-							<th>Status</th>
-							<th>Date</th>
-							<th>Action</th>
-						</tr>
-					</thead>
-					<tbody>
-						@foreach (var item in Model)
-						{
-							<tr>
-								<td>@item.Id</td>
-								<td>@item.Description</td>
-								<td>@item.Reason</td>
-								<td>@item.Category</td>
-								<td>
-									<span class="badge bg-primary">
-										@item.StatusCp
-									</span>
-								</td>
-								<td>@item.DateCp</td>
-								<td>
-									<a asp-action="Details" asp-route-id="@item.ComplainId" class="btn btn-info">Details</a>
-									<a asp-action="EditComplain" asp-route-id="@item.ComplainId" class="btn btn-warning">Reply</a>
-								</td>
-							</tr>
-						}
-
-					</tbody>
-
-				</table>
-				@* Table Hay card gì đó tự build *@
-
-			</div>
-		</div>
-	</section>
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <!-- /.col -->
+                        <div class="col-sm-6 text-right">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                </li>
+                            </ol>
+                        </div>
+                        <!-- /.col -->
+                </div>
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body table-responsive">
+                            <table class="table table-bordered table-hover text-nowrap" id="adminTable">
+                                <thead>
+                                    <tr>
+                                        <th>Complain By</th>
+							            <th>Description</th>
+							            <th>Reason</th>
+							            <th>Devices</th>
+							            <th>Status</th>
+							            <th>Date</th>
+							            <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>@item.Id</td>
+								            <td>@item.Description</td>
+								            <td>@item.Reason</td>
+								            <td>@item.Category</td>
+								            <td>
+									            <span class="badge bg-primary">
+										            @item.StatusCp
+									            </span>
+								            </td>
+								            <td>@item.DateCp</td>
+                                            <td>
+                                                @if (user?.Role == "admin")
+                                                {
+                                                    <a asp-action="EditComplain" asp-route-id="@item.ComplainId" class="btn btn-outline-warning"><i class="fas fa-reply"></i> Reply</a>
+                                                }
+                                                <a asp-action="Details" asp-route-id="@item.ComplainId" class="btn btn-outline-info"><i class="fas fa-circle-info"></i> Details</a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
 </div>
+<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#adminTable").DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": true,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false,
+            "language": {
+                "paginate": {
+                    "next": "<i class='fas fa-chevron-right'></i>",
+                    "previous": "<i class='fas fa-chevron-left'></i>"
+                }
+            }
+        });
+    });
+</script>
 
 <script src="//cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
 <script>

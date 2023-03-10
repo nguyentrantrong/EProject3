@@ -15,6 +15,7 @@ using iTextSharp.text.pdf;
 using iTextSharp.tool.xml;
 using System.Text;
 using iTextSharp.text;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Eproject3.Controllers
 {
