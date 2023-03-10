@@ -45,11 +45,12 @@ namespace Eproject3.Controllers
             newComplain.StatusCp = "Pending";
             newComplain.DateCp = DateTime.Now;
             newComplain.Category = newCPL.Category;
+            newComplain.Id = newCPL.Id;
             newComplain.Reply = "";
             db.Complains.Add(newComplain);
             db.SaveChanges();
             //ViewData["Id"] = new SelectList(db.Admins, "Id", "AdminName", newCPL.Id);
-            return RedirectToAction("Index");
+            return RedirectToAction("IndexUser");
         }
         
         [HttpGet]
