@@ -3,23 +3,23 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
     Admin? user = Context.Items["User"] as Admin;
 }
-<div class="content-wrapper">
 
     <div class="container">
-        <h1>Create</h1>
-        <h4>COMPLAIN</h4>
-        <hr />
-        <div class="row">
-            <div class="col-md-4">
-                <form asp-action="Create" method="post" asp-controller="Complain">
-                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-
-                    <div class="form-group">
-                        <label asp-for="Description" class="control-label"></label>
-                        <input asp-for="Description" class="form-control" placeholder="Enter to Description" required />
-                        <span asp-validation-for="Description" class="text-danger"></span>
-                    </div>
-                    <div class="form-group">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header text-black text-center">
+                    <h3>Create Your Complain</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Create" method="post" asp-controller="Complain">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group">
+                            <label asp-for="Description" class="control-label"></label>
+                            <input asp-for="Description" class="form-control" placeholder="Enter to Description" required />
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
                             <label asp-for="Reason" class="control-label"></label>
                             <select asp-for="Reason" class="form-control" required>
                                 <option>----SELECT----</option>
@@ -32,34 +32,40 @@
                                 <option>----SELECT----</option>
                             </select>
                         </div>
-
-                    <div class="form-group">
-                        <span asp-validation-for="DateCp" class="text-danger"></span>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-select mt-3" asp-for="Category" class="control-label"></label>
-                        <select asp-for="Category" class="form-control" required>
-                            <option>----SELECT----</option>
-                            <option value="Electronic Devices">Electronic Devices</option>
-                            <option value="Learning Facilities">Learning Facilities</option>
-                            <option value="Other Problems">Other Problems</option>
-                            <option>..........</option>
-                            <option>----SELECT----</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label asp-for="Id" class="control-label"></label>
-                        <input asp-for="Id" value="@user.AdminName" class="form-control" readonly />
-                    </div>
-                    <div class="form-group">
-                        <input type="submit" value="COMMIT" class="btn btn-primary" />
-                    </div>
-                </form>
-                <a asp-action="Index">Back to List</a>
+                        @* <div class="form-group">
+                            <label asp-for="StatusCp" class="control-label"></label>
+                            <input asp-for="StatusCp" class="form-control" value="Pending" readonly required />
+                            <span asp-validation-for="StatusCp" class="text-danger"></span>
+                        </div> *@
+                        <div class="form-group">
+                            <span asp-validation-for="DateCp" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-select mt-3" asp-for="Category" class="control-label"></label>
+                            <select asp-for="Category" class="form-control" required>
+                                <option>----SELECT----</option>
+                                <option value="Electronic Devices">Electronic Devices</option>
+                                <option value="Learning Facilities">Learning Facilities</option>
+                                <option value="Other Problems">Other Problems</option>
+                                <option>..........</option>
+                                <option>----SELECT----</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Id" class="control-label"></label>
+                            <input asp-for="Id" value="@user.AdminName" class="form-control" readonly/>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success btn-block">Post</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer text-center">
+                    <a asp-action="Index" asp-controller="Complain" class="btn btn-outline-secondary">Back To List</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </div>
 
 <style>
@@ -82,4 +88,4 @@
             background-color: #495057;
             border-color: #495057;
         }
-</style>
+</style >

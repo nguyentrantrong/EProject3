@@ -82,19 +82,20 @@
                                                 <img src="@item.DeviceImg" width="100px" height="100px" />
                                             </td>
                                             <td>
+
                                                 <a asp-action="Details" asp-route-id="@item.DevicesId" class="btn btn-outline-primary"><i class="fas fa-circle-info"></i> Details</a>
                                                 @if (user?.Role == "admin")
                                                 {
-                                                    <a asp-action="EditDevices" asp-route-id="@item.DevicesId" class="btn btn-outline-info"><i class="fas fa-edit"></i> Edit</a>
-                                                }
+                                                    <a asp-action="EditDevices" asp-route-id="@item.DevicesId" class="btn btn-outline-info"><i class="fas fa-edit"></i> Edit</a>    
+                                                    <a asp-action="DeleteDevice" asp-route-id="@item.DevicesId" class="btn btn-outline-danger"><i class="fas fa-trash"></i> Delete</a>
+                                                    <br />
+                                                    <br />
+                                                    <div><a asp-action="Create" asp-controller="Complain" class="btn btn-outline-success"><i class="fas fa-laptop-medical"></i> Complain</a></div>
+                                                    
+                                                }  
                                                 @if (user?.Role == "maintainer")
                                                 {
                                                     <a asp-action="EditDevices" asp-route-id="@item.DevicesId" class="btn btn-outline-info"><i class="fas fa-edit"></i> Edit</a>
-                                                }
-                                                @if (user?.Role == "admin")
-                                                {
-                                                    <button onclick="displayTextDanger()" class="btn btn-outline-danger"><a asp-action="DeleteDevice" asp-route-id="@item.DevicesId" ><i class="fas fa-trash"></i> Delete</a></button>
-                                                    
                                                 }
                                             </td>
                                         </tr>
