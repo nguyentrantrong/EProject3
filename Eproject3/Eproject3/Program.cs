@@ -3,6 +3,7 @@ using Eproject3.middleware;
 using Eproject3.Models;
 using Eproject3.Repositories.Auth;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Http.Json;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Net;
@@ -17,6 +18,10 @@ builder.Services.AddScoped<Supplier>();
 builder.Services.AddScoped<IDAL, IDAL.DAL>();
 builder.Services.AddScoped<IAuthentication, AuthenticationService>();
 builder.Services.AddDbContext<eProject3Context>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectDb")));
+builder.Services.Configure<JsonOptions>(options =>
+{
+    options.SerializerOptions.PropertyNameCaseInsensitive = true;
+});
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;

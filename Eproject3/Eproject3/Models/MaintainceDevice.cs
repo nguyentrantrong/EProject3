@@ -11,7 +11,6 @@ namespace Eproject3.Models
         public DateTime? Date { get; set; }
         public string? Creater { get; set; }
         public int DevicesId { get; set; }
-        public string Id { get; set; } = null!;
         public string? Status { get; set; }
         public int? Step { get; set; }
         public bool IsFinished { get; set; }

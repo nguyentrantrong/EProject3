@@ -10,14 +10,14 @@
         "projectUniqueName": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\Eproject3.csproj",
         "projectName": "Eproject3",
         "projectPath": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\Eproject3.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\DUNG\\.nuget\\packages\\",
         "outputPath": "D:\\Project\\Eproject3\\Eproject3\\Eproject3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DUNG\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -109,7 +109,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200-preview.22628.1\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

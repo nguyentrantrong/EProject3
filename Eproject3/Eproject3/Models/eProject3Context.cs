@@ -24,12 +24,13 @@ namespace Eproject3.Models
         public virtual DbSet<MaintainceDevice> MaintainceDevices { get; set; } = null!;
         public virtual DbSet<Slot> Slots { get; set; } = null!;
         public virtual DbSet<Supplier> Suppliers { get; set; } = null!;
+        public virtual DbSet<Notification> Notifications { get; set; } = null!;
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("server=.\\SQLEXPRESS;database=eProject3;Trusted_connection=true");
+                optionsBuilder.UseSqlServer("server=.;database=eProject3;uid=sa;pwd=1");
             }
         }
 
@@ -59,10 +60,6 @@ namespace Eproject3.Models
 
                 entity.Property(e => e.Description).HasColumnName("description");
 
-                entity.Property(e => e.Id)
-                    .HasMaxLength(50)
-                    .HasColumnName("ID");
-
                 entity.Property(e => e.StatusCp).HasColumnName("Status_CP");
 
                 //entity.HasOne(d => d.Admins)
@@ -79,7 +76,7 @@ namespace Eproject3.Models
                 entity.HasKey(e => e.DevicesId)
                     .HasName("PK__Devices__36D9232A03FD987F");
 
-                entity.Property(e => e.DevicesId).HasColumnName("Devices_ID");
+                entity.Property(e => e.DevicesId).HasColumnName("DevicesId");
 
                 entity.Property(e => e.DateMaintance).HasColumnType("datetime");
 
@@ -140,11 +137,7 @@ namespace Eproject3.Models
 
                 entity.Property(e => e.Descriptions).IsUnicode(false);
 
-                entity.Property(e => e.DevicesId).HasColumnName("Devices_ID");
-
-                entity.Property(e => e.Id)
-                    .HasMaxLength(50)
-                    .HasColumnName("ID");
+                entity.Property(e => e.DevicesId).HasColumnName("DevicesId");
 
                 entity.Property(e => e.IsFinished).HasColumnName("isFinished");
 
@@ -157,32 +150,6 @@ namespace Eproject3.Models
                     .HasForeignKey(d => d.DevicesId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_Device_Devices_ID");
-            });
-
-            modelBuilder.Entity<Report>(entity =>
-            {
-                entity.ToTable("report");
-
-                entity.Property(e => e.ReportId).HasColumnName("Report_ID");
-
-                entity.Property(e => e.ComplainId).HasColumnName("Complain_ID");
-
-                entity.Property(e => e.Descriptions).IsUnicode(false);
-
-                entity.Property(e => e.DevicesId)
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("Devices_ID");
-
-                entity.Property(e => e.Reciver).IsUnicode(false);
-
-                entity.Property(e => e.ReportDate).HasColumnType("datetime");
-
-                entity.HasOne(d => d.Devices)
-                    .WithMany(p => p.Reports)
-                    .HasForeignKey(d => d.DevicesId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("fk_Devices_Devices_ID");
             });
 
             modelBuilder.Entity<Slot>(entity =>
