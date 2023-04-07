@@ -17,7 +17,7 @@ create table Suppliers
 )
 go 
 CREATE TABLE Devices (
-Devices_ID int PRIMARY KEY identity,
+DevicesId int PRIMARY KEY identity,
 DeviceName NVARCHAR(MAX) NOT NULL,
 DeviceType NVARCHAR(MAX) NULL,
 SupplyFrom NVARCHAR(MAX) NULL,
@@ -38,7 +38,8 @@ CREATE TABLE Admins (
 ID nvarchar(50) PRIMARY KEY,
 AdminName NVARCHAR(MAX) NOT NULL,
 Password NVARCHAR(MAX) NOT NULL,
-Role varchar(max) not null
+Role varchar(max) not null,
+IsActive bit null
 );
 go
 create table Complain
@@ -73,14 +74,14 @@ create table MaintainceDevices
 	Reason varchar(MAX),
 	Date datetime,
 	Creater varchar(MAX),
-	Devices_ID int not null,
+	DevicesId int not null,
 	ID nvarchar(50) not null,
 	Status varchar(MAX),
 	Step int,
 	isFinished bit
-	CONSTRAINT fk_Device_Devices_ID
-	FOREIGN KEY (Devices_ID)
-	REFERENCES Devices (Devices_ID),
+	CONSTRAINT fk_Device_DevicesId
+	FOREIGN KEY (DevicesId)
+	REFERENCES Devices (DevicesId),
 )
 go
 CREATE TABLE Slot
@@ -96,5 +97,14 @@ CREATE TABLE Slot
    CONSTRAINT FK_admins_ID
       FOREIGN KEY (Admins_ID)
       REFERENCES Admins (ID)
+)
+go
+Create Table Notifications
+(
+	Id int primary key identity,
+	Content nvarchar(max),
+	SendFor nvarchar(max),
+	Url nvarchar(max),
+	isRead bit
 )
 go

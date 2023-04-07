@@ -1,0 +1,83 @@
+@model Eproject3.Models.Device
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+	<div class="row justify-content-center mt-5">
+		<div class="col-md-6">
+			<div class="card">
+				<div class="card-header text-black text-center">
+					<h3>Create Device</h3>
+				</div>
+				<div class="card-body">
+					<form asp-action="Create" method="post" enctype="multipart/form-data">
+						<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+						<div class="form-group">
+                            <label asp-for="DeviceName" class="control-label"></label>
+                            <input asp-for="DeviceName" class="form-control" required />
+                            <span asp-validation-for="DeviceName" class="text-danger"></span>
+						</div>
+						<div class="form-group">
+                            <label asp-for="DeviceType" class="control-label"></label>
+                            <input asp-for="DeviceType" class="form-control" required/>
+                            <span asp-validation-for="DeviceType" class="text-danger"></span>
+						</div>
+						<div class="form-group">
+                            <label asp-for="DateMaintance" class="control-label"></label>
+                            <input asp-for="DateMaintance" class="form-control" required/>
+							<span asp-validation-for="DateMaintance" class="text-danger"></span>
+						</div>
+						<div class="input-group mb-3">
+                            <label asp-for="DeviceImg" class="input-group-text" for="inputGroupFile01">Upload</label>
+                            <input type="file" name="file" class="form-control" id="inputGroupFile01"/>
+							<span asp-validation-for="DeviceImg" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="LabsId" class="control-label"></label>
+                            <select asp-for="LabsId" class="form-control" asp-items="ViewBag.LabsId" required>
+                                <option>----SELECT----</option>
+                            </select>
+							
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="SupplierId" class="control-label"></label>
+                            <select asp-for="SupplierId" class="form-control" asp-items="ViewBag.Supplier_ID" required>
+                                <option>----SELECT----</option>
+                            </select>
+							
+                        </div>
+						<div class="form-group">
+							<button type="submit" class="btn btn-success btn-block">Create</button>
+						</div>
+					</form>
+				</div>
+				<div class="card-footer text-center">
+					<a asp-action="Index" asp-controller="Devices" class="btn btn-outline-secondary">Back To List</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<style>
+	.card {
+		border-radius: 10px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	}
+
+	.card-header {
+		border-radius: 10px 10px 0 0;
+	}
+
+	.btn-outline-secondary {
+		color: #495057;
+		border-color: #495057;
+	}
+
+	.btn-outline-secondary:hover {
+		color: #fff;
+		background-color: #495057;
+		border-color: #495057;
+	}
+</style >

@@ -1,0 +1,96 @@
+@model IEnumerable<Eproject3.Models.MaintainceDevice>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+    <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <!-- /.col -->
+                </div>
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body table-responsive">
+                            <table class="table table-bordered table-hover text-nowrap" id="deviceTable">
+                                <thead>
+                                    <tr>
+                                        <th>Descriptions</th>
+                                        <th>Reason</th>
+                                        <th>Date</th>
+                                        <th>Creater</th>
+                                        <th>Devices</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>@item.Descriptions</td>
+                                            <td>@item.Reason</td>
+                                            <td>@item.Date</td>
+                                            <td>@item.Creater</td>
+                                            <td>@item.Devices.DeviceName</td>
+                                            <td>
+                                            @if(item.Step == 4){
+                                                <span class="badge bg-success">Completed</span>
+                                            }else{
+                                                @if(item.Step != -99 && item.Step != 4){
+                                                    <span class="badge bg-primary">@Html.DisplayFor(modelItem => item.Status)</span>
+                                                }
+                                            }   
+                                            @if(item.Step == -99){
+                                                <span class="badge bg-danger">Rejected</span>
+                                            }
+                                            </td>
+                                            <td>
+                                                <a asp-action="Details" class="btn btn-outline-info" asp-route-id="@item.MaintnId"><i class="fas fa-circle-info"></i> Maintenance Confirmation</a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>
+<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#deviceTable").DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": true,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false,
+            "language": {
+                "paginate": {
+                    "next": "<i class='fas fa-chevron-right'></i>",
+                    "previous": "<i class='fas fa-chevron-left'></i>"
+                }
+            }
+        });
+    });
+</script>

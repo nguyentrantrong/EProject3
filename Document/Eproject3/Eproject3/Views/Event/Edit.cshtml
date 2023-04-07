@@ -1,0 +1,90 @@
+﻿@model Eproject3.Models.ViewModels.EventViewModel
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header text-black text-center">
+                    <h3>Update Event</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Edit" >
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <input type="hidden" asp-for="Event.Id"/>
+                        <div class="form-group">
+                            <label asp-for="Event.Name" class="control-label"></label>
+                            <input asp-for="Event.Name" class="form-control" />
+                            <span asp-validation-for="Event.Name" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Event.Description" class="control-label"></label>
+                            <input asp-for="Event.Description" class="form-control" />
+                            <span asp-validation-for="Event.Description" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Event.StartTime" class="control-label"></label>
+                            <input asp-for="Event.StartTime" class="form-control" />
+                            <span asp-validation-for="Event.StartTime" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Event.EndTime" class="control-label"></label>
+                            <input asp-for="Event.EndTime" class="form-control" />
+                            <span asp-validation-for="Event.EndTime" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="LabName" class="control-label"></label>
+                            @Html.DropDownList("Lab", Model.Lab, "Select a Lab", new { @class = "form-control" })
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block">Update</button>
+                        </div>
+                    </form>
+                    <script>
+                        function SetSelectedLab(Labs) {
+                            var labs = document.getElementById('Lab'), la, i;
+                            for (i = 0; i < labs.length; i++) {
+                                la = labs[i];
+                                if (la.innerText === Labs) {
+                                    la.selected = "true";
+                                }
+                            }
+                        }
+                        var eventlab = "@Html.Raw(Model.LabName)";
+                        document.addEventListener('DOMContentLoaded', function () {
+                            SetSelectedLab(eventlab);
+                        });
+                    </script>
+                </div>
+                <div class="card-footer text-center">
+                    <a asp-action="Index" asp-controller="Event" class="btn btn-outline-secondary">Back To List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .card-header {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .btn-outline-secondary {
+        color: #495057;
+        border-color: #495057;
+    }
+
+        .btn-outline-secondary:hover {
+            color: #fff;
+            background-color: #495057;
+            border-color: #495057;
+        }
+</style>

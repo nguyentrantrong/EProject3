@@ -1,0 +1,77 @@
+﻿@model Eproject3.Models.MaintainceDevice
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header text-black text-center">
+                    <h3>Update MaintainceDevice</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Edit" method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <input type="hidden" asp-for="MaintnId" />
+                            <div class="form-group">
+                                <label asp-for="Descriptions" class="control-label"></label>
+                                <input asp-for="Descriptions" class="form-control" />
+                                <span asp-validation-for="Descriptions" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Reason" class="control-label"></label>
+                                <input asp-for="Reason" class="form-control" />
+                                <span asp-validation-for="Reason" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Date" class="control-label"></label>
+                                <input asp-for="Date" class="form-control" />
+                                <span asp-validation-for="Date" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Creater" class="control-label"></label>
+                            <input asp-for="Creater" class="form-control" readonly/>
+                                <span asp-validation-for="Creater" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="DevicesId" class="control-label">Device Name</label>
+                                <select asp-for="DevicesId" class="form-control" asp-items="ViewBag.DevicesId"></select>
+                                <span asp-validation-for="DevicesId" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-block">Update</button>
+                            </div>
+                    </form>
+                </div>
+                <div class="card-footer text-center">
+                    <a class="btn btn-outline-secondary" asp-action="Index">Back to List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .card-header {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .btn-outline-secondary {
+        color: #495057;
+        border-color: #495057;
+    }
+
+        .btn-outline-secondary:hover {
+            color: #fff;
+            background-color: #495057;
+            border-color: #495057;
+        }
+</style>
